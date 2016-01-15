@@ -55,16 +55,6 @@ $(document).ready(function(){
 
 
 
-
-
-    // if (window.matchMedia('(max-width: 1024px)').matches){
-           
-    //     $('footer').before($('#sidebar'));
-    //     $('.articles').after($('#sidebar--banner1'));
-    //     $('.reports').after($('#sidebar--banner2'));
-
-    // }
-
     checkSize();
     $(window).resize(checkSize);
     function checkSize(){
