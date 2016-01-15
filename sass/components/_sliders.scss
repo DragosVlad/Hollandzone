@@ -1,0 +1,267 @@
+.featured-articles--item {
+	position: relative;
+	margin-right: 10px;
+	// box-shadow: 3px 2px 2px 1px rgba(0, 0, 0, 0.4);
+
+	
+}
+
+	.hover-effect {
+		position: relative;
+		overflow: hidden;
+		margin: 0;
+		cursor: pointer;
+		background: $main-color;
+
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+
+		&:hover {
+
+			.article-thumbnail {
+				opacity: 0.6;
+				-webkit-transform: scale3d(1,1,1);
+				transform: scale3d(1,1,1);
+			}
+
+			figcaption::before {
+				-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,125%,0);
+				transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,125%,0);
+			}
+
+			.article--text {
+				opacity: 1;
+				-webkit-transition-delay: 0.1s;
+				transition-delay: 0.1s;
+			}
+
+			.category {
+				z-index: 98;
+			}
+
+
+		}
+
+	}
+
+		.article-thumbnail {
+			opacity: 0.95;
+			-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+			transition: opacity 0.35s, transform 0.35s;
+			-webkit-transform: scale3d(1.2,1.2,1);
+			transform: scale3d(1.2,1.2,1);
+		}
+
+		figcaption {
+			padding: 15px;
+			color: #fff;
+			font-size: 1em;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+
+			&:before {
+				pointer-events: none;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba($accent-color, 0.7);
+				content: '';
+				-webkit-transition: -webkit-transform 0.6s;
+				transition: transform 0.6s;
+				-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-125%,0);
+				transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-125%,0);
+			}
+
+
+			&:after {
+				pointer-events: none;
+			}
+		}
+
+
+		.article--title {
+			font-size: 1.7em;
+			font-weight: 300;
+			color: #fff;
+			word-spacing: -0.15em;
+			text-align: left;
+			margin: 0;
+		
+			span {
+				font-weight: 800;
+			}
+
+		}
+
+			.article--details {
+				margin-top: 5px;
+				color: #fff;
+				font-size: 0.5em;
+				display: flex;
+			}
+
+				.date {
+					display: flex;
+
+					i {
+						font-size: 1.2em;
+						display: inline-block;
+					}
+
+					span {
+						font-weight: 300;
+						margin-left: 5px;
+						display: inline-block;
+					}
+				}
+
+				.category {
+					margin-left: 10px;
+
+					i {
+						font-size: 1.2em;
+						display: inline-block;
+					}
+
+					a {
+						display: flex;
+						align-items: center;
+						color: #fff;
+						margin-left: 10px;
+						font-weight: 700;
+						text-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.3);
+						transition: all 0.3s ease-in-out;
+
+						&:hover {
+							color: lighten($accent-color, 5%);
+						}
+
+						span {
+							margin-left: 5px;
+						}
+					}
+				}
+			
+
+		.article--text {
+			letter-spacing: 1px;
+			font-size: 68.5%;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			margin: 30px 10px;
+			padding: 0 15px;
+			max-width: 90%;
+			border-right: 4px solid #fff;
+			text-align: right;
+			opacity: 0;
+			pointer-events: none;
+			-webkit-transition: opacity 0.35s;
+			transition: opacity 0.35s;
+		}
+
+		.owl-theme .owl-controls .owl-page span {
+			background: $main-color;
+		}
+
+
+
+
+
+.articles--main {
+	position: relative;
+
+	figure {
+		// box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.4);
+	}
+
+	.article--title {
+		font-size: 2em;
+	}
+
+	.article--text {
+		font-size: 0.9em;
+	}
+}
+
+
+
+
+
+
+
+
+.reports {
+
+	.owl-theme .owl-buttons i {
+	  transition: all 0.3s ease-in-out;
+	}
+	 
+	.owl-theme .owl-controls .owl-buttons div {
+		position: absolute;
+		transition: all 0.3s ease-in-out;
+	}
+	 
+	.owl-theme .owl-controls .owl-buttons .owl-prev {
+		left: 5px;
+		top: 45%;
+		padding: 5px 18px; 
+		background: #000;
+		font-size: 1.3em;
+
+		&:hover {
+			background: $main-color;
+		}
+	}
+	 
+	.owl-theme .owl-controls .owl-buttons .owl-next {
+		right: 3px;
+		top: 45%;
+		padding: 5px 18px; 
+		background: #000;
+		font-size: 1.3em;
+
+		&:hover {
+			background: $main-color;
+		}
+	}
+
+}
+
+
+
+.reports--carousel {
+
+	padding: 60px 60px 20px 60px;
+	background-color: $accent-color;
+
+	.reports--item {
+		margin-right: 15px;
+	}
+
+		figcaption {
+			padding: 10px;
+		}
+
+		.article--title {
+			font-size: 1.7em;
+		}
+
+		.article--text {
+			font-size: 0.6em;
+			margin: 10px;
+			line-height: 1.3;
+		}
+
+
+}

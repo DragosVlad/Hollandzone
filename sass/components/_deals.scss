@@ -1,0 +1,76 @@
+.deals--articles-list {
+	margin-top: 30px;
+	margin-left: 0;
+}
+
+.deals--articles--list__item {
+	width: 100%;
+	margin-right: 50px;
+	margin-bottom: 50px;
+	border-bottom: 1px dashed rgba(0, 0, 0, 0.7);
+
+	.articles--list__thumbnail {
+		position: relative;
+		margin: 0 auto;
+		max-width: 340px;
+	}
+}
+
+	.deals--articles--list__text {
+		width: 90%;
+		margin: 15px auto;
+	}
+
+		.deals--articles--list__title {
+			font-size: 1.8em;
+			margin-bottom: 10px;
+
+			a {
+				color: $accent-color;
+				transition: all 0.3s ease-in-out;
+				
+				&:hover {
+					color: $main-color;
+				}
+			}
+				
+		}
+
+		.deals--articles--list__info {
+			display: flex;
+			align-items: center;
+			font-size: 0.8em;
+			margin-bottom: 10px;
+
+			.category a {
+				color: #000;
+
+				&:hover {
+					color: $main-color;
+				}
+			}
+		}
+
+		.deals--articles--list__description {
+			font-size: 0.8em;
+		}
+		
+
+		.deals--list__button {
+			display: inline-block;
+			color: #fff;
+			background-color: $accent-color;
+			padding: 10px 15px;
+			border-radius: 2px;
+			transition: all 0.3s ease-in-out;
+
+			&:hover, &:active, &:focus {
+				text-decoration: none;
+				color: #fff;
+				background-color: $main-color;
+			}
+		}
+
+.deals--articles-list__mobile {
+	display: none;
+}

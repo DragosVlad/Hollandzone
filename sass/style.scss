@@ -1,0 +1,23 @@
+@import
+	'base/variables',
+	'base/typography',
+	'base/base';
+
+@import
+	'layout/header';
+
+@import
+	'components/navigation',
+	'components/buttons',
+	'components/sliders',
+	'components/articles-list',
+	'components/sidebar',
+	'components/banners',
+	'components/deals',
+	'components/footer';
+
+@import
+	'pages/home';
+
+@import
+	'base/responsive';

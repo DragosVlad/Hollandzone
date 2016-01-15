@@ -1,0 +1,156 @@
+
+.articles--list {
+	list-style: none;
+	margin-top: 100px;
+}
+
+	.articles--list__item {
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+		display: flex;
+		align-items: center;
+		border-bottom: 1px dashed rgba($accent-color, 0.7);
+	}
+
+
+
+		.articles--list__thumbnail {
+			background-color: $main-color;
+			max-width: 320px;
+			position: relative;
+			flex-basis: 45%;
+			margin-right: 20px;
+
+			&:hover {
+
+				.articles--list__image {
+					opacity: 0.6;
+
+				}
+
+				.image-button--wrapper {
+					opacity: 1;
+
+					a {
+						z-index: 98;
+					}
+				}
+			}
+		}
+
+		
+			.full-link {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				text-decoration: none;
+				z-index: 10;
+			}
+
+			.articles--list__image {
+				position: relative;
+				opacity: 0.95;
+				transition: opacity 0.35s;
+			}
+
+			.image-button--wrapper {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				opacity: 0;
+				transition: all 0.3s ease-in-out;
+			}
+
+			.image-button {
+				color: #fff;
+				padding: 5px 10px;
+				background-color: $accent-color;
+				transition: all 0.3s ease-in-out;
+
+				&:hover, &:active, &:focus {
+					color: #fff;
+					background-color: darken($accent-color, 5%);
+				}
+			}
+
+
+		.articles--list__text {
+			align-self: flex-start;
+			display: flex;
+			flex-basis: 55%;
+			flex-direction: column;
+		}
+
+			.articles--list__title a {
+				font-family: $font-family-raleway;
+				font-size: 1.1em;
+				color: $accent-color;
+				transition: all 0.3s ease-in-out;
+				text-decoration: none;
+
+				&:hover {
+					color: $main-color;
+					text-decoration: none;
+				}
+			}
+
+			.articles--list__info {
+				display: flex;
+				margin-bottom: 10px;
+
+				.date {
+					span {
+						margin-left: 5px;
+					}
+				}
+
+				.category {
+
+					margin-left: 10px;
+
+					span {
+						margin-left: 5px;
+					}
+
+					a {
+						color: $text-color-black;
+
+						&:hover {
+							color: $main-color;
+							text-decoration: none;
+						}
+					}
+					
+				}
+			}
+
+			.articles--list__description {
+				line-height: 1.2;
+			}
+
+			.articles--list__button {
+				display: block;
+				color: #fff;
+				background-color: $accent-color;
+				padding: 10px 15px;
+				border-radius: 2px;
+				align-self: flex-start;
+				transition: all 0.3s ease-in-out;
+
+				&:hover, &:active, &:focus {
+					text-decoration: none;
+					color: #fff;
+					background-color: $main-color;
+				}
+			}
+
+
+
+

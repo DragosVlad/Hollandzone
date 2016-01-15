@@ -1,0 +1,71 @@
+/// Various page styles for default look
+
+::selection {
+  background: $main-color;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: $main-color; 
+  color: #fff; 
+}
+
+
+body {
+	background-color: #F0F0F0;
+	padding-top: 135px;
+}
+
+
+.wrapper {
+	width: 85%;
+	background-color: #fff;	
+	box-shadow: 0 15px 40px 3px rgba(0, 0, 0, 0.6);
+}
+
+	.wrapper--main {
+		margin: 0 auto;
+		padding: 30px 25px 0;
+	}
+
+	.row {
+		margin: 0;
+		margin-right: 0;
+	}
+
+
+
+
+.section-title {
+	font-family: $font-family-raleway;
+	font-weight: 600;
+	font-size: 2.5em;
+	margin-bottom: 30px;
+	color: lighten($accent-color, 5%);
+}
+
+
+section {
+	margin-bottom: 50px;
+
+	&.articles {
+		margin-bottom: 0;
+	}
+
+	&.two-sides-content {
+		margin-bottom: 0;
+	}
+
+	&.reports {
+		margin-bottom: 100px;
+	}
+}
+
+
+.two-sides-content {
+	padding: 0;
+}
+
+	.main-content {
+		// padding: 10px 20px;
+	}
