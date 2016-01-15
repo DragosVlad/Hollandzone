@@ -57,13 +57,29 @@ $(document).ready(function(){
 
 
 
-    if (window.matchMedia('(max-width: 1024px)').matches){
+    // if (window.matchMedia('(max-width: 1024px)').matches){
            
-        $('footer').before($('#sidebar'));
-        $('.articles').after($('#sidebar--banner1'));
-        $('.reports').after($('#sidebar--banner2'));
+    //     $('footer').before($('#sidebar'));
+    //     $('.articles').after($('#sidebar--banner1'));
+    //     $('.reports').after($('#sidebar--banner2'));
 
-    }
+    // }
+
+    checkSize();
+    $(window).resize(checkSize);
+    function checkSize(){
+        if (window.matchMedia('(max-width: 1024px)').matches){
+           
+            $('footer').before($('#sidebar'));
+            $('.articles').after($('#sidebar--banner1'));
+            $('.reports').after($('#sidebar--banner2'));
+
+        } else {
+          $('.main-content').after($('#sidebar'));
+          $('.sidebar--box__recent').after($('#sidebar--banner1'));
+          $('.sidebar--box__calendar').after($('#sidebar--banner2'));
+        };
+    }; // End function checkSize()
 
 
 
