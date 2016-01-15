@@ -56,11 +56,17 @@ $(document).ready(function(){
 
 
 
-    // if ($('.sidebar').css('color') === '#ffffff') {
-    //   $('footer').before($('.sidebar'));
-    //   $('.articles').after($('#sidebar--banner1'));
-    //   $('.reports').after($('#sidebar--banner2'));
-    // };
+
+    if (window.matchMedia('(max-width: 1024px)').matches){
+           
+        $('footer').before($('#sidebar'));
+        $('.articles').after($('#sidebar--banner1'));
+        $('.reports').after($('#sidebar--banner2'));
+
+    }
+
+
+
     
 
 
@@ -74,5 +80,6 @@ $(document).ready(function(){
 
 
 });
+
 
 

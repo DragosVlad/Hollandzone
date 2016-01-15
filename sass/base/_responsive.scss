@@ -347,6 +347,15 @@
 	}
 
 
+	.page-numbers--item {
+		font-size: 1.5em;
+
+		a {
+			padding: 0 15px;
+		}
+	}
+
+
 
 
 	// FOOTER 
@@ -535,12 +544,6 @@
 	}
 
 
-
-
-
-
-
-
 	.articles--list__item {
 		flex-wrap: wrap;
 		justify-content: center;
@@ -559,6 +562,14 @@
 			flex-basis: 90%;
 		}
 
+	
+	.page-numbers--item {
+		font-size: 1.1em;
+
+		a {
+			padding: 0 8px;
+		}
+	}
 
 
 

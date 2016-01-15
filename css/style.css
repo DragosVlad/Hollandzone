@@ -961,7 +961,7 @@ figcaption {
 .page-numbers--item {
   display: inline-block;
   margin: 0;
-  font-size: 2em;
+  font-size: 1.7em;
   font-family: Helvetica, sans-serif; }
   .page-numbers--item a {
     display: block;
@@ -1188,6 +1188,10 @@ figcaption {
       margin-right: 10px; }
     .reports--carousel .article--title {
       font-size: 1.5em; }
+  .page-numbers--item {
+    font-size: 1.5em; }
+    .page-numbers--item a {
+      padding: 0 15px; }
   .main-footer {
     width: calc(100% + 30px);
     margin: 0 auto 0 -15px; } }
@@ -1284,4 +1288,8 @@ figcaption {
   .articles--list__text {
     -webkit-flex-basis: 90%;
         -ms-flex-preferred-size: 90%;
-            flex-basis: 90%; } }
+            flex-basis: 90%; }
+  .page-numbers--item {
+    font-size: 1.1em; }
+    .page-numbers--item a {
+      padding: 0 8px; } }
