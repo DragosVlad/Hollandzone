@@ -1,0 +1,43 @@
+.page-numbers--list {
+	list-style: none;
+}
+
+	.page-numbers--item {
+		display: inline-block;
+		margin: 0;
+		font-size: 2em;
+		font-family: Helvetica, sans-serif;
+
+		a {
+			display: block;
+			padding: 0px 20px;
+			color: $accent-color;
+			transition: all 0.3s ease-in-out;
+
+			&:hover {
+				background-color: $main-color;
+				color: #fff;
+			}
+
+
+			&.active {
+				background-color: $main-color;
+				color: #fff;
+			}
+		}
+
+		
+	}
+
+	.page-numbers--item__arrow {
+		&.disabled {
+			a {
+				color: $text-color-grey;
+				pointer-events: none;
+
+				&:hover {
+					background-color: transparent;
+				}
+			}
+		}
+	}

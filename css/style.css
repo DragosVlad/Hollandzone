@@ -955,6 +955,33 @@ figcaption {
 .deals--articles-list__mobile {
   display: none; }
 
+.page-numbers--list {
+  list-style: none; }
+
+.page-numbers--item {
+  display: inline-block;
+  margin: 0;
+  font-size: 2em;
+  font-family: Helvetica, sans-serif; }
+  .page-numbers--item a {
+    display: block;
+    padding: 0px 20px;
+    color: #2b3340;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    .page-numbers--item a:hover {
+      background-color: #ed6a15;
+      color: #fff; }
+    .page-numbers--item a.active {
+      background-color: #ed6a15;
+      color: #fff; }
+
+.page-numbers--item__arrow.disabled a {
+  color: #999999;
+  pointer-events: none; }
+  .page-numbers--item__arrow.disabled a:hover {
+    background-color: transparent; }
+
 .main-footer {
   width: calc(100% + 50px);
   margin: 0 auto 0 -25px;
