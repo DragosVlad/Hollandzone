@@ -6,25 +6,27 @@
 	.main-article--overlay {
 		position: absolute;
 		bottom: 0;
-		left: 0px;
-		width: 100%;
+		left: 20px;
+		width: 70%;
+		padding: 20px 10px;
 		text-align: center;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		// display: flex;
+		// justify-content: center;
+		// align-items: center;
 
 
-		background-color: rgba(0, 0, 0, 0.4);
+		background-color: rgba(0, 0, 0, 0.6);
 		z-index: 10;
 
 	}
 
 		.main-article--title {
 			font-family: $font-family-raleway;
-			font-size: 2.8em;
+			font-size: 2.3em;
 			font-weight: $font-semibold;
 			color: rgba(#fff, 0.8);
 			width: 90%;
+			margin-bottom: 20px;
 		}	
 
 	.main-article--image {
@@ -74,45 +76,48 @@
 
 .main-article--details {
 	display: flex;
+	align-items: center;
 	width: 100%;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 
 	.main-article--details__date {
 
-		margin-right: 30px;
+		margin-right: 15px;
 
 		i {
-			font-size: 1.3em;
-			color: $accent-color;
+			font-size: 0.8em;
+			color: #fff;
 		}
 
 
 		span {
-			color: $accent-color;
-			margin-left: 10px;
+			font-size: 0.8em;
+			color: #fff;
+			margin-left: 2px;
 		}
 	}
 
 	.main-article--details__category {
 
-		margin-right: 30px;
+		margin-right: 15px;
 
 		a {
 
-			color: $accent-color;
+			color: #fff;
 			transition: all 0.3s ease-in-out;
 
 			i {
-				font-size: 1.3em;
+				font-size: 0.8em;
 				vertical-align: middle;
 
 			}
 
 
 			span {
+				font-size: 0.8em;
 				font-weight: $font-semibold;
-				margin-left: 5px;
+				margin-left: 2px;
 			}
 
 			&:hover {
@@ -127,6 +132,8 @@
 
 
 	.main-article--details__image-source {
+		color: #fff;
+
 		a {
 			font-weight: $font-semibold;
 			color: $main-color;
