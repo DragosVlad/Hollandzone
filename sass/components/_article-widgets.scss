@@ -29,3 +29,38 @@
 }
 
 
+.related-entries {
+	display: block;
+	width: 100%;
+	margin-top: 50px;
+}
+
+	.related-entries--title {
+		font-family: $font-family-raleway;
+		font-weight: $font-semibold;
+		font-size: 2em;
+	}
+
+	.deals--articles-list__related {
+
+
+		.deals--articles--list__item {
+
+			// border-bottom: none;
+
+			.articles--list__thumbnail {
+				max-width: 250px;
+			}
+
+			.deals--articles--list__text {
+				width: 70%;
+				margin: 10px auto;
+			}
+
+			.deals--articles--list__info {
+				font-size: 1em;
+			}
+		}
+
+
+	}

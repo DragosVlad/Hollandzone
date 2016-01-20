@@ -32,3 +32,11 @@
 			background-position: 50% 50%;
 			background-repeat: no-repeat;
 		}
+
+	.banner--sidebar__long {
+		height: 600px;
+
+		.banner--sidebar__ad {
+			background-image: url('../images/banner3.jpg');
+		}
+	}
