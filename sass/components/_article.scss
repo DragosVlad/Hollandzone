@@ -4,18 +4,18 @@
 }
 	
 	.main-article--overlay {
-		position: relative;
+		position: absolute;
 		bottom: 0;
 		left: 20px;
-		width: 100%;
-		padding: 20px 10px;
+		// width: 60%;
+		padding: 10px 10px 0;
 		text-align: center;
 		// display: flex;
 		// justify-content: center;
 		// align-items: center;
 
 
-		// background-color: rgba(0, 0, 0, 0.6);
+		background-color: rgba(0, 0, 0, 0.6);
 		z-index: 10;
 
 	}
@@ -80,7 +80,7 @@
 	display: flex;
 	align-items: center;
 	width: 100%;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 	.main-article--details__date {
@@ -89,13 +89,13 @@
 
 		i {
 			font-size: 0.8em;
-			color: $accent-color;
+			color: #fff;
 		}
 
 
 		span {
 			font-size: 0.8em;
-			color: $accent-color;
+			color: #fff;
 			margin-left: 2px;
 		}
 	}
@@ -106,7 +106,7 @@
 
 		a {
 
-			color: $accent-color;
+			color: #fff;
 			transition: all 0.3s ease-in-out;
 
 			i {
@@ -134,7 +134,7 @@
 
 
 	.main-article--details__image-source {
-		color: $accent-color;
+		color: #fff;
 
 		a {
 			font-weight: $font-semibold;
