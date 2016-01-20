@@ -823,10 +823,14 @@ section {
 .main-article--overlay {
   position: absolute;
   bottom: 0;
-  left: 20px;
-  width: 70%;
+  left: 0px;
+  width: 100%;
   padding: 20px 10px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 10; }
 
@@ -840,7 +844,8 @@ section {
 
 .main-article--image {
   position: relative;
-  max-width: 100%; }
+  max-width: 100%;
+  opacity: 0.4; }
 
 .language-switcher {
   position: relative;
@@ -871,8 +876,8 @@ section {
 .main-article--details {
   display: flex;
   align-items: center;
-  width: 100%;
-  margin-bottom: 10px; }
+  justify-content: center;
+  width: 100%; }
 
 .main-article--details__date {
   margin-right: 15px; }
