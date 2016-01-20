@@ -1,0 +1,31 @@
+.widget--image {
+	position: relative;
+	margin: 0 0 30px;
+	padding: 0;
+	background-color: rgba($accent-color, 0.7);
+}
+
+	.widget--image__picture {
+		
+	}
+
+	.widget--image__caption {
+		padding: 15px 10px;
+		color: #fff;
+		font-family: $font-family-overlock;
+		font-style: italic;
+		font-size: 1.1em;
+		letter-spacing: 2px;
+		line-height: 1.2em;
+	}
+
+
+
+.widget--video {
+	padding: 0;
+	margin-bottom: 30px;
+	width: 100%;
+	height: 100%;
+}
+
+
