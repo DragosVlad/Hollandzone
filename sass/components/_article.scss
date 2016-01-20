@@ -4,10 +4,10 @@
 }
 	
 	.main-article--overlay {
-		position: absolute;
+		position: relative;
 		bottom: 0;
 		left: 20px;
-		width: 70%;
+		width: 100%;
 		padding: 20px 10px;
 		text-align: center;
 		// display: flex;
@@ -15,7 +15,7 @@
 		// align-items: center;
 
 
-		background-color: rgba(0, 0, 0, 0.6);
+		// background-color: rgba(0, 0, 0, 0.6);
 		z-index: 10;
 
 	}
@@ -24,7 +24,7 @@
 			font-family: $font-family-raleway;
 			font-size: 2.3em;
 			font-weight: $font-semibold;
-			color: rgba(#fff, 0.8);
+			color: $accent-color;
 			width: 90%;
 			margin-bottom: 20px;
 			padding-bottom: 10px;
@@ -89,13 +89,13 @@
 
 		i {
 			font-size: 0.8em;
-			color: #fff;
+			color: $accent-color;
 		}
 
 
 		span {
 			font-size: 0.8em;
-			color: #fff;
+			color: $accent-color;
 			margin-left: 2px;
 		}
 	}
@@ -106,7 +106,7 @@
 
 		a {
 
-			color: #fff;
+			color: $accent-color;
 			transition: all 0.3s ease-in-out;
 
 			i {
@@ -134,7 +134,7 @@
 
 
 	.main-article--details__image-source {
-		color: #fff;
+		color: $accent-color;
 
 		a {
 			font-weight: $font-semibold;
