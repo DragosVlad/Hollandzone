@@ -817,8 +817,7 @@ section {
     background-color: transparent; }
 
 .main-article--hero {
-  position: relative;
-  background-color: #ed6a15; }
+  position: relative; }
 
 .main-article--overlay {
   position: absolute;
@@ -840,7 +839,8 @@ section {
 
 .main-article--image {
   position: relative;
-  max-width: 100%; }
+  max-width: 100%;
+  filter: blur(4px); }
 
 .language-switcher {
   position: relative;

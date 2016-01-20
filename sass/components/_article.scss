@@ -1,6 +1,6 @@
 .main-article--hero {
 	position: relative;
-	background-color: $main-color;
+	// background-color: $main-color;
 }
 	
 	.main-article--overlay {
@@ -32,6 +32,7 @@
 	.main-article--image {
 		position: relative;
 		max-width: 100%;
+		filter: blur(4px);
 	}
 
 
