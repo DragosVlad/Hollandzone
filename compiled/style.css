@@ -18,6 +18,7 @@ body {
 .wrapper {
   width: 85%;
   background-color: #fff;
+  background-color: #fefefe;
   box-shadow: 0 15px 40px 3px rgba(0, 0, 0, 0.6); }
 
 .wrapper--main {
@@ -828,16 +829,16 @@ section {
 .main-article--overlay {
   position: absolute;
   bottom: 0;
-  left: 20px;
-  width: 70%;
-  padding: 20px 10px;
+  left: 0px;
+  width: 75%;
+  padding: 20px 10px 0;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 10; }
 
 .main-article--title {
   font-family: "Raleway", sans-serif;
-  font-size: 2.3em;
+  font-size: 2.1em;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
   width: 90%;
@@ -849,37 +850,11 @@ section {
   position: relative;
   max-width: 100%; }
 
-.language-switcher {
-  position: relative;
-  margin: 10px 0 30px;
-  display: flex;
-  justify-content: space-between;
-  width: 60px;
-  height: 12px; }
-
-.language-switcher--item {
-  position: relative;
-  width: 25px;
-  background-image: url("../images/flag-sprite.jpg");
-  background-repeat: no-repeat;
-  opacity: 0.3;
-  transition: all 0.3s ease-in-out; }
-  .language-switcher--item.active {
-    opacity: 1; }
-  .language-switcher--item:hover {
-    opacity: 1; }
-
-.language-switcher--item__english {
-  background-position: 0 0; }
-
-.language-switcher--item__dutch {
-  background-position: 100% 0; }
-
 .main-article--details {
   display: flex;
   align-items: center;
   width: 100%;
-  margin-bottom: 10px; }
+  margin-bottom: 0px; }
 
 .main-article--details__date {
   margin-right: 15px; }
@@ -909,11 +884,67 @@ section {
 .main-article--details__image-source {
   color: #fff; }
   .main-article--details__image-source a {
+    font-size: 0.8em;
     font-weight: 600;
     color: #ed6a15;
     transition: all 0.3s ease-in-out; }
     .main-article--details__image-source a:hover {
       color: #91400b; }
+
+.language-switcher {
+  position: relative;
+  margin: 15px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  height: 12px; }
+
+.language-icon {
+  color: #2b3340;
+  font-size: 1.8em;
+  position: relative;
+  margin-top: -5px;
+  margin-right: 10px; }
+
+.language-switcher--item {
+  position: relative;
+  width: 25px;
+  background-image: url("../images/flag-sprite.jpg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  transition: all 0.3s ease-in-out; }
+  .language-switcher--item.active {
+    opacity: 1; }
+  .language-switcher--item:hover {
+    opacity: 1; }
+
+.language-switcher--item__english {
+  background-position: 0 0; }
+
+.language-switcher--item__dutch {
+  background-position: 100% 0; }
+
+.main-article--paragraph {
+  font-family: "Overlock", cursive;
+  font-size: 1.2em;
+  font-kerning: normal;
+  line-height: 1.4em;
+  letter-spacing: 0.8px;
+  margin-bottom: 30px; }
+  .main-article--paragraph.p3 {
+    font-family: 'Droid Serif', serif; }
+  .main-article--paragraph.p4 {
+    font-family: 'Merriweather', serif; }
+  .main-article--paragraph.p5 {
+    font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif; }
+  .main-article--paragraph.p6 {
+    font-family: 'EB Garamond', serif; }
+  .main-article--paragraph.p7 {
+    font-family: 'Open Sans', sans-serif; }
+  .main-article--paragraph.p8 {
+    font-family: 'Lato', sans-serif; }
+  .main-article--paragraph.p9 {
+    font-family: 'PT Serif', serif; }
 
 .share-buttons {
   margin-bottom: 30px;
@@ -965,14 +996,6 @@ section {
     color: #fff;
     background-color: #007bb5; }
 
-.main-article--paragraph {
-  font-family: "Overlock", cursive;
-  font-size: 1.2em;
-  font-kerning: normal;
-  line-height: 1.4em;
-  letter-spacing: 0.8px;
-  margin-bottom: 30px; }
-
 .widget--image {
   position: relative;
   margin: 0 0 30px;
@@ -994,6 +1017,39 @@ section {
   width: 100%;
   height: 100%; }
 
+.widget--deal__wrapper,
+.widget--calendar__wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 10px 15px;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.4); }
+  .widget--deal__wrapper:hover,
+  .widget--calendar__wrapper:hover {
+    box-shadow: 0 3px 6px 2px rgba(0, 0, 0, 0.4); }
+    .widget--deal__wrapper:hover .widget--deal__title,
+    .widget--calendar__wrapper:hover .widget--deal__title {
+      color: #ed6a15; }
+    .widget--deal__wrapper:hover .widget--calendar__title,
+    .widget--calendar__wrapper:hover .widget--calendar__title {
+      color: #ed6a15; }
+
+.widget--deal__image,
+.widget--calendar__image {
+  max-width: 85px;
+  margin-right: 20px;
+  transition: all 0.2s ease-in-out; }
+
+.widget--deal__title,
+.widget--calendar__title {
+  font-size: 1.8em;
+  font-family: "Raleway", sans-serif;
+  color: #2b3340;
+  transition: all 0.2s ease-in-out; }
+
 .related-entries {
   display: block;
   width: 100%;
@@ -1004,15 +1060,27 @@ section {
   font-weight: 600;
   font-size: 2em; }
 
-.deals--articles-list__related .deals--articles--list__item .articles--list__thumbnail {
-  max-width: 250px; }
+.widget--related-entries__item {
+  position: relative;
+  margin-bottom: 30px;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.4); }
+  .widget--related-entries__item:hover {
+    box-shadow: 0 3px 6px 2px rgba(0, 0, 0, 0.4); }
+    .widget--related-entries__item:hover .widget--related-entries__title {
+      color: #ed6a15; }
 
-.deals--articles-list__related .deals--articles--list__item .deals--articles--list__text {
-  width: 70%;
-  margin: 10px auto; }
+.widget--related-entries__image {
+  max-width: 100%; }
 
-.deals--articles-list__related .deals--articles--list__item .deals--articles--list__info {
-  font-size: 1em; }
+.widget--related-entries__text {
+  padding: 10px; }
+
+.widget--related-entries__title {
+  color: #2b3340;
+  font-family: "Raleway", sans-serif;
+  transition: all 0.2s ease-in-out; }
 
 .main-footer {
   width: calc(100% + 50px);

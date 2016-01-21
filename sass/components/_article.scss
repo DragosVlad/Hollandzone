@@ -6,9 +6,9 @@
 	.main-article--overlay {
 		position: absolute;
 		bottom: 0;
-		left: 20px;
-		width: 70%;
-		padding: 20px 10px;
+		left: 0px;
+		width: 75%;
+		padding: 20px 10px 0;
 		text-align: center;
 		// display: flex;
 		// justify-content: center;
@@ -22,7 +22,7 @@
 
 		.main-article--title {
 			font-family: $font-family-raleway;
-			font-size: 2.3em;
+			font-size: 2.1em;
 			font-weight: $font-semibold;
 			color: rgba(#fff, 0.8);
 			width: 90%;
@@ -39,39 +39,7 @@
 
 
 
-.language-switcher {
-	position: relative;
-	margin: 10px 0 30px;
-	display: flex;
-	justify-content: space-between;
-	width: 60px;
-	height: 12px;
-}
 
-	.language-switcher--item {
-		position: relative;
-		width: 25px;
-		background-image: url('../images/flag-sprite.jpg');
-		background-repeat: no-repeat;
-		opacity: 0.3;
-		transition: all 0.3s ease-in-out;
-
-		&.active {
-			opacity: 1;
-		}
-
-		&:hover {
-			opacity: 1;
-		}
-	}
-
-		.language-switcher--item__english {
-			background-position: 0 0;
-		}
-
-		.language-switcher--item__dutch {
-			background-position: 100% 0;
-		}
 
 
 
@@ -80,7 +48,7 @@
 	display: flex;
 	align-items: center;
 	width: 100%;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 }
 
 	.main-article--details__date {
@@ -137,6 +105,7 @@
 		color: #fff;
 
 		a {
+			font-size: 0.8em;
 			font-weight: $font-semibold;
 			color: $main-color;
 			transition: all 0.3s ease-in-out;
@@ -146,6 +115,88 @@
 			}
 		}
 	}
+
+
+
+
+.language-switcher {
+	position: relative;
+	margin: 15px 0 30px;
+	display: flex;
+	justify-content: space-between;
+	width: 100px;
+	height: 12px;
+}
+
+	.language-icon {
+		color: $accent-color;
+		font-size: 1.8em;
+		position: relative;
+		margin-top: -5px;
+		margin-right: 10px;
+	}
+
+	.language-switcher--item {
+		position: relative;
+		width: 25px;
+		background-image: url('../images/flag-sprite.jpg');
+		background-repeat: no-repeat;
+		opacity: 0.3;
+		transition: all 0.3s ease-in-out;
+
+		&.active {
+			opacity: 1;
+		}
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+		.language-switcher--item__english {
+			background-position: 0 0;
+		}
+
+		.language-switcher--item__dutch {
+			background-position: 100% 0;
+		}
+
+
+
+
+
+
+.main-article--content {
+	
+}
+
+	.main-article--paragraph {
+		font-family: $font-family-overlock;
+		font-size: 1.2em;
+		font-kerning: normal;
+		line-height: 1.4em;
+		letter-spacing: 0.8px;
+		margin-bottom: 30px;
+		
+		&.p2 {}
+
+		&.p3 {font-family: 'Droid Serif', serif;}
+
+		&.p4 {font-family: 'Merriweather', serif;}
+
+		&.p5 {font-family: $font-family-sans;}
+
+		&.p6 {font-family: 'EB Garamond', serif;}
+
+		&.p7 {font-family: 'Open Sans', sans-serif;}
+
+		&.p8 {font-family: 'Lato', sans-serif;}
+
+		&.p9 {font-family: 'PT Serif', serif;}
+	}
+
+
+
 
 .share-buttons {
 	margin-bottom: 30px;
@@ -215,23 +266,4 @@
 				background-color: #007bb5;
 			}
 		}
-
-
-
-
-
-
-.main-article--content {
-	
-}
-
-	.main-article--paragraph {
-		font-family: $font-family-overlock;
-		font-size: 1.2em;
-		font-kerning: normal;
-		line-height: 1.4em;
-		letter-spacing: 0.8px;
-		margin-bottom: 30px;
-	}
-
 

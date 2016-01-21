@@ -29,6 +29,61 @@
 }
 
 
+
+.widget--deal__wrapper,
+.widget--calendar__wrapper {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	margin-bottom: 30px;
+	padding: 10px 15px;
+	background-color: #fff;	
+	transition: all 0.2s ease-in-out;
+	box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.4);
+
+	&:hover {
+		box-shadow: 0 3px 6px 2px rgba(0, 0, 0, 0.4);
+
+		.widget--deal__title {
+			color: $main-color;
+		}
+
+		.widget--calendar__title {
+			color: $main-color;
+		}
+	}
+}
+
+	.widget--deal__image,
+	.widget--calendar__image {
+		max-width: 85px;
+		margin-right: 20px;
+		transition: all 0.2s ease-in-out;
+	}
+
+	.widget--deal__text {
+
+	}
+
+		.widget--deal__title,
+		.widget--calendar__title {
+			font-size: 1.8em;
+			font-family: $font-family-raleway;
+			color: $accent-color;
+			transition: all 0.2s ease-in-out;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
 .related-entries {
 	display: block;
 	width: 100%;
@@ -41,26 +96,33 @@
 		font-size: 2em;
 	}
 
-	.deals--articles-list__related {
+	.widget--related-entries__item {
+		position: relative;
+		margin-bottom: 30px;
+		background-color: #fff;
+		transition: all 0.2s ease-in-out;
+		box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.4);
 
+		&:hover {
+			box-shadow: 0 3px 6px 2px rgba(0, 0, 0, 0.4);
 
-		.deals--articles--list__item {
-
-			// border-bottom: none;
-
-			.articles--list__thumbnail {
-				max-width: 250px;
-			}
-
-			.deals--articles--list__text {
-				width: 70%;
-				margin: 10px auto;
-			}
-
-			.deals--articles--list__info {
-				font-size: 1em;
+			.widget--related-entries__title {
+				color: $main-color;
 			}
 		}
-
-
 	}
+
+		.widget--related-entries__image {
+			max-width: 100%;
+		}
+
+		.widget--related-entries__text {
+			padding: 10px;
+		}
+
+			.widget--related-entries__title {
+				color: $accent-color;
+				font-family: $font-family-raleway;
+				transition: all 0.2s ease-in-out;
+			}
+
