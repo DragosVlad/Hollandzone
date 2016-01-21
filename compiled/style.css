@@ -1050,6 +1050,86 @@ section {
   color: #2b3340;
   transition: all 0.2s ease-in-out; }
 
+.widget--review {
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden; }
+
+.widget--review__bg-image {
+  position: absolute;
+  height: 100%; }
+
+.widget--review__overlay {
+  position: relative;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.widget--review__title {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.2); }
+
+.widget--review__text {
+  color: #fff;
+  font-size: 1em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.2); }
+
+.widget--review__lists {
+  display: flex;
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.2); }
+
+.widget--review__pro-list {
+  list-style: none;
+  margin-left: 80px;
+  margin-right: 200px;
+  padding-left: 10px;
+  border-left: 2px dashed rgba(255, 255, 255, 0.2); }
+
+.widget--review__pro-list--item {
+  color: #fff; }
+
+.widget--review__pro-list--title {
+  position: absolute;
+  color: #fff;
+  margin-left: -60px; }
+
+.widget--review__con-list {
+  list-style: none;
+  padding-left: 10px;
+  border-left: 2px dashed rgba(255, 255, 255, 0.2); }
+
+.widget--review__con-list--item {
+  color: #fff; }
+
+.widget--review__con-list--title {
+  position: absolute;
+  color: #fff;
+  margin-left: -60px; }
+
+.widget--review__rating--number {
+  color: #fff;
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: 700; }
+
+.widget--review__rating--stars {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto; }
+
+.star-icon {
+  font-size: 3em;
+  color: #ed6a15;
+  text-align: center;
+  margin-right: 10px; }
+
 .related-entries {
   display: block;
   width: 100%;
