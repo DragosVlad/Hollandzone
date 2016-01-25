@@ -33,7 +33,7 @@
 
 	.main-article--image {
 		position: relative;
-		max-width: 100%;
+		width: 100%;
 	}
 
 
@@ -110,6 +110,10 @@
 				color: darken($main-color, 20%);
 			}
 		}
+
+		i {
+			color: #fff;
+		}
 	}
 
 
@@ -175,7 +179,8 @@
 		font-kerning: normal;
 		line-height: 1.4em;
 		letter-spacing: 0.8px;
-		color: $accent-color;
+		// color: $accent-color;
+		color: #000;
 		margin-bottom: 30px;
 		
 		// &.p2 {}

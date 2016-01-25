@@ -38,6 +38,22 @@
 
 	}
 
+
+
+	/*----------  Article page  ----------*/
+	
+	.main-article--title {
+		font-size: 1.8em;
+		width: 90%;
+		margin-bottom: 20px;
+		padding-bottom: 10px;
+		border-bottom: 2px dashed rgba(255, 255, 255, 0.15);
+	}
+
+
+
+
+
 }  /// END  ---  1300px
 
 
@@ -212,10 +228,10 @@
 
 
 @media only screen and (max-width: 1024px) {
-	.sidebar {
-		color: #ffffff;
-	}
-}
+	// .sidebar {
+	// 	color: #ffffff;
+	// }
+} // END  ---  1024px (this is the Foundation medium media query)
 
 
 
@@ -399,10 +415,6 @@
 	}
 
 
-
-
-
-
 	.section-title {
 		font-size: 2em;
 	}
@@ -420,6 +432,23 @@
 	}
 
 
+
+	/*----------  Article page  ----------*/
+
+
+	.main-article--overlay {
+		width: 100%;
+	}
+
+		.main-article--title {
+			font-size: 1.5em;
+			width: 100%;
+		}
+
+	.widget--review__pro-list {
+		margin-left: 60px;
+		margin-right: 150px;
+	}
 
 	
 
@@ -484,9 +513,6 @@
 		}
 
 
-
-
-
 		.main-footer--text {
 			color: #fff;
 			font-size: 1.1em;
@@ -520,6 +546,71 @@
 
 
 		}
+
+
+
+	/*----------  Article page  ----------*/
+
+	.main-article--overlay {
+		padding: 10px 5px 0;
+	}
+
+		.main-article--title {
+			font-size: 1.2em;
+			margin-bottom: 5px;
+			padding-bottom: 5px;
+		}
+
+
+	.main-article--details__date {
+
+		margin-right: 10px;
+		margin-bottom: 5px;
+
+		i {
+			font-size: 0.6em;
+		}
+
+
+		span {
+			font-size: 0.6em;
+		}
+	}
+
+	.main-article--details__category {
+
+		margin-right: 10px;
+		margin-bottom: 5px;
+
+		a {
+
+			i {
+				font-size: 0.6em;
+
+			}
+
+
+			span {
+				font-size: 0.6em;
+			}
+		}
+		
+	}
+
+
+	.main-article--details__image-source {
+		margin-bottom: 5px;
+
+		a {
+			font-size: 0.6em;
+		}
+	}
+	
+
+
+
+
+
 
 
 } /// END --- 635px
