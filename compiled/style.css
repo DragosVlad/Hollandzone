@@ -832,7 +832,6 @@ section {
   left: 0px;
   width: 75%;
   padding: 20px 10px 0;
-  text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 10; }
 
@@ -840,6 +839,7 @@ section {
   font-family: "Raleway", sans-serif;
   font-size: 2.1em;
   font-weight: 600;
+  text-align: left;
   color: rgba(255, 255, 255, 0.8);
   width: 90%;
   margin-bottom: 20px;
@@ -896,7 +896,7 @@ section {
   margin: 15px 0 30px;
   display: flex;
   justify-content: space-between;
-  width: 100px;
+  width: 60px;
   height: 12px; }
 
 .language-icon {
@@ -924,27 +924,20 @@ section {
 .language-switcher--item__dutch {
   background-position: 100% 0; }
 
+.main-article--heading {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 2.1em;
+  color: #2b3340; }
+
 .main-article--paragraph {
-  font-family: "Overlock", cursive;
-  font-size: 1.2em;
+  font-family: "Domine", serif;
+  font-size: 1.1em;
   font-kerning: normal;
   line-height: 1.4em;
   letter-spacing: 0.8px;
+  color: #2b3340;
   margin-bottom: 30px; }
-  .main-article--paragraph.p3 {
-    font-family: 'Droid Serif', serif; }
-  .main-article--paragraph.p4 {
-    font-family: 'Merriweather', serif; }
-  .main-article--paragraph.p5 {
-    font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif; }
-  .main-article--paragraph.p6 {
-    font-family: 'EB Garamond', serif; }
-  .main-article--paragraph.p7 {
-    font-family: 'Open Sans', sans-serif; }
-  .main-article--paragraph.p8 {
-    font-family: 'Lato', sans-serif; }
-  .main-article--paragraph.p9 {
-    font-family: 'PT Serif', serif; }
 
 .share-buttons {
   margin-bottom: 30px;
@@ -1073,14 +1066,16 @@ section {
   border-bottom: 2px dashed rgba(255, 255, 255, 0.2); }
 
 .widget--review__text {
-  color: #fff;
+  font-family: "Domine", serif;
   font-size: 1em;
+  color: #fff;
   margin-top: 20px;
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 2px dashed rgba(255, 255, 255, 0.2); }
 
 .widget--review__lists {
+  font-family: "Domine", serif;
   display: flex;
   border-bottom: 2px dashed rgba(255, 255, 255, 0.2); }
 
@@ -1115,6 +1110,7 @@ section {
 .widget--review__rating--number {
   color: #fff;
   text-align: center;
+  font-family: "Domine", serif;
   font-size: 3.5em;
   font-weight: 700; }
 

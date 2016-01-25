@@ -1,3 +1,5 @@
+// Image widget
+
 .widget--image {
 	position: relative;
 	margin: 0 0 30px;
@@ -21,6 +23,9 @@
 
 
 
+
+// Embed video widget
+
 .widget--video {
 	padding: 0;
 	margin-bottom: 30px;
@@ -29,6 +34,9 @@
 }
 
 
+
+
+// Related deals and calendar widget (material design cards)
 
 .widget--deal__wrapper,
 .widget--calendar__wrapper {
@@ -74,6 +82,10 @@
 		}
 
 
+
+
+// Review widget
+
 .widget--review {
 	position: relative;
 	margin-bottom: 30px;
@@ -101,8 +113,9 @@
 		}
 
 		.widget--review__text {
-			color: #fff;
+			font-family: $font-family-domine;
 			font-size: 1em;
+			color: #fff;
 			margin-top: 20px;
 			margin-bottom: 20px;
 			padding-bottom: 20px;
@@ -110,6 +123,7 @@
 		}
 
 		.widget--review__lists {
+			font-family: $font-family-domine;
 			display: flex;
 			border-bottom: 2px dashed rgba(255, 255, 255, 0.2);
 		}
@@ -156,6 +170,7 @@
 			.widget--review__rating--number {
 				color: #fff;
 				text-align: center;
+				font-family: $font-family-domine;
 				font-size: 3.5em;
 				font-weight: $font-bold;
 			}
@@ -177,13 +192,7 @@
 
 
 
-
-
-
-
-
-
-
+// Related entries widget
 
 .related-entries {
 	display: block;

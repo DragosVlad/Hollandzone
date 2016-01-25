@@ -9,7 +9,6 @@
 		left: 0px;
 		width: 75%;
 		padding: 20px 10px 0;
-		text-align: center;
 		// display: flex;
 		// justify-content: center;
 		// align-items: center;
@@ -24,6 +23,7 @@
 			font-family: $font-family-raleway;
 			font-size: 2.1em;
 			font-weight: $font-semibold;
+			text-align: left;
 			color: rgba(#fff, 0.8);
 			width: 90%;
 			margin-bottom: 20px;
@@ -35,10 +35,6 @@
 		position: relative;
 		max-width: 100%;
 	}
-
-
-
-
 
 
 
@@ -117,14 +113,12 @@
 	}
 
 
-
-
 .language-switcher {
 	position: relative;
 	margin: 15px 0 30px;
 	display: flex;
 	justify-content: space-between;
-	width: 100px;
+	width: 60px;
 	height: 12px;
 }
 
@@ -164,35 +158,41 @@
 
 
 
-
-
 .main-article--content {
 	
 }
 
+	.main-article--heading {
+		font-family: $font-family-raleway;
+		font-weight: $font-semibold;
+		font-size: 2.1em;
+		color: $accent-color;
+	}
+
 	.main-article--paragraph {
-		font-family: $font-family-overlock;
-		font-size: 1.2em;
+		font-family: $font-family-domine;
+		font-size: 1.1em;
 		font-kerning: normal;
 		line-height: 1.4em;
 		letter-spacing: 0.8px;
+		color: $accent-color;
 		margin-bottom: 30px;
 		
-		&.p2 {}
+		// &.p2 {}
 
-		&.p3 {font-family: 'Droid Serif', serif;}
+		// &.p3 {font-family: 'Droid Serif', serif;}
 
-		&.p4 {font-family: 'Merriweather', serif;}
+		// &.p4 {font-family: 'Merriweather', serif;}
 
-		&.p5 {font-family: $font-family-sans;}
+		// &.p5 {font-family: $font-family-sans;}
 
-		&.p6 {font-family: 'EB Garamond', serif;}
+		// &.p6 {font-family: 'EB Garamond', serif;}
 
-		&.p7 {font-family: 'Open Sans', sans-serif;}
+		// &.p7 {font-family: 'Open Sans', sans-serif;}
 
-		&.p8 {font-family: 'Lato', sans-serif;}
+		// &.p8 {font-family: 'Lato', sans-serif;}
 
-		&.p9 {font-family: 'PT Serif', serif;}
+		// &.p9 {font-family: 'PT Serif', serif;}
 	}
 
 
