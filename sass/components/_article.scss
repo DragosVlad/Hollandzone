@@ -120,44 +120,25 @@
 .language-switcher {
 	position: relative;
 	margin: 15px 0 30px;
-	display: flex;
-	justify-content: space-between;
-	width: 60px;
-	height: 12px;
+	width: 150px;
+	font-size: 1.2em;
+	height: auto;
+	letter-spacing: 1px;
+	border: 2px solid $accent-color;
+	// background-color: $main-color;
+	// color: #fff;
 }
 
-	.language-icon {
-		color: $accent-color;
-		font-size: 1.8em;
+	.language-switcher--flag {
+		width: 25px;
+		height: 12px;
 		position: relative;
-		margin-top: -5px;
-		margin-right: 10px;
+		background-image: url("../images/flag-sprite.jpg");
 	}
 
 	.language-switcher--item {
-		position: relative;
-		width: 25px;
-		background-image: url('../images/flag-sprite.jpg');
-		background-repeat: no-repeat;
-		opacity: 0.3;
-		transition: all 0.3s ease-in-out;
-
-		&.active {
-			opacity: 1;
-		}
-
-		&:hover {
-			opacity: 1;
-		}
+		
 	}
-
-		.language-switcher--item__english {
-			background-position: 0 0;
-		}
-
-		.language-switcher--item__dutch {
-			background-position: 100% 0;
-		}
 
 
 
@@ -182,22 +163,6 @@
 		// color: $accent-color;
 		color: #000;
 		margin-bottom: 30px;
-		
-		// &.p2 {}
-
-		// &.p3 {font-family: 'Droid Serif', serif;}
-
-		// &.p4 {font-family: 'Merriweather', serif;}
-
-		// &.p5 {font-family: $font-family-sans;}
-
-		// &.p6 {font-family: 'EB Garamond', serif;}
-
-		// &.p7 {font-family: 'Open Sans', sans-serif;}
-
-		// &.p8 {font-family: 'Lato', sans-serif;}
-
-		// &.p9 {font-family: 'PT Serif', serif;}
 	}
 
 

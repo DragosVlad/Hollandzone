@@ -597,7 +597,6 @@
 		
 	}
 
-
 	.main-article--details__image-source {
 		margin-bottom: 5px;
 
@@ -605,9 +604,47 @@
 			font-size: 0.6em;
 		}
 	}
-	
 
 
+	.main-article--heading {
+		font-size: 1.6em;
+		color: $accent-color;
+	}
+
+	.main-article--paragraph {
+		font-size: 0.9em;
+		line-height: 1.3em;
+		letter-spacing: 0.8px;
+	}
+
+
+	.widget--image__caption {
+		padding: 10px 5px;
+		font-family: $font-family-domine;
+		font-size: 0.7em;
+		letter-spacing: 1px;
+		line-height: 1.2em;
+	}
+
+
+	.share-buttons {
+		font-size: 1.2em;
+	}
+
+		.share-icon {
+			margin-right: 10px;
+		}
+
+		.social-button {
+			display: block;
+			padding: 2px 25px;
+			margin-right: 5px;
+
+			&:first-child {
+				margin-left: 10px;
+			}
+
+		}
 
 
 
@@ -661,6 +698,57 @@
 			padding: 0 8px;
 		}
 	}
+
+
+	/*----------  Article page  ----------*/
+	
+	.main-article--title {
+		font-size: 1em;
+		margin-bottom: 0;
+	}
+
+
+	.widget--deal__wrapper,
+	.widget--calendar__wrapper {
+		margin-bottom: 30px;
+		padding: 10px 10px;
+	}
+
+	.widget--deal__image,
+	.widget--calendar__image {
+		max-width: 50px;
+		margin-right: 10px;
+	}
+
+	.widget--deal__title,
+	.widget--calendar__title {
+		font-size: 1.2em;
+	}
+
+	.widget--calendar__date {
+		font-size: 0.7em;
+	}
+
+	.share-buttons {
+		font-size: 1em;
+	}
+
+		.share-icon {
+			margin-right: 10px;
+		}
+
+		.social-button {
+			display: block;
+			padding: 0px 20px;
+			margin-right: 5px;
+
+			&:first-child {
+				margin-left: 10px;
+			}
+
+		}
+
+
 
 
 

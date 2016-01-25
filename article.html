@@ -80,7 +80,7 @@
 					<a href="#">Articles&nbsp;<i class="fa fa-caret-down"></i></a>
 					<ul class="dropdown-list">
 						<li class="nav-item"><a href="events.html">Events</a></li>
-						<li class="nav-item" class="nav-item"><a href="#">Festivals</a></li>
+						<li class="nav-item"><a href="#">Festivals</a></li>
 						<li class="nav-item"><a href="#">Attractions</a></li>
 					</ul>
 				</li>
@@ -206,10 +206,12 @@
 						<img src="images/article-image.jpg" alt="Article Image" class="main-article--image">
 					</div>
 
-					<div class="language-switcher">
-						<div class="language-switcher--item language-switcher--item__english active"><a href="#" class="full-link"></a></div>
-						<div class="language-switcher--item language-switcher--item__dutch"><a href="#" class="full-link"></a></div>
-					</div>
+
+					<select class="language-switcher">
+						<option value="English" class="language-switcher--item"><div class="language-switcher--flag"></div>English</option>
+						<option value="Dutch" class="language-switcher--item">Dutch</option>
+					</select>
+
 
 					
 
@@ -311,13 +313,11 @@
 
 								<div class="widget--review__rating">
 									<div class="widget--review__rating--number">4.5</div>
+
 									<div class="widget--review__rating--stars">
-										<i class="fa fa-star star-icon"></i>
-										<i class="fa fa-star star-icon"></i>
-										<i class="fa fa-star star-icon"></i>
-										<i class="fa fa-star star-icon"></i>
-										<i class="fa fa-star-half-o star-icon"></i>
+										<span class="widget--review__rating--stars-inner" style="width: 89%;"></span>
 									</div>
+
 								</div>
 							</div>
 						</div>

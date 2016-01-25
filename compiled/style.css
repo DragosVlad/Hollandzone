@@ -19,7 +19,8 @@ body {
   width: 85%;
   background-color: #fff;
   background-color: #fffefe;
-  box-shadow: 0 15px 40px 3px rgba(0, 0, 0, 0.6); }
+  box-shadow: 0 15px 40px 3px rgba(0, 0, 0, 0.6);
+  overflow: hidden; }
 
 .wrapper--main {
   margin: 0 auto;
@@ -902,35 +903,17 @@ section {
 .language-switcher {
   position: relative;
   margin: 15px 0 30px;
-  display: flex;
-  justify-content: space-between;
-  width: 60px;
-  height: 12px; }
+  width: 150px;
+  font-size: 1.2em;
+  height: auto;
+  letter-spacing: 1px;
+  border: 2px solid #2b3340; }
 
-.language-icon {
-  color: #2b3340;
-  font-size: 1.8em;
-  position: relative;
-  margin-top: -5px;
-  margin-right: 10px; }
-
-.language-switcher--item {
-  position: relative;
+.language-switcher--flag {
   width: 25px;
-  background-image: url("../images/flag-sprite.jpg");
-  background-repeat: no-repeat;
-  opacity: 0.3;
-  transition: all 0.3s ease-in-out; }
-  .language-switcher--item.active {
-    opacity: 1; }
-  .language-switcher--item:hover {
-    opacity: 1; }
-
-.language-switcher--item__english {
-  background-position: 0 0; }
-
-.language-switcher--item__dutch {
-  background-position: 100% 0; }
+  height: 12px;
+  position: relative;
+  background-image: url("../images/flag-sprite.jpg"); }
 
 .main-article--heading {
   font-family: "Raleway", sans-serif;
@@ -1043,7 +1026,7 @@ section {
 
 .widget--deal__image,
 .widget--calendar__image {
-  max-width: 85px;
+  max-width: 70px;
   margin-right: 20px;
   transition: all 0.2s ease-in-out; }
 
@@ -1052,7 +1035,14 @@ section {
   font-size: 1.6em;
   font-family: "Raleway", sans-serif;
   color: #2b3340;
+  margin-bottom: 0;
   transition: all 0.2s ease-in-out; }
+
+.widget--deal__title {
+  margin-top: -15px; }
+
+.widget--calendar__date {
+  font-size: 1em; }
 
 .widget--review {
   position: relative;
@@ -1119,24 +1109,42 @@ section {
   color: #fff;
   margin-left: -60px; }
 
+.widget--review__rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 .widget--review__rating--number {
   color: #fff;
-  text-align: center;
   font-family: "Domine", serif;
   font-size: 3.5em;
   font-weight: 700; }
 
 .widget--review__rating--stars {
-  display: flex;
-  justify-content: center;
   position: relative;
-  margin: 0 auto; }
-
-.star-icon {
+  display: block;
   font-size: 3em;
-  color: #ed6a15;
-  text-align: center;
-  margin-right: 10px; }
+  font-family: "FontAwesome";
+  letter-spacing: 5px;
+  overflow: hidden; }
+  .widget--review__rating--stars:before {
+    display: block;
+    content: '\f005\f005\f005\f005\f005';
+    color: #fff; }
+
+.widget--review__rating--stars-inner {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: block;
+  z-index: 5; }
+  .widget--review__rating--stars-inner:before {
+    display: block;
+    content: '\f005\f005\f005\f005\f005';
+    color: #ed6a15; }
 
 .related-entries {
   display: block;
@@ -1484,7 +1492,30 @@ section {
   .main-article--details__image-source {
     margin-bottom: 5px; }
     .main-article--details__image-source a {
-      font-size: 0.6em; } }
+      font-size: 0.6em; }
+  .main-article--heading {
+    font-size: 1.6em;
+    color: #2b3340; }
+  .main-article--paragraph {
+    font-size: 0.9em;
+    line-height: 1.3em;
+    letter-spacing: 0.8px; }
+  .widget--image__caption {
+    padding: 10px 5px;
+    font-family: "Domine", serif;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    line-height: 1.2em; }
+  .share-buttons {
+    font-size: 1.2em; }
+  .share-icon {
+    margin-right: 10px; }
+  .social-button {
+    display: block;
+    padding: 2px 25px;
+    margin-right: 5px; }
+    .social-button:first-child {
+      margin-left: 10px; } }
 
 @media only screen and (max-width: 400px) {
   .nav--mobile__search {
@@ -1507,4 +1538,31 @@ section {
   .page-numbers--item {
     font-size: 1.1em; }
     .page-numbers--item a {
-      padding: 0 8px; } }
+      padding: 0 8px; }
+  /*----------  Article page  ----------*/
+  .main-article--title {
+    font-size: 1em;
+    margin-bottom: 0; }
+  .widget--deal__wrapper,
+  .widget--calendar__wrapper {
+    margin-bottom: 30px;
+    padding: 10px 10px; }
+  .widget--deal__image,
+  .widget--calendar__image {
+    max-width: 50px;
+    margin-right: 10px; }
+  .widget--deal__title,
+  .widget--calendar__title {
+    font-size: 1.2em; }
+  .widget--calendar__date {
+    font-size: 0.7em; }
+  .share-buttons {
+    font-size: 1em; }
+  .share-icon {
+    margin-right: 10px; }
+  .social-button {
+    display: block;
+    padding: 0px 20px;
+    margin-right: 5px; }
+    .social-button:first-child {
+      margin-left: 10px; } }
