@@ -135,13 +135,14 @@
 		.widget--review__lists {
 			font-family: $font-family-domine;
 			display: flex;
+			justify-content: space-around;
 			border-bottom: 2px dashed rgba(255, 255, 255, 0.2);
 		}
 
 			.widget--review__pro-list {
 				list-style: none;
-				margin-left: 80px;
-				margin-right: 200px;
+				margin-left: 40px;
+				// margin-right: 200px;
 				padding-left: 10px;
 				border-left: 2px dashed rgba(255, 255, 255, 0.2);
 			}
@@ -275,4 +276,8 @@
 			.widget--related-entries__date {
 				font-size: 0.8em;
 			}
+
+
+
+
 

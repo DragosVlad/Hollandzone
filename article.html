@@ -7,6 +7,11 @@
 	<!-- Website Title -->
 	<title>Holland Zone</title>
 
+	<!-- SEO Tags -->
+	<meta name="description" content="This is the website description">
+	<meta name="keywords" content="">
+
+
 	<!-- Meta for responsive page -->
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,28 +21,27 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 
 	<!-- Facebook graphs -->
+	<meta property="og:locale" content="" />
+	<meta property="og:type" content="" />
+	<meta property="og:title" content="Hollandzone - This is the article title" />
+	<meta property="og:description" content="Page description" />
 	<meta property="og:url" content="http://dragosvlad.ml/hollandzone/article.html">
-	<meta property="og:type" content="article">
-	<meta property="og:title" content="Hollandzone - This is the article title">
-	<meta property="og:description" content="Electronic Family festival is somewhat unknown to us but having a look at the line-up this festival is obviously not the new kid in town.">
-	<meta property="og:image" content="http://dragosvlad.ml/hollandzone/images/article-image.jpg">
+	<meta property="og:site_name" content="" />
+	<meta property="article:section" content="" />
+	<meta property="article:published_time" content="" />
+	<meta property="article:modified_time" content="" />
+	<meta property="og:updated_time" content="" />
+	<meta property="og:image" content="http://dragosvlad.ml/hollandzone/images/article-image.jpg" />
 
 	<!-- Twitter cards -->
 	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:site" content="@site" />
+	<meta name="twitter:site" content="" />
 	<meta name="twitter:title" content="Hollandzone - This is the article title" />
-	<meta name="twitter:description" content="Electronic Family festival is somewhat unknown to us but having a look at the line-up this festival is obviously not the new kid in town." />
+	<meta name="twitter:url" content="" />
 	<meta name="twitter:image" content="http://dragosvlad.ml/hollandzone/images/article-image.jpg" />
 
 	<!-- Google Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,600,700,300' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Overlock:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Domine:400,700' rel='stylesheet' type='text/css'>
 
 	<!-- Foundation CSS -->
@@ -52,6 +56,7 @@
 
 	<!-- Custom CSS styles -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/switch.css">
 </head>
 <body>
 
@@ -207,10 +212,33 @@
 					</div>
 
 
-					<select class="language-switcher">
+					<!-- <select class="language-switcher">
 						<option value="English" class="language-switcher--item"><div class="language-switcher--flag"></div>English</option>
 						<option value="Dutch" class="language-switcher--item">Dutch</option>
-					</select>
+					</select> -->
+
+					<!-- <div class="onoffswitch">
+					    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+					    <label class="onoffswitch-label" for="myonoffswitch">
+					        <span class="onoffswitch-inner"></span>
+					        <span class="onoffswitch-switch"></span>
+					    </label>
+					</div> -->
+
+
+					<!-- <div class="switch">
+			            <input id="cmn-toggle-7" class="cmn-toggle cmn-toggle-yes-no" type="checkbox">
+			            <label for="cmn-toggle-7" data-on="EN" data-off="NL"></label>
+			          </div> -->
+
+
+			         <div class="language-switch switch medium">
+						<input class="switch-input" id="yes-no" type="checkbox" name="exampleSwitch" checked>
+						<label class="switch-paddle" for="yes-no">
+							<span class="switch-active" aria-hidden="true">EN</span>
+							<span class="switch-inactive" aria-hidden="true">NL</span>
+						</label>
+					</div>
 
 
 					

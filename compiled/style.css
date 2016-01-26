@@ -17,7 +17,6 @@ body {
 
 .wrapper {
   width: 85%;
-  background-color: #fff;
   background-color: #fffefe;
   box-shadow: 0 15px 40px 3px rgba(0, 0, 0, 0.6);
   overflow: hidden; }
@@ -900,20 +899,30 @@ section {
   .main-article--details__image-source i {
     color: #fff; }
 
-.language-switcher {
-  position: relative;
-  margin: 15px 0 30px;
-  width: 150px;
-  font-size: 1.2em;
-  height: auto;
-  letter-spacing: 1px;
-  border: 2px solid #2b3340; }
+.language-switch {
+  margin-top: 10px;
+  margin-bottom: 30px; }
+  .language-switch label {
+    font-size: 1rem; }
 
-.language-switcher--flag {
-  width: 25px;
-  height: 12px;
-  position: relative;
-  background-image: url("../images/flag-sprite.jpg"); }
+.switch-paddle {
+  width: 5.7rem; }
+  .switch-paddle:after {
+    width: 3rem; }
+
+.switch-paddle, input:checked ~ .switch-paddle {
+  background: #2b3340; }
+
+.switch-paddle::after {
+  background-image: url("../images/flag-sprite.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 0; }
+
+input:checked ~ .switch-paddle::after {
+  background-image: url("../images/flag-sprite.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0; }
 
 .main-article--heading {
   font-family: "Raleway", sans-serif;
@@ -1079,12 +1088,12 @@ section {
 .widget--review__lists {
   font-family: "Domine", serif;
   display: flex;
+  justify-content: space-around;
   border-bottom: 2px dashed rgba(255, 255, 255, 0.2); }
 
 .widget--review__pro-list {
   list-style: none;
-  margin-left: 80px;
-  margin-right: 200px;
+  margin-left: 40px;
   padding-left: 10px;
   border-left: 2px dashed rgba(255, 255, 255, 0.2); }
 
@@ -1421,9 +1430,22 @@ section {
   .main-article--title {
     font-size: 1.5em;
     width: 100%; }
-  .widget--review__pro-list {
-    margin-left: 60px;
-    margin-right: 150px; } }
+  .widget--review__lists {
+    justify-content: space-between; }
+  .language-switch {
+    margin-top: 10px;
+    margin-bottom: 30px; }
+    .language-switch label {
+      font-size: 0.7rem; }
+  .switch-paddle {
+    width: 4.4rem; }
+    .switch-paddle:after {
+      width: 2rem;
+      height: 1.3em;
+      top: 25%; }
+  .switch-paddle::after {
+    background-repeat: no-repeat;
+    background-size: 200%; } }
 
 @media only screen and (max-width: 635px) {
   .deals--articles--list__text--mobile {
@@ -1515,7 +1537,25 @@ section {
     padding: 2px 25px;
     margin-right: 5px; }
     .social-button:first-child {
-      margin-left: 10px; } }
+      margin-left: 10px; }
+  .widget--review__title {
+    font-size: 1.6em; }
+  .widget--review__text {
+    font-size: 0.8em; }
+  .widget--review__lists {
+    font-size: 0.9em;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .widget--review__pro-list,
+  .widget--review__con-list {
+    flex-basis: 80%;
+    margin-bottom: 30px; }
+  .widget--review__con-list {
+    margin-left: 40px; }
+  .widget--review__rating--number {
+    font-size: 2.5em; }
+  .widget--review__rating--stars {
+    font-size: 2em; } }
 
 @media only screen and (max-width: 400px) {
   .nav--mobile__search {

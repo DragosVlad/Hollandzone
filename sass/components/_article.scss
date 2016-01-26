@@ -117,27 +117,38 @@
 	}
 
 
-.language-switcher {
-	position: relative;
-	margin: 15px 0 30px;
-	width: 150px;
-	font-size: 1.2em;
-	height: auto;
-	letter-spacing: 1px;
-	border: 2px solid $accent-color;
-	// background-color: $main-color;
-	// color: #fff;
+.language-switch {
+	margin-top: 10px;
+	margin-bottom: 30px;
+
+	label {
+		font-size: 1rem;
+	}
 }
 
-	.language-switcher--flag {
-		width: 25px;
-		height: 12px;
-		position: relative;
-		background-image: url("../images/flag-sprite.jpg");
+	.switch-paddle {
+		width: 5.7rem;
+
+		&:after {
+			width: 3rem;
+		}
 	}
 
-	.language-switcher--item {
-		
+	.switch-paddle, input:checked~.switch-paddle {
+		background: $accent-color;
+	  }
+
+	.switch-paddle::after {
+		background-image: url('../images/flag-sprite.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 100% 0;
+	}
+
+	input:checked~.switch-paddle::after {
+		background-image: url('../images/flag-sprite.jpg');
+		background-repeat: no-repeat;
+		background-position: 0 0;
 	}
 
 
@@ -236,4 +247,7 @@
 				background-color: #007bb5;
 			}
 		}
+
+
+
 
