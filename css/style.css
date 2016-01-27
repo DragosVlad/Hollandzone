@@ -995,7 +995,8 @@ section {
 
 .main-article--hero {
   position: relative;
-  background-color: #ed6a15; }
+  background-color: #ed6a15;
+  margin-bottom: 30px; }
 
 .main-article--overlay {
   position: absolute;
@@ -1030,8 +1031,17 @@ section {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  margin-bottom: 0px; }
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%; }
+
+.main-article--details__left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 .main-article--details__date {
   margin-right: 15px; }
@@ -1072,30 +1082,40 @@ section {
   .main-article--details__image-source i {
     color: #fff; }
 
-.language-switch {
-  margin-top: 10px;
-  margin-bottom: 30px; }
-  .language-switch label {
-    font-size: 1rem; }
+.language-switcher {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60px;
+  margin-left: 10px;
+  margin-bottom: 1rem;
+  position: relative;
+  right: 0; }
 
-.switch-paddle {
-  width: 5.7rem; }
-  .switch-paddle:after {
-    width: 3rem; }
-
-.switch-paddle, input:checked ~ .switch-paddle {
-  background: #2b3340; }
-
-.switch-paddle::after {
+.language-switcher--item {
+  opacity: 0.4;
+  width: 24px;
+  height: 12px;
   background-image: url("../images/flag-sprite.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 100% 0; }
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .language-switcher--item.active {
+    opacity: 1; }
+  .language-switcher--item:hover {
+    opacity: 1; }
 
-input:checked ~ .switch-paddle::after {
-  background-image: url("../images/flag-sprite.jpg");
-  background-repeat: no-repeat;
+.language-switcher--item.english {
   background-position: 0 0; }
+
+.language-switcher--item.dutch {
+  background-position: 100% 0; }
 
 .main-article--heading {
   font-family: "Raleway", sans-serif;
@@ -1182,9 +1202,9 @@ input:checked ~ .switch-paddle::after {
 .widget--image__caption {
   padding: 15px 10px;
   color: #fff;
-  font-family: "Overlock", cursive;
+  font-family: "Domine", serif;
   font-style: italic;
-  font-size: 1.1em;
+  font-size: 1em;
   letter-spacing: 2px;
   line-height: 1.2em; }
 
@@ -1224,6 +1244,7 @@ input:checked ~ .switch-paddle::after {
 .widget--deal__image,
 .widget--calendar__image {
   max-width: 70px;
+  max-height: 70px;
   margin-right: 20px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
@@ -1720,20 +1741,24 @@ input:checked ~ .switch-paddle::after {
     margin-right: 10px;
     margin-bottom: 5px; }
     .main-article--details__date i {
-      font-size: 0.6em; }
+      font-size: 0.5em; }
     .main-article--details__date span {
-      font-size: 0.6em; }
+      font-size: 0.5em; }
   .main-article--details__category {
     margin-right: 10px;
     margin-bottom: 5px; }
     .main-article--details__category a i {
-      font-size: 0.6em; }
+      font-size: 0.5em; }
     .main-article--details__category a span {
-      font-size: 0.6em; }
+      font-size: 0.5em; }
   .main-article--details__image-source {
     margin-bottom: 5px; }
     .main-article--details__image-source a {
-      font-size: 0.6em; }
+      font-size: 0.5em; }
+  .main-article--details__category a i {
+    vertical-align: baseline; }
+  .language-switcher {
+    margin-bottom: 0; }
   .main-article--heading {
     font-size: 1.6em;
     color: #2b3340; }
@@ -1741,6 +1766,11 @@ input:checked ~ .switch-paddle::after {
     font-size: 0.9em;
     line-height: 1.3em;
     letter-spacing: 0.8px; }
+  .widget--deal__image,
+  .widget--calendar__image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px; }
   .widget--image__caption {
     padding: 10px 5px;
     font-family: "Domine", serif;
@@ -1818,14 +1848,21 @@ input:checked ~ .switch-paddle::after {
   .main-article--title {
     font-size: 1em;
     margin-bottom: 0; }
+  .main-article--details__date i {
+    font-size: 0.4em; }
+  .main-article--details__date span {
+    font-size: 0.4em; }
+  .main-article--details__category a i {
+    font-size: 0.4em;
+    vertical-align: baseline; }
+  .main-article--details__category a span {
+    font-size: 0.4em; }
+  .main-article--details__image-source a {
+    font-size: 0.4em; }
   .widget--deal__wrapper,
   .widget--calendar__wrapper {
     margin-bottom: 30px;
     padding: 10px 10px; }
-  .widget--deal__image,
-  .widget--calendar__image {
-    max-width: 50px;
-    margin-right: 10px; }
   .widget--deal__title,
   .widget--calendar__title {
     font-size: 1.2em; }

@@ -14,9 +14,9 @@
 	.widget--image__caption {
 		padding: 15px 10px;
 		color: #fff;
-		font-family: $font-family-overlock;
+		font-family: $font-family-domine;
 		font-style: italic;
-		font-size: 1.1em;
+		font-size: 1em;
 		letter-spacing: 2px;
 		line-height: 1.2em;
 	}
@@ -65,6 +65,7 @@
 	.widget--deal__image,
 	.widget--calendar__image {
 		max-width: 70px;
+		max-height: 70px;
 		margin-right: 20px;
 		transition: all 0.2s ease-in-out;
 	}
