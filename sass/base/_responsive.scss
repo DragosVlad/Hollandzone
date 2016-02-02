@@ -69,6 +69,8 @@
 
 	.wrapper--main {
 		padding: 30px 10px 0;
+
+
 	}
 
 
@@ -477,7 +479,24 @@
 	}
 
 
+	/*----------  ABOUT PAGE  ----------*/
+	
+	.contributors-info {
+		font-size: 0.9em;
+		line-height: 1.3em;
+	}
 
+	.contact-title {
+		font-size: 1.8em;
+	}
+
+	.contact-email {
+		font-size: 0.8em;
+	}
+
+	.contact-form {
+		margin-top: 30px;
+	}
 
 
 
@@ -852,6 +871,84 @@
 			}
 
 		}
+
+
+	/*----------  ABOUT PAGE  ----------*/
+
+	.content-wrap section {
+		padding: 30px 15px 20px;
+	}
+	
+	.contributors-info {
+		font-size: 0.7em;
+		line-height: 1.4em;
+		letter-spacing: 1px;
+	}
+
+	.contact-title {
+		font-size: 1.5em;
+	}
+
+	.contact-email {
+		font-size: 0.6em;
+	}
+
+
+	.profile-card--avatar {
+		top: 150px;
+	}
+
+	.profile-card--avatar-image {
+		width: 100px;
+		height: 100px;
+	}
+
+	.profile-card--name {
+		font-size: 1.2em;
+		margin-top: 40px;
+	}
+
+	.profile-card--description {
+		font-size: 0.8em;
+		line-height: 1em;
+	}
+
+	.profile-card--role {
+		font-size: 0.7em;
+	}
+
+	.profile-card--social-links__item {
+		a {
+			font-size: 1em;
+			padding: 2px 0;
+		}
+	}
+
+	.contact-title {
+		font-size: 1.5em;
+	}
+
+
+	.contact-form--input {
+		margin-bottom: 25px;
+		background-color: #fff;
+		height: 35px;
+		font-family: $font-family-domine;
+		font-size: 0.8em;
+	}
+
+	label {
+		font-size: 0.8em;
+		line-height: 35px;
+	}
+
+	.contact-form--button {
+		font-size: 1em;
+		border: 2px solid $main-color;
+		padding: 5px 10px;
+	}
+
+
 
 
 

@@ -29,10 +29,6 @@ body {
   margin: 0 auto;
   padding: 30px 25px 0; }
 
-.wrapper--nopadding {
-  margin: 0 auto;
-  padding: 0; }
-
 .row {
   margin: 0;
   margin-right: 0; }
@@ -58,27 +54,6 @@ section {
 
 .two-sides-content > .row {
   max-width: 100%; }
-
-/*----------  Temporary style for work in progress pages  ----------*/
-.work-in-progress-message {
-  font-family: "Domine", serif;
-  font-size: 2.5em;
-  font-weight: 700;
-  color: #2b3340;
-  text-align: center;
-  padding: 150px 100px; }
-  .work-in-progress-message i {
-    margin-right: 10px; }
-
-@media only screen and (max-width: 1100px) {
-  .work-in-progress-message {
-    font-size: 2em;
-    padding: 100px 70px; } }
-
-@media only screen and (max-width: 820px) {
-  .work-in-progress-message {
-    font-size: 1.5em;
-    padding: 60px 30px; } }
 
 .container {
   position: relative;
@@ -333,8 +308,6 @@ section {
     background-color: #2b3340;
     height: 350px;
     margin-top: -43px; }
-    .nav--mobile__menu .vertical.city {
-      margin-top: -255px; }
 
 .nav--mobile__menu--open {
   display: block; }
@@ -1533,7 +1506,7 @@ section {
   content: "\f007"; }
 
 .icon-ad::before {
-  content: "\f108"; }
+  content: "\f044"; }
 
 .icon-contact::before {
   content: "\f003"; }
@@ -1582,6 +1555,7 @@ section {
   width: 100%;
   height: 100%;
   height: calc(100% + 1px);
+  border: 1px solid #ed6a15;
   background: #ed6a15;
   content: '';
   -webkit-transition: -webkit-transform 0.3s;
@@ -1662,7 +1636,7 @@ section {
 .contributors-info, .ad-paragraph, .ad-download-link {
   font-family: "Domine", serif;
   font-size: 1.1em;
-  line-height: 1.5em;
+  line-height: 1.3em;
   margin-bottom: 30px; }
 
 .profiles .row {
@@ -1672,7 +1646,7 @@ section {
 .profile-card {
   position: relative;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   border-radius: 5px;
   box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.4); }
 
@@ -1722,14 +1696,13 @@ section {
 
 .profile-card--description, .profile-card--role {
   font-family: "Domine", serif;
-  font-size: 1em;
-  color: rgba(43, 51, 64, 0.85);
+  font-size: 1.1em;
   line-height: 1.2em;
   text-align: center; }
 
 .profile-card--role {
   color: rgba(0, 0, 0, 0.7);
-  font-size: 0.9em; }
+  font-size: 1em; }
 
 .profile-card--social {
   position: relative;
@@ -1771,8 +1744,9 @@ section {
 /*----------  ADVERTISING TAB  ----------*/
 .ad-image {
   margin-bottom: 30px;
+  max-width: 400px;
   border-radius: 5px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.6); }
 
 .ad-download-link {
   display: block; }
@@ -1784,18 +1758,7 @@ section {
     .ad-download-link a:hover {
       color: #c0550f; }
 
-/*----------  CONTACT TAB  ----------*/
-.contact-title {
-  font-family: "Raleway", sans-serif;
-  font-size: 2em; }
-
-.contact-email {
-  color: #ed6a15;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-  .contact-email:hover, .contact-email:active, .contact-email:focus {
-    color: #91400b; }
-
+/*----------  ADVERTISING TAB  ----------*/
 .contact-tab {
   position: relative;
   width: 100%;
@@ -1823,10 +1786,12 @@ section {
   .contact-form--input:focus {
     border: none;
     box-shadow: none;
-    background-color: rgba(237, 106, 21, 0.015); }
+    background-color: #fcfcfc;
+    background-color: #ed6a15;
+    color: #fff; }
     .contact-form--input:focus ~ label {
-      -webkit-transform: translate(-12%, -65%) scale(0.75);
-              transform: translate(-12%, -65%) scale(0.75); }
+      -webkit-transform: translate(-12%, -60%) scale(0.75);
+              transform: translate(-12%, -60%) scale(0.75); }
     .contact-form--input:focus ~ .form-bar:before, .contact-form--input:focus ~ .form-bar:after {
       width: 50%; }
   .contact-form--input:valid ~ label {
@@ -1865,32 +1830,11 @@ label {
   .form-bar:after {
     right: 50%; }
 
-.contact-form--button {
-  background-color: #fff;
-  font-family: "Domine", serif;
-  font-size: 1.2em;
-  color: #ed6a15;
-  outline: none;
-  border: 3px solid #ed6a15;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-  .contact-form--button:hover {
-    background-color: #ed6a15;
-    color: #fff; }
-
 .main-footer {
   width: calc(100% + 50px);
   margin: 0 auto 0 -25px;
   background-color: #2b3340;
   position: relative; }
-
-.main-footer--nopadding {
-  background-color: #2b3340;
-  position: relative;
-  width: 100%;
-  margin: 0 auto; }
 
 .main-footer--main-content {
   text-align: center;
@@ -2144,17 +2088,7 @@ label {
       top: 25%; }
   .switch-paddle::after {
     background-repeat: no-repeat;
-    background-size: 200%; }
-  /*----------  ABOUT PAGE  ----------*/
-  .contributors-info, .ad-paragraph, .ad-download-link {
-    font-size: 0.9em;
-    line-height: 1.3em; }
-  .contact-title {
-    font-size: 1.8em; }
-  .contact-email {
-    font-size: 0.8em; }
-  .contact-form {
-    margin-top: 30px; } }
+    background-size: 200%; } }
 
 @media only screen and (max-width: 635px) {
   .deals--articles--list__text--mobile {
@@ -2350,46 +2284,4 @@ label {
     padding: 0px 20px;
     margin-right: 5px; }
     .social-button:first-child {
-      margin-left: 10px; }
-  /*----------  ABOUT PAGE  ----------*/
-  .content-wrap section {
-    padding: 30px 15px 20px; }
-  .contributors-info, .ad-paragraph, .ad-download-link {
-    font-size: 0.7em;
-    line-height: 1.4em;
-    letter-spacing: 1px; }
-  .contact-title {
-    font-size: 1.5em; }
-  .contact-email {
-    font-size: 0.6em; }
-  .profile-card--avatar {
-    top: 150px; }
-  .profile-card--avatar-image {
-    width: 100px;
-    height: 100px; }
-  .profile-card--name {
-    font-size: 1.2em;
-    margin-top: 40px; }
-  .profile-card--description, .profile-card--role {
-    font-size: 0.8em;
-    line-height: 1em; }
-  .profile-card--role {
-    font-size: 0.7em; }
-  .profile-card--social-links__item a {
-    font-size: 1em;
-    padding: 2px 0; }
-  .contact-title {
-    font-size: 1.5em; }
-  .contact-form--input {
-    margin-bottom: 25px;
-    background-color: #fff;
-    height: 35px;
-    font-family: "Domine", serif;
-    font-size: 0.8em; }
-  label {
-    font-size: 0.8em;
-    line-height: 35px; }
-  .contact-form--button {
-    font-size: 1em;
-    border: 2px solid #ed6a15;
-    padding: 5px 10px; } }
+      margin-left: 10px; } }

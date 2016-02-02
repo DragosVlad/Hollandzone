@@ -30,6 +30,11 @@ body {
 		padding: 30px 25px 0;
 	}
 
+	.wrapper--nopadding {
+		margin: 0 auto;
+		padding: 0;
+	}
+
 	.row {
 		margin: 0;
 		margin-right: 0;
@@ -75,3 +80,41 @@ section {
 	.main-content {
 		// padding: 10px 20px;
 	}
+
+
+
+
+
+
+
+/*----------  Temporary style for work in progress pages  ----------*/
+
+
+.work-in-progress-message {
+	font-family: $font-family-domine; 
+	font-size: 2.5em;
+	font-weight: $font-bold;
+	color: $accent-color;
+	text-align: center;
+	padding: 150px 100px;
+
+	i {
+		margin-right: 10px;
+	}
+	
+}
+
+
+@media only screen and (max-width: 1100px) {
+	.work-in-progress-message {
+		font-size: 2em;
+		padding: 100px 70px;
+	}
+}
+
+@media only screen and (max-width: 820px) {
+	.work-in-progress-message {
+		font-size: 1.5em;
+		padding: 60px 30px;
+	}
+}

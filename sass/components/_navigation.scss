@@ -33,11 +33,14 @@
 			position: relative;
 
 			&.active {
+				position: relative;
+
 				&:after {
 					position: absolute;
 					content: "";
 					width: 100%;
 					height: 5px;
+					left: 0;
 					bottom: 0;
 					cursor: pointer;
 					background-color: $main-color;
@@ -285,7 +288,7 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
-	height: 0;
+	// height: 0;
 	z-index: 100;
 }
 
@@ -324,8 +327,12 @@
 
 		.vertical {
 			background-color: $accent-color;
-			height: 300px;
+			height: 350px;
 			margin-top: -43px;
+
+			&.city {
+				margin-top: -255px;
+			}
 		}
 	}
 
@@ -475,7 +482,7 @@
 
 .is-drilldown {
 		width: 200px !important;
-		height: 300px !important;
+		height: 350px !important;
 		display: none;
 	}
 

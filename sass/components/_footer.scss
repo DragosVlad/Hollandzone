@@ -5,7 +5,12 @@
 	position: relative;
 }
 
-
+.main-footer--nopadding {
+	background-color: $accent-color;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
 
 	.main-footer--main-content {
 		text-align: center;
