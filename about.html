@@ -55,7 +55,6 @@
 
 	<!-- Custom CSS styles -->
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/about.css">
 </head>
 <body>
 
@@ -91,7 +90,7 @@
 
 				<li class="nav-item"><a href="#">Reports</a></li>
 				<li class="nav-item"><a href="#">Deals</a></li>
-				<li class="nav-item"><a href="calendar.html">Calendar</a></li>
+				<li class="nav-item"><a href="activities.html">Activities</a></li>
 
 			</ul> <!-- End 1st Flex child --> 
 
@@ -172,7 +171,7 @@
 		  	</li>
 		 	<li class="nav-item"><a href="#">Reports</a></li>
 			<li class="nav-item"><a href="#">Deals</a></li>
-			<li class="nav-item"><a href="calendar.html">Calendar</a></li>
+			<li class="nav-item"><a href="activities.html">Activities</a></li>
 			<li class="nav-item"><a href="media.html">Media</a></li>
 			<li class="nav-item">
 				<a href="#" class="has-dropdown">City</a>
@@ -358,8 +357,6 @@
 
 									<div class="profile-card--top profile-card--4">
 
-										<!-- <img src="images/profile-image3.jpg" alt="Card image" class="profile-card--top-image"> -->
-
 									</div> <!-- END Top -->
 
 									<div class="profile-card--avatar">
@@ -389,7 +386,7 @@
 								</div> <!-- END Profile card -->
 
 							</div>
-						</div>
+						</div> 
 	
 
 
@@ -440,6 +437,13 @@
 
 
 						<div class="large-6 large-offset-2 medium-7 small-12 columns">
+								
+							<ul class="errors">
+								<li>Please enter your name!</li>
+								<li>Please enter a valid email address!</li>
+								<li>Please enter a message!</li>
+							</ul>
+
 							<form class="contact-form" action="">
 								<div class="form-group">
 									<input class="contact-form--input" type="text" id="name" required>
@@ -464,6 +468,8 @@
 									<label for="message">Message...</label>
 									<div class="form-bar"></div>
 								</div>
+
+								<input class="honeypot" id="selectedTopic" name="selectedTopic" type="text">
 								
 								<input class="contact-form--button" type="submit" value="Send message">
 							</form>

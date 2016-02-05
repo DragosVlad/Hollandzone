@@ -463,6 +463,21 @@
 }
 
 
+.errors {
+	list-style: none;
+	margin-bottom: 30px;
+	// display: none;
+
+	li {
+		font-family: $font-family-domine;
+		font-weight: $font-semibold;
+		font-style: italic;
+		font-size: 1em;
+		letter-spacing: 1.1px;
+		color: #D70B1E;
+	}
+}
+
 .contact-form {
 	position: relative;
 	right: 0;
@@ -515,6 +530,8 @@
 		    	}
       		}
 		}
+
+		.honeypot {display: none;}
 
 
 		label {
