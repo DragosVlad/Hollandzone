@@ -2103,7 +2103,7 @@ label {
   color: #2b3340;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
-  .listing-item--title:hover {
+  .listing-item--title:hover, .listing-item--title:active, .listing-item--title:focus {
     color: #ed6a15; }
 
 .tags {
