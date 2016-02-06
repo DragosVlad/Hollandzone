@@ -137,17 +137,34 @@
 
 			.articles--list__button {
 				display: block;
+				font-family: $font-family-domine;
+				font-size: 1.1em;
+				line-height: 1.3;
+				letter-spacing: 0.7px;
 				color: #fff;
 				background-color: $accent-color;
 				padding: 10px 15px;
 				border-radius: 2px;
 				align-self: flex-start;
-				transition: all 0.3s ease-in-out;
+				text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+				box-shadow: 0 5px darken($accent-color, 10%);
+				
+				transition: all 0.15s ease-in-out;
 
-				&:hover, &:active, &:focus {
-					text-decoration: none;
+				&:hover {
 					color: #fff;
-					background-color: $main-color;
+					background-color: darken($accent-color, 5%);
+					box-shadow: 0 5px darken($accent-color, 15%);
+				}
+
+				&:active {
+					color: #fff;
+					box-shadow: 0 2px darken($accent-color, 15%);
+					transform: translateY(3px);
+				}
+
+				&:focus {
+					color: #fff;
 				}
 			}
 

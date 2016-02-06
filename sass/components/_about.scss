@@ -295,7 +295,6 @@
 	}
 
 		.profile-card--top {
-			background-image: url('../images/profile-image3.jpg');
 			background-repeat: no-repeat;
 			background-position: 0 50%;
 			background-size: cover;
@@ -308,9 +307,16 @@
 			overflow: hidden;
 		}
 
-			// .profile-card--top-image {
-			// 	width: 100%;
-			// }
+
+		/*  Background images for profile cards  */
+
+		.profile-card--1 {background-image: url('../images/profile-image1.jpg');}
+		.profile-card--2 {background-image: url('../images/profile-image3.jpg');}
+		.profile-card--3 {background-image: url('../images/profile-image2.jpg');}
+		.profile-card--4 {background-image: url('../images/profile-image3.jpg');}
+		
+
+			
 
 		.profile-card--avatar {
 			position: absolute;
@@ -531,7 +537,7 @@
       		}
 		}
 
-		.honeypot {display: none;}
+		.topic {display: none;}
 
 
 		label {
@@ -579,15 +585,32 @@
 		background-color: #fff;
 		font-family: $font-family-domine;
 		font-size: 1.2em;
+		line-height: 1.4;
 		color: $main-color;
 		outline: none;
-		border: 3px solid $main-color;
+		border: none;
+		border-radius: 3px;
+		color: #fff;
+		text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+		background-color: $main-color;
+		box-shadow: 0 5px darken($main-color, 10%);
 		text-transform: uppercase;
 		padding: 10px 20px;
-		transition: all 0.3s ease-in-out;
+		transition: all 0.15s ease-in-out;
 
 		&:hover {
-			background-color: $main-color;
+			color: #fff;
+			background-color: darken($main-color, 5%);
+			box-shadow: 0 5px darken($main-color, 15%);
+		}
+
+		&:active {
+			color: #fff;
+			box-shadow: 0 2px darken($main-color, 15%);
+			transform: translateY(3px);
+		}
+
+		&:focus {
 			color: #fff;
 		}
 	}

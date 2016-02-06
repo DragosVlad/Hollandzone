@@ -55,7 +55,6 @@
 
 	<!-- Custom CSS styles -->
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/about.css">
 </head>
 <body>
 
@@ -121,9 +120,12 @@
 					</li>
 					<li class="nav-item"><a href="about.html">About</a></li>
 
-					<li class="nav-item nav-item--search"> <!-- Flexbox container -->
-						<i class="fa fa-search icon"></i>
-						<input class="search-box" type="search" placeholder="Search...">
+					<li class="nav-item nav-item--search">
+						<form action="" class="search-box--form">
+							<div class="search-box">
+								<input type="search" placeholder="Search...">
+							</div>
+						</form>
 					</li>
 			
 			</ul> <!-- End 3rd Flex child -->
@@ -149,10 +151,12 @@
 			</div>
 			
 
-
-			<div class="nav--mobile__search nav--mobile__top-item"> <!-- Flexbox container -->
-				<i class="fa fa-search icon"></i>
-				<input class="nav--mobile__search-box" type="search" placeholder="Search...">
+			<div class="nav--mobile__search nav--mobile__top-item">
+				<form action="" class="search-box--form">
+					<div class="nav--mobile__search-box">
+						<input type="search" placeholder="Search...">
+					</div>
+				</form>
 			</div>
 
 		</div>
@@ -204,7 +208,7 @@
 	<div class="wrapper wrapper--nopadding">
 
 		<div class="months">
-			<ul class="months-list">
+			<!-- <ul class="months-list">
 				<li class="months-item january"><a href="#">January</a></li>
 				<li class="months-item february"><a href="#" class="active">February</a></li>
 				<li class="months-item march"><a href="#">March</a></li>
@@ -217,9 +221,9 @@
 				<li class="months-item octomber"><a href="#">Octomber</a></li>
 				<li class="months-item november"><a href="#">November</a></li>
 				<li class="months-item december"><a href="#">December</a></li>
-			</ul>
+			</ul> -->
 
-			<!-- <ul class="months-list months-list--mobile">
+			<ul class="months-list months-list--mobile">
 				<li class="months-item january"><a href="#">January</a></li>
 				<li class="months-item february"><a href="#" class="active">February</a></li>
 				<li class="months-item march"><a href="#">March</a></li>
@@ -235,7 +239,7 @@
 				<li class="months-item octomber"><a href="#">Octomber</a></li>
 				<li class="months-item november"><a href="#">November</a></li>
 				<li class="months-item december"><a href="#">December</a></li>
-			</ul> -->
+			</ul>
 				
 		
 		</div> <!-- END Months -->
@@ -254,17 +258,22 @@
 
 					<div class="listing-item--info">
 						<a href="#"><img src="images/small-thumbnail.jpg" alt="Event thumb" class="listing-item--thumb"></img></a>
-						<div class="listing-item--title">
-							<a href="#">Awesome Party in Amsterdam This Weekend!</a>
+						<div class="listing-item--text">
+							<a href="#" class="listing-item--title">
+								Awesome Party in Amsterdam This Weekend!
+							</a>
+							<div class="tags">
+								<i class="fa fa-tag"></i>
+								<ul class="tags-list">
+									<li class="tags-list--item"><a href="#">party</a></li>
+									<li class="tags-list--item"><a href="#">Amsterdam</a></li>
+									<li class="tags-list--item"><a href="#">fun</a></li>
+								</ul>
+							</div>
 						</div>
 						<div class="listing-item--buttons">
-							<div class="listing-item--button__ticket">
-								<a href="#">Buy&nbsp;Ticket</a>
-							</div>
-
-							<div class="listing-item--button__deal" style="z-index: 97;">
-								<a href="#">Deal</a>
-							</div>
+							<a class="listing-item--button__ticket" href="#">Buy&nbsp;Ticket</a>							
+							<a style ="z-index: 97" class="listing-item--button__deal" href="#">Deal</a>
 						</div>
 					</div>
 
@@ -282,17 +291,22 @@
 
 					<div class="listing-item--info">
 						<a href="#"><img src="images/small-thumbnail.jpg" alt="Event thumb" class="listing-item--thumb"></img></a>
-						<div class="listing-item--title">
-							<a href="#">Awesome Party in Amsterdam This Weekend!</a>
+						<div class="listing-item--text">
+							<a href="#" class="listing-item--title">
+								Awesome Party in Amsterdam This Weekend!
+							</a>
+							<div class="tags">
+								<i class="fa fa-tag"></i>
+								<ul class="tags-list">
+									<li class="tags-list--item"><a href="#">party</a></li>
+									<li class="tags-list--item"><a href="#">Amsterdam</a></li>
+									<li class="tags-list--item"><a href="#">fun</a></li>
+								</ul>
+							</div>
 						</div>
 						<div class="listing-item--buttons">
-							<div class="listing-item--button__ticket">
-								<a href="#">Buy&nbsp;Ticket</a>
-							</div>
-
-							<div class="listing-item--button__deal" style="z-index: -97;">
-								<a href="#">Deal</a>
-							</div>
+							<a class="listing-item--button__ticket" href="#">Buy&nbsp;Ticket</a>							
+							<a style ="z-index: -97" class="listing-item--button__deal" href="#">Deal</a>
 						</div>
 					</div>
 
@@ -310,17 +324,22 @@
 
 					<div class="listing-item--info">
 						<a href="#"><img src="images/small-thumbnail.jpg" alt="Event thumb" class="listing-item--thumb"></img></a>
-						<div class="listing-item--title">
-							<a href="#">Awesome Party in Amsterdam This Weekend!</a>
+						<div class="listing-item--text">
+							<a href="#" class="listing-item--title">
+								Awesome Party in Amsterdam This Weekend!
+							</a>
+							<div class="tags">
+								<i class="fa fa-tag"></i>
+								<ul class="tags-list">
+									<li class="tags-list--item"><a href="#">party</a></li>
+									<li class="tags-list--item"><a href="#">Amsterdam</a></li>
+									<li class="tags-list--item"><a href="#">fun</a></li>
+								</ul>
+							</div>
 						</div>
 						<div class="listing-item--buttons">
-							<div class="listing-item--button__ticket">
-								<a href="#">Buy&nbsp;Ticket</a>
-							</div>
-
-							<div class="listing-item--button__deal" style="z-index: 97;">
-								<a href="#">Deal</a>
-							</div>
+							<a class="listing-item--button__ticket" href="#">Buy&nbsp;Ticket</a>							
+							<a style ="z-index: -97" class="listing-item--button__deal" href="#">Deal</a>
 						</div>
 					</div>
 
@@ -338,17 +357,22 @@
 
 					<div class="listing-item--info">
 						<a href="#"><img src="images/small-thumbnail.jpg" alt="Event thumb" class="listing-item--thumb"></img></a>
-						<div class="listing-item--title">
-							<a href="#">Awesome Party in Amsterdam This Weekend!</a>
+						<div class="listing-item--text">
+							<a href="#" class="listing-item--title">
+								Awesome Party in Amsterdam This Weekend!
+							</a>
+							<div class="tags">
+								<i class="fa fa-tag"></i>
+								<ul class="tags-list">
+									<li class="tags-list--item"><a href="#">party</a></li>
+									<li class="tags-list--item"><a href="#">Amsterdam</a></li>
+									<li class="tags-list--item"><a href="#">fun</a></li>
+								</ul>
+							</div>
 						</div>
 						<div class="listing-item--buttons">
-							<div class="listing-item--button__ticket">
-								<a href="#">Buy&nbsp;Ticket</a>
-							</div>
-
-							<div class="listing-item--button__deal" style="z-index: 97;">
-								<a href="#">Deal</a>
-							</div>
+							<a class="listing-item--button__ticket" href="#">Buy&nbsp;Ticket</a>							
+							<a style ="z-index: 97" class="listing-item--button__deal" href="#">Deal</a>
 						</div>
 					</div>
 
@@ -366,17 +390,22 @@
 
 					<div class="listing-item--info">
 						<a href="#"><img src="images/small-thumbnail.jpg" alt="Event thumb" class="listing-item--thumb"></img></a>
-						<div class="listing-item--title">
-							<a href="#">Awesome Party in Amsterdam This Weekend!</a>
+						<div class="listing-item--text">
+							<a href="#" class="listing-item--title">
+								Awesome Party in Amsterdam This Weekend!
+							</a>
+							<div class="tags">
+								<i class="fa fa-tag"></i>
+								<ul class="tags-list">
+									<li class="tags-list--item"><a href="#">party</a></li>
+									<li class="tags-list--item"><a href="#">Amsterdam</a></li>
+									<li class="tags-list--item"><a href="#">fun</a></li>
+								</ul>
+							</div>
 						</div>
 						<div class="listing-item--buttons">
-							<div class="listing-item--button__ticket">
-								<a href="#">Buy&nbsp;Ticket</a>
-							</div>
-
-							<div class="listing-item--button__deal" style="z-index: -97;">
-								<a href="#">Deal</a>
-							</div>
+							<a class="listing-item--button__ticket" href="#">Buy&nbsp;Ticket</a>							
+							<a style ="z-index: -97" class="listing-item--button__deal" href="#">Deal</a>
 						</div>
 					</div>
 
@@ -393,17 +422,22 @@
 
 					<div class="listing-item--info">
 						<a href="#"><img src="images/small-thumbnail.jpg" alt="Event thumb" class="listing-item--thumb"></img></a>
-						<div class="listing-item--title">
-							<a href="#">Awesome Party in Amsterdam This Weekend!</a>
+						<div class="listing-item--text">
+							<a href="#" class="listing-item--title">
+								Awesome Party in Amsterdam This Weekend!
+							</a>
+							<div class="tags">
+								<i class="fa fa-tag"></i>
+								<ul class="tags-list">
+									<li class="tags-list--item"><a href="#">party</a></li>
+									<li class="tags-list--item"><a href="#">Amsterdam</a></li>
+									<li class="tags-list--item"><a href="#">fun</a></li>
+								</ul>
+							</div>
 						</div>
 						<div class="listing-item--buttons">
-							<div class="listing-item--button__ticket">
-								<a href="#">Buy&nbsp;Ticket</a>
-							</div>
-
-							<div class="listing-item--button__deal" style="z-index: -97;">
-								<a href="#">Deal</a>
-							</div>
+							<a class="listing-item--button__ticket" href="#">Buy&nbsp;Ticket</a>							
+							<a style ="z-index: 97" class="listing-item--button__deal" href="#">Deal</a>
 						</div>
 					</div>
 
@@ -420,17 +454,22 @@
 
 					<div class="listing-item--info">
 						<a href="#"><img src="images/small-thumbnail.jpg" alt="Event thumb" class="listing-item--thumb"></img></a>
-						<div class="listing-item--title">
-							<a href="#">Awesome Party in Amsterdam This Weekend!</a>
+						<div class="listing-item--text">
+							<a href="#" class="listing-item--title">
+								Awesome Party in Amsterdam This Weekend!
+							</a>
+							<div class="tags">
+								<i class="fa fa-tag"></i>
+								<ul class="tags-list">
+									<li class="tags-list--item"><a href="#">party</a></li>
+									<li class="tags-list--item"><a href="#">Amsterdam</a></li>
+									<li class="tags-list--item"><a href="#">fun</a></li>
+								</ul>
+							</div>
 						</div>
 						<div class="listing-item--buttons">
-							<div class="listing-item--button__ticket">
-								<a href="#">Buy&nbsp;Ticket</a>
-							</div>
-
-							<div class="listing-item--button__deal" style="z-index: -97;">
-								<a href="#">Deal</a>
-							</div>
+							<a class="listing-item--button__ticket" href="#">Buy&nbsp;Ticket</a>							
+							<a style ="z-index: -97" class="listing-item--button__deal" href="#">Deal</a>
 						</div>
 					</div>
 
@@ -447,17 +486,22 @@
 
 					<div class="listing-item--info">
 						<a href="#"><img src="images/small-thumbnail.jpg" alt="Event thumb" class="listing-item--thumb"></img></a>
-						<div class="listing-item--title">
-							<a href="#">Awesome Party in Amsterdam This Weekend!</a>
+						<div class="listing-item--text">
+							<a href="#" class="listing-item--title">
+								Awesome Party in Amsterdam This Weekend!
+							</a>
+							<div class="tags">
+								<i class="fa fa-tag"></i>
+								<ul class="tags-list">
+									<li class="tags-list--item"><a href="#">party</a></li>
+									<li class="tags-list--item"><a href="#">Amsterdam</a></li>
+									<li class="tags-list--item"><a href="#">fun</a></li>
+								</ul>
+							</div>
 						</div>
 						<div class="listing-item--buttons">
-							<div class="listing-item--button__ticket">
-								<a href="#">Buy&nbsp;Ticket</a>
-							</div>
-
-							<div class="listing-item--button__deal" style="z-index: -97;">
-								<a href="#">Deal</a>
-							</div>
+							<a class="listing-item--button__ticket" href="#">Buy&nbsp;Ticket</a>							
+							<a style ="z-index: 97" class="listing-item--button__deal" href="#">Deal</a>
 						</div>
 					</div>
 
@@ -466,7 +510,7 @@
 
 			</ul> <!-- END Listing list -->
 
-			<div class="load-more-button"><a href="#">Load more events...</a></div>
+			<a class="load-more-button" href="#">Load more events...</a>
 
 		</div> <!-- END Listing -->
 
@@ -501,6 +545,7 @@
 					<li class="main-footer--links__item"><a href="#">Reports</a></li>
 					<li class="main-footer--links__item"><a href="#">Deals</a></li>
 					<li class="main-footer--links__item"><a href="#">Calendar</a></li>
+					<li class="main-footer--links__item"><a href="#">About</a></li>
 					<li class="main-footer--links__item"><a href="#">Media</a></li>
 				</ul>
 			</div>

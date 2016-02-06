@@ -23,7 +23,7 @@
 				font-family: $font-family-raleway;
 				font-size: 1.1em;
 				color: #fff;
-				background-color: $main-color;
+				background-color: $accent-color;
 				padding: 10px 5px;
 				border-right: 2px dashed rgba(255, 255, 255, 0.7);
 				transition: all 0.3s ease-in-out;
@@ -59,6 +59,7 @@
 /*----------  LISTING  ----------*/
 
 .listing {
+	margin-top: 30px;
 	padding: 30px;
 }
 
@@ -120,69 +121,141 @@
 
 				.listing-item--title {
 					margin-right: 30px;
+					font-size: 1.5em;
+					font-weight: $font-semibold;
+					color: $accent-color;
+					transition: all 0.3s ease-in-out;
 
-					a {
-						font-size: 1.5em;
-						font-weight: $font-semibold;
-						color: $accent-color;
-						transition: all 0.3s ease-in-out;
-
-						&:hover {
-							color: $main-color;
-						}
-
+					&:hover {
+						color: $main-color;
 					}
 				}
 
-				.listing-item--buttons {				
+				.tags {
+					display: flex;
+					align-items: center;
+
+					i {
+						font-size: 1.2em;
+						color: $accent-color;
+						margin-right: 0;
+					}
+
+				}
+
+					.tags-list {
+						list-style: none;
+						margin-left: 10px;
+						display: flex;
+					}
+
+						.tags-list--item {
+							position: relative;
+							margin-right: 5px;
+
+							a {
+								// position: relative;
+								font-size: 1.1em;
+								color: $accent-color;
+								transition: all 0.3s ease-in-out;
+
+								&:hover {
+									color: $main-color;
+								}
+							}
+
+							&:after {
+								position: relative;
+								content: ', ';
+							}
+
+							&:last-child {
+								&:after {
+									content: '';
+								}
+							}
+
+
+						}
+
+
+
+
+
+
+				.listing-item--buttons {			
 					text-align: center;
 					height: 90px;
 					display: flex;
 					flex-direction: column;
 					justify-content: space-around;
+					align-items: center;
 				}
 
 					.listing-item--button__ticket,
 					.listing-item--button__deal {
+						display: inline-block;
+						font-family: $font-family-domine;
+						font-size: 1.1em;
+						line-height: 1.4;
+						text-transform: uppercase;
+						text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+						padding: 5px 8px 3px;
+						border-radius: 3px;
+						background-color: $main-color;
+						box-shadow: 0 5px darken($main-color, 10%);
+						color: #fff;
+						transition: all 0.15s ease-in-out;
 
-						a {
-							font-family: $font-family-domine;
-							font-size: 1.2em;
-							text-transform: uppercase;
-							text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
-							padding: 5px 10px;
-							background-color: $main-color;
+						&:hover {
 							color: #fff;
-							transition: all 0.3s ease-in-out;
+							background-color: darken($main-color, 5%);
+							box-shadow: 0 5px darken($main-color, 15%);
+						}
 
-							&:hover {
-								background-color: darken($main-color, 10%);
-							}
+						&:active {
+							color: #fff;
+							box-shadow: 0 2px darken($main-color, 15%);
+							transform: translateY(3px);
+						}
+
+						&:focus {
+							color: #fff;
 						}
 					}
 
 
 
 	.load-more-button {
+		display: inline-block;
 		margin-top: 100px;
+		position: relative;
+		font-family: $font-family-domine;
+		font-size: 1.5em;
+		color: #fff;
+		background-color: $main-color;
+		padding: 10px 20px;
+		border-radius: 4px;
+		text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+		box-shadow: 0 5px darken($main-color, 10%);
+		transition: all 0.15s ease-in-out;
 
-		a {
-			font-family: $font-family-domine;
-			font-size: 1.5em;
+		&:hover {
 			color: #fff;
-			background-color: $main-color;
-			padding: 10px 20px;
-			text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
-			transition: all 0.3s ease-in-out;
-
-			&:hover, &:focus, &:active {
-				color: #fff;
-				background-color: darken($main-color, 10%);
-			}
-
+			background-color: darken($main-color, 5%);
+			box-shadow: 0 5px darken($main-color, 15%);
 		}
+
+		&:active {
+			color: #fff;
+			box-shadow: 0 2px darken($main-color, 15%);
+			transform: translateY(3px);
+		}
+
+		&:focus {
+			color: #fff;
+		}
+
+
 		
 	}
-
-
-
