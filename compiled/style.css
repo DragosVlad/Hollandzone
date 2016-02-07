@@ -445,7 +445,6 @@ section {
     color: #fff;
     text-decoration: none; }
   .hover-effect figcaption {
-    padding: 15px;
     color: #fff;
     font-size: 1em;
     -webkit-backface-visibility: hidden;
@@ -498,7 +497,9 @@ section {
   color: #fff;
   text-align: left;
   margin: 0;
-  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1), -1px -1px 0 rgba(0, 0, 0, 0.8), 1px -1px 0 rgba(0, 0, 0, 0.8), -1px 1px 0 rgba(0, 0, 0, 0.8), 1px 1px 0 rgba(0, 0, 0, 0.8); }
+  padding: 10px 10px 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4); }
   .article--title span {
     font-weight: 800; }
 
@@ -509,18 +510,19 @@ section {
   display: flex; }
 
 .date {
-  display: flex; }
+  display: flex;
+  margin-bottom: 10px; }
   .date i {
     font-size: 1.2em;
     display: inline-block;
-    margin-right: 10px; }
+    margin-right: 5px; }
   .date span {
     font-weight: 300;
-    margin-right: 5px;
     display: inline-block; }
 
 .category {
-  margin-left: 10px; }
+  margin-left: 10px;
+  margin-bottom: 10px; }
   .category i {
     font-size: 1.2em;
     display: inline-block; }
@@ -544,11 +546,13 @@ section {
   left: 0;
   bottom: 0;
   margin: 30px 10px;
-  padding: 0 15px;
+  padding: 10px 15px;
   max-width: 90%;
   border-right: 4px solid #fff;
   text-align: right;
   opacity: 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   pointer-events: none;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s; }
@@ -593,8 +597,6 @@ section {
   background-color: #2b3340; }
   .reports--carousel .reports--item {
     margin-right: 15px; }
-  .reports--carousel figcaption {
-    padding: 10px; }
   .reports--carousel .article--title {
     font-size: 1.7em; }
   .reports--carousel .article--text {
@@ -1523,7 +1525,7 @@ section {
   background-image: url("../images/profile-image2.jpg"); }
 
 .profile-card--4 {
-  background-image: url("../images/profile-image3.jpg"); }
+  background-image: url("../images/profile-image2.jpg"); }
 
 .profile-card--avatar {
   position: absolute;

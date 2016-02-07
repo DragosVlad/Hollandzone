@@ -17,7 +17,7 @@
 		}
 
 		figcaption {
-			padding: 15px;
+			// padding: 15px;
 			color: #fff;
 			font-size: 1em;
 			-webkit-backface-visibility: hidden;
@@ -96,13 +96,11 @@
 			color: #fff;
 			text-align: left;
 			margin: 0;
-			text-shadow:
-			    3px 3px 0 rgba(0, 0, 0, 0.1),
-			   -1px -1px 0 rgba(0, 0, 0, 0.8),
-			    1px -1px 0 rgba(0, 0, 0, 0.8),
-			   -1px  1px 0 rgba(0, 0, 0, 0.8),
-			    1px  1px 0 rgba(0, 0, 0, 0.8);
-		
+			padding: 10px 10px 0;
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+			background-color: rgba(0, 0, 0, 0.4);
+			
+
 			span {
 				font-weight: 800;
 			}
@@ -118,22 +116,23 @@
 
 				.date {
 					display: flex;
+					margin-bottom: 10px;
 
 					i {
 						font-size: 1.2em;
 						display: inline-block;
-						margin-right: 10px;
+						margin-right: 5px;
 					}
 
 					span {
 						font-weight: 300;
-						margin-right: 5px;
 						display: inline-block;
 					}
 				}
 
 				.category {
 					margin-left: 10px;
+					margin-bottom: 10px;
 
 					i {
 						font-size: 1.2em;
@@ -167,11 +166,13 @@
 			left: 0;
 			bottom: 0;
 			margin: 30px 10px;
-			padding: 0 15px;
+			padding: 10px 15px;
 			max-width: 90%;
 			border-right: 4px solid #fff;
 			text-align: right;
 			opacity: 0;
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+			background-color: rgba(0, 0, 0, 0.4);
 			pointer-events: none;
 			-webkit-transition: opacity 0.35s;
 			transition: opacity 0.35s;
@@ -257,7 +258,7 @@
 	}
 
 		figcaption {
-			padding: 10px;
+			// padding: 10px;
 		}
 
 		.article--title {
