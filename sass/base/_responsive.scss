@@ -529,6 +529,94 @@
 
 
 
+	/*----------  ACTIVITIES PAGE  ----------*/
+
+
+	.listing {
+		margin-top: 20px;
+		padding: 10px 10px 30px;
+	}
+
+	.listing-item--date {
+		padding: 5px 5px;
+		margin-right: 10px;
+		padding-bottom: 0;
+		
+	}
+
+		.listing-item--date__month {
+			font-size: 0.6em;
+			line-height: 0.8;
+		}
+
+		.listing-item--date__day {
+			font-size: 1.2em;
+			line-height: 1.4;
+		}
+
+		.listing-item--date__day-of-week {
+			padding-bottom: 5px;
+			border-bottom: 4px solid $main-color;
+		}
+
+	
+	.listing-item--thumb {
+		max-width: 70px;
+		max-height: 70px;
+		margin-right: 10px;
+	}
+
+	.listing-item--title {
+		margin-right: 30px;
+		font-size: 1em;
+		line-height: 1;
+	}
+
+
+	.tags {
+
+		i {
+			font-size: 0.8em;
+		}
+
+	}
+
+		.tags-list--item {
+			position: relative;
+			margin-right: 5px;
+
+			a {
+				font-size: 0.8em;
+			}
+
+		}
+
+	.listing-item--buttons {
+		height: 70px;
+	}
+
+		.listing-item--button__ticket,
+		.listing-item--button__deal {
+			font-size: 0.6em;
+			line-height: 1.4;
+			padding: 3px 6px 2px;
+			border-radius: 3px;
+			box-shadow: 0 5px darken($main-color, 10%);
+
+			&:hover {
+				background-color: darken($main-color, 5%);
+				box-shadow: 0 5px darken($main-color, 15%);
+			}
+
+			&:active {
+				box-shadow: 0 2px darken($main-color, 15%);
+				transform: translateY(3px);
+			}
+		}
+
+
+
+
 }  /// END  ---  800px
 
 
@@ -994,6 +1082,27 @@
 		padding: 5px 10px;
 	}
 
+
+	.main-footer--links__item {
+
+		margin-right: -1px;
+
+		a {
+			font-size: 0.7em;
+			padding: 4px 2px 4px 0;
+		}
+	}
+
+
+	/*----------  ACTIVITIES PAGE  ----------*/
+	
+	.months {
+
+	}
+
+	.button {
+		// not actual class
+	}
 
 
 

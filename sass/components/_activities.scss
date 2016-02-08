@@ -70,7 +70,6 @@
 		.listing-item {
 			margin-bottom: 50px;
 			background-color: #fff;
-			
 			display: flex;
 		}
 
@@ -79,11 +78,9 @@
 				text-align: center;
 				font-family: $font-family-domine;
 				margin-right: 70px;
-				padding-bottom: 5px;
-				border-bottom: 5px solid $main-color;
 				display: flex;
 				flex-direction: column;
-				justify-content: space-between;
+				justify-content: center;
 			}
 
 				.listing-item--date__month {
@@ -101,6 +98,8 @@
 
 				.listing-item--date__day-of-week {
 					@extend .listing-item--date__month;
+					padding-bottom: 10px;
+					border-bottom: 5px solid $main-color;
 				}
 
 
