@@ -617,8 +617,10 @@ section {
   border-bottom: 1px dashed rgba(43, 51, 64, 0.7); }
 
 .articles--list__thumbnail {
+  overflow: hidden;
   background-color: #ed6a15;
   max-width: 320px;
+  max-height: 100%;
   position: relative;
   flex-basis: 45%;
   margin-right: 20px; }
@@ -626,8 +628,6 @@ section {
     opacity: 0.6; }
   .articles--list__thumbnail:hover .image-button--wrapper {
     opacity: 1; }
-    .articles--list__thumbnail:hover .image-button--wrapper a {
-      z-index: 98; }
 
 .full-link {
   position: absolute;

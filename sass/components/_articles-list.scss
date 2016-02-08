@@ -15,8 +15,10 @@
 
 
 		.articles--list__thumbnail {
+			overflow: hidden;
 			background-color: $main-color;
 			max-width: 320px;
+			max-height: 100%;
 			position: relative;
 			flex-basis: 45%;
 			margin-right: 20px;
@@ -32,7 +34,7 @@
 					opacity: 1;
 
 					a {
-						z-index: 98;
+						// z-index: 98;
 					}
 				}
 			}
