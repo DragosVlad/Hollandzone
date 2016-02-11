@@ -2003,9 +2003,7 @@ label {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
-
-.months-list--mobile {
+  display: flex;
   margin-bottom: 1px; }
 
 .months-item {
@@ -2093,8 +2091,18 @@ label {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5px 10px;
   box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.6); }
+
+.listing-item--info__left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 10px; }
 
 .listing-item--thumb {
   max-width: 90px;
@@ -2102,7 +2110,7 @@ label {
   margin-right: 30px; }
 
 .listing-item--title {
-  margin-right: 30px;
+  margin-right: 10px;
   font-size: 1.5em;
   font-weight: 600;
   color: #2b3340;
@@ -2167,7 +2175,8 @@ label {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-right: 10px; }
 
 .listing-item--button__ticket,
 .listing-item--button__deal {
@@ -2520,7 +2529,7 @@ label {
     line-height: 0.8; }
   .listing-item--date__day {
     font-size: 1.2em;
-    line-height: 1.4; }
+    line-height: 1.8; }
   .listing-item--date__day-of-week {
     padding-bottom: 5px;
     border-bottom: 4px solid #ed6a15; }
@@ -2533,12 +2542,12 @@ label {
     font-size: 1em;
     line-height: 1; }
   .tags i {
-    font-size: 0.8em; }
+    font-size: 0.7em; }
   .tags-list--item {
     position: relative;
     margin-right: 5px; }
     .tags-list--item a {
-      font-size: 0.8em; }
+      font-size: 0.7em; }
   .listing-item--buttons {
     height: 70px; }
   .listing-item--button__ticket,
@@ -2686,7 +2695,11 @@ label {
   .widget--review__rating--number {
     font-size: 2.5em; }
   .widget--review__rating--stars {
-    font-size: 2em; } }
+    font-size: 2em; }
+  .load-more-button {
+    margin-top: 30px;
+    font-size: 1.1em;
+    padding: 12px 15px; } }
 
 @media only screen and (max-width: 400px) {
   .nav--mobile__search {
@@ -2803,4 +2816,33 @@ label {
     .main-footer--links__item a {
       font-size: 0.7em;
       padding: 4px 2px 4px 0; }
-  /*----------  ACTIVITIES PAGE  ----------*/ }
+  /*----------  ACTIVITIES PAGE  ----------*/
+  .months-item a {
+    font-size: 0.9em;
+    padding: 5px 3px; }
+  .listing-item {
+    margin-bottom: 20px; }
+  .listing-item--thumb {
+    max-width: 50px;
+    max-height: 50px; }
+  .listing-item--title {
+    margin-right: 10px;
+    font-size: 0.9em; }
+  .listing-item--info {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .listing-item--buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 10px;
+    height: auto;
+    margin-bottom: 10px; }
+  .listing-item--button__ticket {
+    margin-right: 10px; }
+  .load-more-button {
+    font-size: 1em;
+    padding: 5px 10px; } }

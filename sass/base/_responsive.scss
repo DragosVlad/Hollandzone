@@ -551,7 +551,7 @@
 
 		.listing-item--date__day {
 			font-size: 1.2em;
-			line-height: 1.4;
+			line-height: 1.8;
 		}
 
 		.listing-item--date__day-of-week {
@@ -576,7 +576,7 @@
 	.tags {
 
 		i {
-			font-size: 0.8em;
+			font-size: 0.7em;
 		}
 
 	}
@@ -586,7 +586,7 @@
 			margin-right: 5px;
 
 			a {
-				font-size: 0.8em;
+				font-size: 0.7em;
 			}
 
 		}
@@ -854,6 +854,12 @@
 		font-size: 2em;
 	}
 
+	.load-more-button {
+		margin-top: 30px;
+		font-size: 1.1em;
+		padding: 12px 15px;
+	}
+
 
 
 
@@ -1095,15 +1101,56 @@
 
 
 	/*----------  ACTIVITIES PAGE  ----------*/
+
+	.months-item {
+
+		a {
+			font-size: 0.9em;
+			padding: 5px 3px;
+		}
+	}
+
+	.listing-item {
+		margin-bottom: 20px;
+	}
 	
-	.months {
-
+	.listing-item--thumb {
+		max-width: 50px;
+		max-height: 50px;
 	}
 
-	.button {
-		// not actual class
+
+	.listing-item--title {
+		margin-right: 10px;
+		font-size: 0.9em;
 	}
 
+
+	.load-more-button {
+		
+	}
+
+
+	.listing-item--info {
+		flex-wrap: wrap;
+	}
+
+	.listing-item--buttons {
+		flex-direction: row;
+		margin-left: 10px;
+		height: auto;
+		margin-bottom: 10px;
+	}
+
+		.listing-item--button__ticket {
+			margin-right: 10px;
+		}
+
+
+	.load-more-button {
+		font-size: 1em;
+		padding: 5px 10px;
+	}
 
 
 
