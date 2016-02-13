@@ -973,7 +973,10 @@ section {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 50px; }
+  margin: 0 auto 50px; }
+
+.banner--main {
+  max-width: 95%; }
 
 .deals--articles-list {
   margin-top: 30px;
