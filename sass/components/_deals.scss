@@ -9,16 +9,19 @@
 
 .deals--articles--list__item {
 	width: 100%;
-	margin-right: 50px;
+	// margin-right: 50px;
 	margin-bottom: 50px;
 	border-bottom: 1px dashed rgba(0, 0, 0, 0.7);
 
 	.articles--list__thumbnail {
 		position: relative;
 		margin: 0 auto;
-		// max-width: 340px;
-		max-width: 380px;
+		max-width: 90%;
 	}
+
+		.articles--list__image {
+			width: 100%;
+		}
 }
 
 	.deals--articles--list__text {

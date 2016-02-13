@@ -60,10 +60,12 @@
 }
 
 	.listing-list {
+		position: relative;
 		list-style: none;
 	}
 
 		.listing-item {
+			max-width: 80%;
 			margin-bottom: 50px;
 			background-color: #fff;
 			display: flex;
@@ -101,9 +103,11 @@
 
 
 			.listing-item--info {
+				width: 100%;
 				position: relative;
 				display: flex;
 				align-items: center;
+				justify-content: space-between;
 				// padding: 5px 10px;
 				box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.6);
 			}

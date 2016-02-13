@@ -620,7 +620,6 @@ section {
   overflow: hidden;
   background-color: #ed6a15;
   max-width: 320px;
-  max-height: 100%;
   position: relative;
   flex-basis: 45%;
   margin-right: 20px; }
@@ -796,13 +795,10 @@ section {
 
 .banner {
   position: relative;
-  display: block; }
-
-.banner--main {
-  margin: 0 auto 50px; }
-
-.banner--sidebar {
-  margin: 0 auto 50px; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px; }
 
 .deals--articles-list {
   margin-top: 30px;
@@ -812,13 +808,14 @@ section {
 
 .deals--articles--list__item {
   width: 100%;
-  margin-right: 50px;
   margin-bottom: 50px;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.7); }
   .deals--articles--list__item .articles--list__thumbnail {
     position: relative;
     margin: 0 auto;
-    max-width: 380px; }
+    max-width: 90%; }
+  .deals--articles--list__item .articles--list__image {
+    width: 100%; }
 
 .deals--articles--list__text {
   width: 90%;
@@ -1740,9 +1737,11 @@ label {
   padding: 30px; }
 
 .listing-list {
+  position: relative;
   list-style: none; }
 
 .listing-item {
+  max-width: 80%;
   margin-bottom: 50px;
   background-color: #fff;
   display: flex; }
@@ -1772,9 +1771,11 @@ label {
   border-bottom: 5px solid #ed6a15; }
 
 .listing-item--info {
+  width: 100%;
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.6); }
 
 .listing-item--info__left {
@@ -2214,7 +2215,7 @@ label {
 
 @media only screen and (max-width: 635px) {
   .deals--articles--list__text--mobile {
-    width: 70%; }
+    width: 85%; }
   .articles--list__thumbnail {
     flex-basis: 60%; }
   .articles--list__text {

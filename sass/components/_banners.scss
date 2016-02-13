@@ -1,18 +1,15 @@
 .banner {
 	position: relative;
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
 }
 
 	.banner--main {
-		margin: 0 auto 50px;
+		// margin: 0 auto 50px;
 	}
 
 	.banner--sidebar {
-		// width: 300px;
-		// height: 300px;
-		margin: 0 auto 50px;
-	}
-
-	.banner--sidebar__long {
-		// height: 600px;
+		// margin: 0 auto 50px;
 	}
