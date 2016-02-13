@@ -961,43 +961,20 @@ section {
     margin-left: 5px; }
 
 .banner {
-  position: relative; }
+  position: relative;
+  display: block; }
 
 .banner--main {
-  height: 90px;
-  margin: 0 auto 50px;
-  overflow: hidden; }
-
-.banner--main__ad {
-  max-width: 728px;
-  width: 95%;
-  height: 100%;
-  margin: 0 auto 50px;
-  background-image: url("../images/banner.jpg");
-  background-position: 40% 0; }
+  margin: 0 auto 50px; }
 
 .banner--sidebar {
-  width: 300px;
-  height: 300px;
-  margin: 0 auto;
-  overflow: hiddenn;
-  margin-bottom: 50px; }
-
-.banner--sidebar__ad {
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/banner2.jpg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat; }
-
-.banner--sidebar__long {
-  height: 600px; }
-  .banner--sidebar__long .banner--sidebar__ad {
-    background-image: url("../images/banner3.jpg"); }
+  margin: 0 auto 50px; }
 
 .deals--articles-list {
   margin-top: 30px;
   margin-left: 0; }
+  .deals--articles-list .row {
+    max-width: 100%; }
 
 .deals--articles--list__item {
   width: 100%;
@@ -1007,7 +984,7 @@ section {
   .deals--articles--list__item .articles--list__thumbnail {
     position: relative;
     margin: 0 auto;
-    max-width: 340px; }
+    max-width: 380px; }
 
 .deals--articles--list__text {
   width: 90%;
