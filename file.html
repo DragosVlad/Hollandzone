@@ -207,82 +207,22 @@
 	</header>
 
 
+	<img src="images/bg-image.jpg" alt="Bg Image" class="background-image">
+
+
 	<div class="wrapper wrapper--main">
 
 
-		<section class="two-sides-content">
+		<h1 class="section-title">
+			The file page
+		</h1>
 
-			<div class="row">
-
-				<div class="large-6 medium-12 small-12 columns">
-
-					<div class="activity--hero">
-
-						<div class="activity--overlay">
-							<h1 class="activity--title">Title of the Activity</h1>
-						</div>
-						<img src="images/web1.jpg" alt="Article Image" class="activity--image">
-
-					</div> <!-- END Activity Hero -->
-
-					<p class="activity--main-info">
-						General information about this acitivity adipisicing elit. Ea incidunt maxime rerum suscipit ab quos tempora neque hic, eum iste.
-					</p>
-
-					<p class="activity--main-info">
-						Laboriosam rerum unde assumenda dolores expedita, aliquam omnis laborum quod nesciunt velit. Iste libero qui atque ea doloremque voluptate, deleniti aperiam placeat est magnam deserunt sunt aut nostrum nam quis fuga quia, praesentium minima modi.
-					</p>
-
-					<a href="#" class="activity--button">Purchase Ticket</a>
-
-					
-					
-
-
-				</div> <!-- END Left side -->
-
-
-
-				<div class="large-6 medium-12 small-12 columns">
-
-
-
-					<div class="activity--info">
-
-						<div class="activity--info__top">
-							<h4 class="activity--info__title">Details about the activity</h4>
-						</div>
-
-						<div class="activity--info__content">
-							
-							<p class="activity--details">Date: <span>15 Feb 2016</span> </p>
-							<p class="activity--details">Place: <span>Amsterdam</span> </p>
-
-						</div>
-
-						
-					</div>
-
-					
-	                <div class="activity--map" id="googleMap"></div>
-
-					
-				</div> <!-- END Right side -->
-
-
-			</div> <!-- END Row -->
-
-		</section> <!-- END Two Sides content -->
-
-
-		<div class="organisation-info">
-			<h1 class="organisation-info--title">How everything was organised</h1>
-
-			<p class="organisation-info--paragraph">
-				More info about the organisation of the event odio ad pariatur, aliquam quis rem fugiat reprehenderit ipsum cum ullam. Quaerat, ea. Eaque voluptas dolor id, tenetur in sequi. Architecto ea non eligendi eaque error laboriosam doloribus cumque dolorum ullam minima aspernatur consequuntur dicta fugiat amet minus atque harum corporis inventore delectus, est vero quo, optio odio perferendis aperiam. Maiores necessitatibus nulla, praesentium rerum libero culpa? Odio impedit quo amet excepturi asperiores iste assumenda.
-			</p>
-		</div>
-
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla possimus nihil iure non soluta molestiae id, debitis dicta distinctio reprehenderit repellat odit delectus temporibus quas, qui reiciendis quos dolores adipisci doloremque sequi inventore minus eum unde porro. Quia officia sed, quo obcaecati numquam consectetur nemo, laborum aspernatur nesciunt architecto autem.</p>
+		<p>Molestias, consequuntur praesentium ipsam dolores quia voluptatem quasi repellat minus rem! Sint ipsum maiores aliquid voluptatum tempore tenetur error, quibusdam, atque voluptatibus rerum nostrum voluptas, sequi commodi unde ab dolor fugiat. Harum alias quibusdam quia excepturi iusto eveniet ab! Eos officia voluptatem voluptatibus tempore hic sapiente nesciunt pariatur minus doloribus.</p>
+		<p>Explicabo sit ducimus, ea exercitationem necessitatibus? Non obcaecati praesentium ipsam, similique sint vero facilis numquam a cupiditate aut adipisci maiores harum culpa, temporibus ea, ab deleniti, alias accusamus id repellat tempora. Ut dolore sapiente, repellendus ipsum est quidem numquam atque! Libero asperiores ex, sit ab id soluta reiciendis suscipit placeat.</p>
+		<p>Incidunt ex debitis rerum sed natus, minima quos. Pariatur quasi dolores incidunt in ea a? Quaerat minima deleniti voluptatibus eius laboriosam, quasi odit, doloremque voluptate quidem magnam, aut! Enim explicabo, sit quaerat natus autem nulla quas nesciunt cumque est dolore maxime temporibus in nihil, hic reiciendis rem ipsum consequuntur ea.</p>
+		<p>Animi in dolores minus ipsa iusto autem, cumque quia facere quae beatae asperiores provident odit cupiditate, harum facilis, aperiam iure explicabo quas debitis delectus incidunt. Eum ratione laborum expedita voluptate unde inventore quo minima velit ab praesentium laboriosam excepturi dolores, quod veniam beatae ducimus incidunt voluptates rerum sed soluta? Dolor.</p>
+		<p>Beatae officia, consequatur fugit omnis nam hic earum expedita, fuga qui eius eligendi quas a ab iste dignissimos, perferendis. Doloribus earum vel nobis laboriosam qui cupiditate veritatis animi cumque delectus dolor, tempore beatae, quae temporibus rem sed tempora tenetur fugit ipsum ratione ullam explicabo harum! Aliquam at error similique facilis.</p>
 		
 
 
@@ -376,36 +316,10 @@
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/headroom.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/jQuery.headroom.min.js"></script>
 
-	<!-- Map -->
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
-    <script>
-        function initialize() {   
-            var myCenter=new google.maps.LatLng(52.372593,4.893053);
-                // Change the coordintes for the map here ^
-            var mapProp = {
-                center:myCenter,
-                zoom:14,
-                disableDefaultUI:true,
-                mapTypeId:google.maps.MapTypeId.TERRAIN 
-            };
-            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-            var marker=new google.maps.Marker({
-                position:myCenter,
-            });
-            marker.setMap(map);
-            var infowindow = new google.maps.InfoWindow({
-                // Message to display when the map indicator is clicked
-                content:"This is the activity place!"
-              });
-            google.maps.event.addListener(marker, 'click', function() {
-              infowindow.open(map,marker);
-            });
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
+	<!-- Owl carousel Javascript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 
 	<script src="js/SmoothScroll.js"></script>
 
-	
 </body>
 </html>

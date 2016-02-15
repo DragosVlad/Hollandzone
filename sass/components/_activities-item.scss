@@ -1,0 +1,86 @@
+.activity--hero {
+	@extend .main-article--hero;
+
+}
+
+.activity--overlay {
+	@extend .main-article--overlay;
+	width: 100%;
+}
+
+.activity--title {
+	@extend .main-article--title;
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+.activity--image {
+	@extend .main-article--image;
+}
+
+.activity--main-info {
+	@extend .main-article--paragraph;
+}
+
+.activity--button {
+	@extend .articles--list__button;
+	display: inline-block;
+	margin-bottom: 40px;
+}
+
+
+.activity--info {
+	@extend .sidebar--box;
+	width: 100%;
+}
+
+.activity--info__top {
+	@extend .sidebar--box__top;
+}
+
+.activity--info__title {
+	@extend .sidebar--box__title;
+	font-size: 1.8em;
+	text-align: center;
+}
+
+.activity--info__content {
+	padding: 10px;
+}
+
+.activity--details {
+	font-family: $font-family-domine;
+	font-size: 1.6em;
+	font-weight: $font-bold;
+	text-align: center;
+	color: $accent-color;
+
+	span {
+		font-weight: $font-regular;
+		margin-left: 10px;
+	}
+
+}
+
+
+.activity--map {
+	width: 100%;
+	height: 450px;
+}
+
+
+
+.organisation-info {
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+
+	.organisation-info--title {
+		@extend .section-title;
+		font-size: 2.3em;
+	}
+
+	.organisation-info--paragraph {
+		@extend .main-article--paragraph;
+	}
+

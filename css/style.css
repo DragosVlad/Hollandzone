@@ -16,6 +16,7 @@ body {
   color: #fff; }
 
 body {
+  position: relative;
   background-color: #F0F0F0;
   padding-top: 135px; }
 
@@ -38,7 +39,7 @@ body {
   margin: 0;
   margin-right: 0; }
 
-.section-title {
+.section-title, .organisation-info--title {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 2.5em;
@@ -59,6 +60,15 @@ section {
 
 .two-sides-content > .row {
   max-width: 100%; }
+
+.background-image {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none; }
 
 /*----------  Temporary style for work in progress pages  ----------*/
 .work-in-progress-message {
@@ -839,7 +849,7 @@ section {
 .articles--list__description {
   line-height: 1.2; }
 
-.articles--list__button {
+.articles--list__button, .activity--button {
   display: block;
   font-family: "Domine", serif;
   font-size: 1.1em;
@@ -856,16 +866,16 @@ section {
   box-shadow: 0 5px #171b21;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out; }
-  .articles--list__button:hover {
+  .articles--list__button:hover, .activity--button:hover {
     color: #fff;
     background-color: #212731;
     box-shadow: 0 5px #0c0f12; }
-  .articles--list__button:active {
+  .articles--list__button:active, .activity--button:active {
     color: #fff;
     box-shadow: 0 2px #0c0f12;
     -webkit-transform: translateY(3px);
             transform: translateY(3px); }
-  .articles--list__button:focus {
+  .articles--list__button:focus, .activity--button:focus {
     color: #fff; }
 
 .sidebar {
@@ -887,7 +897,7 @@ section {
   margin: 0;
   padding: 0 0 100px; }
 
-.sidebar--box {
+.sidebar--box, .activity--info {
   position: relative;
   padding: 0;
   width: 90%;
@@ -895,14 +905,14 @@ section {
   border: 1px solid rgba(0, 0, 0, 0.2);
   margin-bottom: 50px; }
 
-.sidebar--box__top {
+.sidebar--box__top, .activity--info__top {
   background-color: #2b3340;
   width: 100%;
   text-align: center;
   padding: 15px 20px 10px;
   margin-bottom: 30px; }
 
-.sidebar--box__title {
+.sidebar--box__title, .activity--info__title {
   color: #fff;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -1084,12 +1094,12 @@ section {
   .page-numbers--item__arrow.disabled a:hover {
     background-color: transparent; }
 
-.main-article--hero {
+.main-article--hero, .activity--hero {
   position: relative;
   background-color: #ed6a15;
   margin-bottom: 30px; }
 
-.main-article--overlay {
+.main-article--overlay, .activity--overlay {
   position: absolute;
   bottom: 0;
   left: 0px;
@@ -1098,7 +1108,7 @@ section {
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 10; }
 
-.main-article--title {
+.main-article--title, .activity--title {
   font-family: "Raleway", sans-serif;
   font-size: 2.1em;
   font-weight: 600;
@@ -1109,7 +1119,7 @@ section {
   padding-bottom: 10px;
   border-bottom: 2px dashed rgba(255, 255, 255, 0.15); }
 
-.main-article--image {
+.main-article--image, .activity--image {
   position: relative;
   width: 100%; }
 
@@ -1214,7 +1224,7 @@ section {
   font-size: 2.1em;
   color: #2b3340; }
 
-.main-article--paragraph {
+.main-article--paragraph, .activity--main-info, .organisation-info--paragraph {
   font-family: "Domine", serif;
   font-size: 1.1em;
   -webkit-font-kerning: normal;
@@ -2227,6 +2237,48 @@ label {
   .load-more-button:focus {
     color: #fff; }
 
+.activity--overlay {
+  width: 100%; }
+
+.activity--title {
+  border-bottom: none;
+  padding-bottom: 0; }
+
+.activity--button {
+  display: inline-block;
+  margin-bottom: 40px; }
+
+.activity--info {
+  width: 100%; }
+
+.activity--info__title {
+  font-size: 1.8em;
+  text-align: center; }
+
+.activity--info__content {
+  padding: 10px; }
+
+.activity--details {
+  font-family: "Domine", serif;
+  font-size: 1.6em;
+  font-weight: 700;
+  text-align: center;
+  color: #2b3340; }
+  .activity--details span {
+    font-weight: 400;
+    margin-left: 10px; }
+
+.activity--map {
+  width: 100%;
+  height: 450px; }
+
+.organisation-info {
+  margin-top: 40px;
+  margin-bottom: 50px; }
+
+.organisation-info--title {
+  font-size: 2.3em; }
+
 .main-footer {
   width: calc(100% + 50px);
   margin: 0 auto 0 -25px;
@@ -2326,7 +2378,7 @@ label {
   .headroom--not-top .has-dropdown i {
     top: 33%; }
   /*----------  Article page  ----------*/
-  .main-article--title {
+  .main-article--title, .activity--title {
     font-size: 1.8em;
     width: 90%;
     margin-bottom: 20px;
@@ -2427,7 +2479,7 @@ label {
   .headroom--not-top .has-dropdown i {
     top: 40%;
     font-size: 0.44em; }
-  .section-title {
+  .section-title, .organisation-info--title {
     font-size: 2.3em; }
   .article--title {
     font-size: 1.5em; }
@@ -2468,16 +2520,16 @@ label {
     display: none; }
   .deals--articles-list__mobile {
     display: block; }
-  .section-title {
+  .section-title, .organisation-info--title {
     font-size: 2em; }
   .article--title {
     font-size: 1.3em; }
   .articles--main .article--title {
     font-size: 1.2em; }
   /*----------  Article page  ----------*/
-  .main-article--overlay {
+  .main-article--overlay, .activity--overlay {
     width: 100%; }
-  .main-article--title {
+  .main-article--title, .activity--title {
     font-size: 1.5em;
     width: 100%; }
   .widget--review__lists {
@@ -2532,22 +2584,22 @@ label {
     margin-right: 10px; }
   .listing-item--title {
     margin-right: 30px;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1; }
   .tags i {
-    font-size: 0.7em; }
+    font-size: 0.9em; }
   .tags-list--item {
     position: relative;
     margin-right: 5px; }
     .tags-list--item a {
-      font-size: 0.7em; }
+      font-size: 0.9em; }
   .listing-item--buttons {
     height: 70px; }
   .listing-item--button__ticket,
   .listing-item--button__deal {
-    font-size: 0.6em;
+    font-size: 0.8em;
     line-height: 1.4;
-    padding: 3px 6px 2px;
+    padding: 4px 6px 2px;
     border-radius: 3px;
     box-shadow: 0 5px #c0550f; }
     .listing-item--button__ticket:hover,
@@ -2578,7 +2630,7 @@ label {
     font-size: 0.7em; }
   .articles--list__description {
     font-size: 0.8em; }
-  .articles--list__button {
+  .articles--list__button, .activity--button {
     font-size: 0.9em;
     padding: 7px 12px;
     border-radius: 2px; }
@@ -2608,9 +2660,9 @@ label {
     .back-to-top:hover {
       background-color: #ed6a15; }
   /*----------  Article page  ----------*/
-  .main-article--overlay {
+  .main-article--overlay, .activity--overlay {
     padding: 10px 5px 0; }
-  .main-article--title {
+  .main-article--title, .activity--title {
     font-size: 1.2em;
     margin-bottom: 5px;
     padding-bottom: 5px; }
@@ -2639,7 +2691,7 @@ label {
   .main-article--heading {
     font-size: 1.6em;
     color: #2b3340; }
-  .main-article--paragraph {
+  .main-article--paragraph, .activity--main-info, .organisation-info--paragraph {
     font-size: 0.9em;
     line-height: 1.3em;
     letter-spacing: 0.8px; }
@@ -2689,10 +2741,39 @@ label {
     font-size: 2.5em; }
   .widget--review__rating--stars {
     font-size: 2em; }
+  /*----------  ACTIVITIES PAGE  ----------*/
   .load-more-button {
     margin-top: 30px;
     font-size: 1.1em;
-    padding: 12px 15px; } }
+    padding: 12px 15px; }
+  .listing-item {
+    max-width: 90%;
+    margin-bottom: 20px; }
+  .listing-item--thumb {
+    max-width: 50px;
+    max-height: 50px; }
+  .listing-item--title {
+    margin-right: 10px;
+    font-size: 0.9em; }
+  .tags i {
+    font-size: 0.8em; }
+  .tags-list--item a {
+    font-size: 0.8em; }
+  .listing-item--info {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .listing-item--buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 10px;
+    height: auto;
+    margin-bottom: 10px; }
+  .listing-item--button__ticket {
+    margin-right: 10px; } }
 
 @media only screen and (max-width: 400px) {
   .nav--mobile__search {
@@ -2729,7 +2810,7 @@ label {
     .page-numbers--item a {
       padding: 0 8px; }
   /*----------  Article page  ----------*/
-  .main-article--title {
+  .main-article--title, .activity--title {
     font-size: 1em;
     margin-bottom: 0; }
   .main-article--details__date i {
@@ -2813,29 +2894,10 @@ label {
   .months-item a {
     font-size: 0.9em;
     padding: 5px 3px; }
-  .listing-item {
-    margin-bottom: 20px; }
-  .listing-item--thumb {
-    max-width: 50px;
-    max-height: 50px; }
-  .listing-item--title {
-    margin-right: 10px;
-    font-size: 0.9em; }
-  .listing-item--info {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-  .listing-item--buttons {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-left: 10px;
-    height: auto;
-    margin-bottom: 10px; }
-  .listing-item--button__ticket {
-    margin-right: 10px; }
   .load-more-button {
     font-size: 1em;
-    padding: 5px 10px; } }
+    padding: 5px 10px; }
+  .listing-item--button__ticket,
+  .listing-item--button__deal {
+    font-size: 0.7em;
+    padding: 3px 6px 2px; } }
