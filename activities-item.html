@@ -91,7 +91,7 @@
 
 				<li class="nav-item"><a href="#">Reports</a></li>
 				<li class="nav-item"><a href="#">Deals</a></li>
-				<li class="nav-item"><a href="activities.html">Activities</a></li>
+				<li class="nav-item active"><a href="activities.html">Activities</a></li>
 
 			</ul> <!-- End 1st Flex child --> 
 
@@ -110,7 +110,7 @@
 
 			<ul class="nav-section nav-section--right"> 
 	
-					<li class="nav-item active"><a href="media.html">Media</a></li>
+					<li class="nav-item"><a href="media.html">Media</a></li>
 					<li class="nav-item has-dropdown">
 						<a href="#">City&nbsp;<i class="fa fa-caret-down"></i></a>
 						<ul class="dropdown-list">
@@ -233,7 +233,31 @@
 						Laboriosam rerum unde assumenda dolores expedita, aliquam omnis laborum quod nesciunt velit. Iste libero qui atque ea doloremque voluptate, deleniti aperiam placeat est magnam deserunt sunt aut nostrum nam quis fuga quia, praesentium minima modi.
 					</p>
 
-					<a href="#" class="activity--button">Purchase Ticket</a>
+					<p class="activity--main-info">
+						Assumenda dolores expedita, aliquam omnis laborum quod nesciunt velit. Iste libero qui atque ea doloremque voluptate, deleniti aperiam placeat est magnam deserunt sunt aut nostrum nam quis fuga quia, praesentium minima modi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nihil voluptatum magnam, laborum dolores quas quasi suscipit recusandae deserunt assumenda dolorum minus molestiae, iusto placeat dolore libero dignissimos aut corporis necessitatibus animi alias aperiam, perferendis. Quis eum magnam commodi, aliquam!
+					</p>
+
+					<p class="activity--main-info">
+						Unde assumenda dolores expedita, aliquam omnis laborum quod nesciunt velit. Iste libero qui atque ea doloremque voluptate, deleniti aperiam placeat est magnam deserunt sunt aut nostrum nam quis fuga quia, praesentium minima modi.
+					</p>
+
+					<div class="activity--button-group">
+						<a href="#" class="activity--button">Purchase Ticket</a>
+						<a href="#" class="activity--button" style="display: inline-block; /* inline-block | none */">Deal</a>
+					</div>
+
+					<div class="share-buttons share-buttons--activity">
+						<i class="fa fa-share share-icon"></i>
+
+						<a class="social-button social-button--facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//dragosvlad.ml/hollandzone/article.html" onclick="window.open(this.href,'_blank', 'toolbar=no, location=no, directories=no, resizable=yes, width=620, height=600, left=430, top=100 '); return false;"><i class="fa fa-facebook"></i><a>
+
+						<a class="social-button social-button--twitter" href="https://twitter.com/home?status=http%3A//dragosvlad.ml/hollandzone/article.html" onclick="window.open(this.href,'_blank', 'toolbar=no, location=no, directories=no, resizable=yes, width=620, height=620, left=430, top=100 '); return false;"><i class="fa fa-twitter"></i><a>
+
+						<a class="social-button social-button--googleplus" href="https://plus.google.com/share?url=http%3A//dragosvlad.ml/hollandzone/article.html" onclick="window.open(this.href,'_blank', 'toolbar=no, location=no, directories=no, resizable=yes, width=620, height=700, left=430, top=100 '); return false;"><i class="fa fa-google-plus"></i></a>
+						
+						<a class="social-button social-button--linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//dragosvlad.ml/hollandzone/article.html&title=This%20is%20the%20main%20article%20title&summary=&source=" onclick="window.open(this.href,'_blank', 'toolbar=no, location=no, directories=no, resizable=yes, width=620, height=700, left=430, top=100 '); return false;"><i class="fa fa-linkedin"></i></a>
+					</div>
+					
 
 					
 					
@@ -250,13 +274,90 @@
 					<div class="activity--info">
 
 						<div class="activity--info__top">
-							<h4 class="activity--info__title">Details about the activity</h4>
+							<h4 class="activity--info__title">Activity Info</h4>
 						</div>
 
 						<div class="activity--info__content">
 							
-							<p class="activity--details">Date: <span>15 February 2016</span> </p>
-							<p class="activity--details">Place: <span>Amsterdam</span> </p>
+							<ul class="vertical menu activity--info__list" data-accordion-menu>
+
+						        <li class="activity--info__type">
+
+						          <a href="#" class="activity--info__type--title">
+						          	<div class="info-icon"><i class="fa fa-info"></i></div>
+						          	General&nbsp;Info
+						          </a>
+
+						        <ul class="menu vertical is-active activity--info__type--content">
+
+						            <li class="activity--info__line">
+						            	<i class="fa fa-map-marker"></i> 
+						            	<span>Amsterdam, Rotterdam</span>
+						            </li>
+
+						            <li class="activity--info__line">
+						            	<i class="fa fa-calendar-o"></i> 
+						            	<span>20 Feb - 27 Feb 2016</span>
+						            </li>
+
+						            <li class="activity--info__line">
+						            	<i class="fa fa-clock-o"></i>
+						            	<span>09:00 AM - 18:00 PM</span>
+						            </li>
+
+						            <li class="activity--info__line">
+						            	<i class="fa fa-money"></i> 
+						            	<span>&euro; 40 - 100</span>
+						            </li>
+
+						            <li class="activity--info__line">
+						            	<i class="fa fa-external-link"></i>
+						            	<span><a href="#" target="_blank">Visit the activity website</a></span>
+						            </li>
+
+						        </ul>
+
+						        </li>
+
+
+
+						        <li class="activity--info__type">
+
+						          <a href="#" class="activity--info__type--title">
+						          	<div class="info-icon"><i class="fa fa-pencil-square-o"></i></div>
+						          	Contact&nbsp;Information
+						          </a>
+
+						          <ul class="menu vertical activity--info__type--content">
+
+
+						            <li class="activity--info__line"><i class="fa fa-phone"></i> <span>+44-245-585-7521</span></li>
+						            <li class="activity--info__line"><i class="fa fa-envelope-o"></i> <span><a href="mailto:email@example.com">email@example.com</a></span></li>
+
+
+						          </ul>
+
+						        </li>
+
+
+						        <li class="activity--info__type">
+
+						          <a href="#" class="activity--info__type--title">
+						          	<div class="info-icon"><i class="fa fa-users"></i></div>
+						          	Event&nbsp;organisation
+						          </a>
+
+						          <ul class="menu vertical activity--info__type--content">
+
+
+						            <li class="activity--info__line">Info about the company that organised the event</li>
+
+
+						          </ul>
+
+						        </li>
+
+					      </ul>
 
 						</div>
 
@@ -275,13 +376,79 @@
 		</section> <!-- END Two Sides content -->
 
 
-		<div class="organisation-info">
-			<h1 class="organisation-info--title">How everything was organised</h1>
+		<div class="other-activities">
+			
+			<h1 class="section-title">Other activities</h1>
 
-			<p class="organisation-info--paragraph">
-				More info about the organisation of the event odio ad pariatur, aliquam quis rem fugiat reprehenderit ipsum cum ullam. Quaerat, ea. Eaque voluptas dolor id, tenetur in sequi. Architecto ea non eligendi eaque error laboriosam doloribus cumque dolorum ullam minima aspernatur consequuntur dicta fugiat amet minus atque harum corporis inventore delectus, est vero quo, optio odio perferendis aperiam. Maiores necessitatibus nulla, praesentium rerum libero culpa? Odio impedit quo amet excepturi asperiores iste assumenda.
-			</p>
-		</div>
+			<div class="widget--related-entries">
+
+				<div class="row">
+
+					<div class="medium-4 small-12 columns">
+
+						<div class="widget--related-entries__item">
+							<a href="#" class="full-link"></a>
+							<img src="images/thumbnail.jpg" alt="Thumbnail" class="widget--related-entries__image">
+								
+							<div class="widget--related-entries__text"> <!-- Flexbox container -->
+								<h3 class="widget--related-entries__title">Article Title</h3>
+								<div class="widget--related-entries__date"><i class="fa fa-calendar"></i> <span>01/04/2016</span></div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="medium-4 small-12 columns">
+
+						<div class="widget--related-entries__item">
+							<a href="#" class="full-link"></a>
+							<img src="images/web1.jpg" alt="Thumbnail" class="widget--related-entries__image">
+								
+							<div class="widget--related-entries__text">
+								<h3 class="widget--related-entries__title">Article Title</h3>
+								<div class="widget--related-entries__date"><i class="fa fa-calendar"></i> <span>01/04/2016</span></div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="medium-4 small-12 columns">
+
+						<div class="widget--related-entries__item">
+							<a href="#" class="full-link"></a>
+							<img src="images/thumbnail.jpg" alt="Thumbnail" class="widget--related-entries__image">
+								
+							<div class="widget--related-entries__text">
+								<h3 class="widget--related-entries__title">Article Title</h3>
+								<div class="widget--related-entries__date"><i class="fa fa-calendar"></i> <span>01/04/2016</span></div>
+							</div>
+
+						</div>
+
+					</div>
+
+
+				</div> <!-- END Row -->
+
+
+			</div>  <!-- END Related articles list -->
+
+
+
+
+		</div> <!-- END Other activities -->
+		
+
+
+
+
+
+
+
+
+
 
 		
 
@@ -369,12 +536,13 @@
 
 	<!-- Foundation Javascript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.1/foundation.min.js"></script>
+
 	<script>$(document).foundation();</script>
+
 
 	
 	<!-- Headroom for navigation hide on scroll -->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/headroom.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/jQuery.headroom.min.js"></script>
 
 	<!-- Map -->
     <script src="http://maps.googleapis.com/maps/api/js"></script>

@@ -87,6 +87,14 @@
 	content: "\f003";
 }
 
+.icon-photo::before {
+	content: "\f030";
+}
+
+.icon-video::before {
+	content: "\f03d";
+}
+
 /* Content */
 .content-wrap {
 	position: relative;
