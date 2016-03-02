@@ -55,7 +55,6 @@
 
 	<!-- Custom CSS styles -->
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/about.css">
 </head>
 <body>
 
@@ -365,7 +364,9 @@
 					</div>
 
 					
-	                <div class="activity--map" id="googleMap"></div>
+					<div class="map-wrapper">
+					    <div id="map" class="map"></div>
+					</div>
 
 					
 				</div> <!-- END Right side -->
@@ -545,31 +546,51 @@
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/headroom.min.js"></script>
 
 	<!-- Map -->
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
+
     <script>
-        function initialize() {   
-            var myCenter=new google.maps.LatLng(52.372593,4.893053);
-                // Change the coordintes for the map here ^
-            var mapProp = {
-                center:myCenter,
-                zoom:14,
-                disableDefaultUI:true,
-                mapTypeId:google.maps.MapTypeId.TERRAIN 
-            };
-            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-            var marker=new google.maps.Marker({
-                position:myCenter,
-            });
-            marker.setMap(map);
-            var infowindow = new google.maps.InfoWindow({
-                // Message to display when the map indicator is clicked
-                content:"This is the activity place!"
-              });
-            google.maps.event.addListener(marker, 'click', function() {
-              infowindow.open(map,marker);
-            });
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
+        function initialize() {
+
+        	// Change locations here
+
+		    var locations = [
+		      ['Amsterdam', 52.372593, 4.89305, 1],
+		      ['Other location', 52.47259, 4.99305, 2]
+		    ];
+
+		    var map = new google.maps.Map(document.getElementById('map'), {
+		      zoom: 10,
+		      center: new google.maps.LatLng(52.372593, 4.89305),
+		      mapTypeId: google.maps.MapTypeId.ROADMAP
+		    });
+
+		    var infowindow = new google.maps.InfoWindow();
+
+		    var marker, i;
+
+		    for (i = 0; i < locations.length; i++) {  
+		      marker = new google.maps.Marker({
+		        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+		        map: map
+		      });
+
+		      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+		        return function() {
+		          infowindow.setContent(locations[i][0]);
+		          infowindow.open(map, marker);
+		        }
+		      })(marker, i));
+		    }
+		}
+
+		function loadScript() {
+		  var script = document.createElement('script');
+		  script.type = 'text/javascript';
+		  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&' +
+		      'callback=initialize';
+		  document.body.appendChild(script);
+		}
+
+		window.onload = loadScript;
     </script>
 
 	<script src="js/SmoothScroll.js"></script>

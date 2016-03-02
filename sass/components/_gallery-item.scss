@@ -1,0 +1,138 @@
+
+.gallery-image {
+    .owl-theme .owl-buttons i {
+      transition: all 0.3s ease-in-out;
+    }
+     
+    .owl-theme .owl-controls .owl-buttons div {
+        position: absolute;
+        transition: all 0.2s ease-in-out;
+    }
+     
+    .owl-theme .owl-controls .owl-buttons .owl-prev,
+    .owl-theme .owl-controls .owl-buttons .owl-next {
+        top: 30%;
+        padding: 50px 25px; 
+        background: #000;
+        font-size: 3em;
+        border-radius: 5px;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+
+        &:hover {
+            background: $main-color;
+        }
+    }
+
+    .owl-theme .owl-controls .owl-buttons .owl-prev {
+        left: 5px;
+    }
+     
+    .owl-theme .owl-controls .owl-buttons .owl-next {
+        right: 3px;
+    }
+}
+
+
+
+
+
+
+.gallery-title {
+    font-size: 3em;
+    font-weight: $font-semibold;
+    text-align: center;
+    color: $accent-color;
+    margin-bottom: 30px;
+}
+
+.gallery-image--slider {
+
+    margin-bottom: 40px;
+
+    .item {
+        padding: 5px 0;
+        margin: 5px;
+        color: #FFF;
+        text-align: center;
+
+        img {
+            max-width: 65%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+            
+        }
+    }
+
+
+    
+}
+
+
+.gallery-thumbs--slider {
+
+    margin-bottom: 50px;
+
+    .item {
+        margin: 5px;
+        color: #FFF;
+        text-align: center;
+        cursor: pointer;
+
+        img {
+            border-radius: 3px;
+            opacity: 0.6;
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out ;
+
+            &:hover {
+                opacity: 1;
+
+            }
+        }
+    }
+    
+}
+
+
+.gallery-thumbs--slider .synced .item {
+
+    img {
+        opacity: 1;
+        border: 3px solid rgba($accent-color, 0.99);
+        transform: scale(1.2);
+      }
+
+}
+
+
+.other-galleries {
+    margin-bottom: 50px;
+}
+
+
+
+.video-title {
+    @extend .gallery-title;
+}
+
+.video {
+    position: relative;
+    width: 85%;
+    height: 0;
+    padding-bottom: 47.8%;
+    
+    display: block;
+    margin: 0 auto 100px;
+    box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.8);
+
+    iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+}
+
+
