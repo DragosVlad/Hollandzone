@@ -127,7 +127,7 @@
 			padding: 20px;
 		}
 
-
+			.menu.vertical > .activity--info__line {display: flex}
 			.activity--info__line {
 				font-family: $font-family-domine;
 				font-size: 1.4em;
@@ -163,6 +163,31 @@
 					}
 				}
 			}
+
+				.activity--location-list {
+					display: inline-flex;
+					flex-wrap: wrap;
+
+					div {
+						margin-left: 7px;
+
+						&:after {
+							position: relative;
+							content: ', ';
+						}
+
+						&:last-child {
+							&:after {
+								content: '';
+							}
+						}
+
+						&:first-child {
+							margin-left: 0;
+						}
+					}
+
+				}
 
 
 
