@@ -139,9 +139,9 @@ $(document).ready(function(){
     sync2.owlCarousel({
       items : 10,
       itemsDesktop      : [1199,10],
-      itemsDesktopSmall     : [979,10],
-      itemsTablet       : [768,8],
-      itemsMobile       : [479,4],
+      itemsDesktopSmall     : [979,8],
+      itemsTablet       : [768,6],
+      itemsMobile       : [520,4],
       pagination:true,
       responsiveRefreshRate : 100,
       afterInit : function(el){

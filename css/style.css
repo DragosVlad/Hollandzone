@@ -969,6 +969,9 @@ section {
   .sidebar--box__details .category {
     margin-left: 5px; }
 
+.sidebar--box__gallery .sidebar--box__content {
+  padding: 0 5px; }
+
 .sidebar--box__gallery .widget--gallery {
   box-shadow: none;
   padding: 5px 10px 20px;
@@ -978,8 +981,43 @@ section {
     border-bottom: none; }
 
 .sidebar--box__gallery .widget--gallery__title {
-  font-size: 1.2em;
   margin-bottom: 10px; }
+  .sidebar--box__gallery .widget--gallery__title a {
+    display: block;
+    color: #1a1a1a;
+    font-size: 0.6em;
+    line-height: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    .sidebar--box__gallery .widget--gallery__title a:hover {
+      color: #ed6a15; }
+
+.sidebar--box__gallery .widget--gallery__description {
+  margin-top: 0;
+  font-size: 0.8em; }
+
+.sidebar--box__gallery .widget--gallery__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px; }
+
+.sidebar--box__gallery .widget--gallery__photos {
+  margin-right: 15px; }
+
+.sidebar--box__gallery .widget--gallery__photos,
+.sidebar--box__gallery .widget--gallery__button {
+  dispplay: flex; }
+  .sidebar--box__gallery .widget--gallery__photos a,
+  .sidebar--box__gallery .widget--gallery__button a {
+    font-size: 0.9em;
+    color: #2b3340;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    .sidebar--box__gallery .widget--gallery__photos a:hover,
+    .sidebar--box__gallery .widget--gallery__button a:hover {
+      color: #ed6a15; }
 
 .sidebar--box__gallery .widget--gallery__item {
   height: 50px;
@@ -1694,8 +1732,12 @@ section {
     font-size: 0.6em; }
   .sidebar--box__gallery .widget--gallery {
     padding: 3px 5px; }
-  .sidebar--box__gallery .widget--gallery__title {
-    font-size: 1em; }
+  .sidebar--box__gallery .widget--gallery__title a {
+    font-size: 0.8em; }
+  .sidebar--box__gallery .widget--gallery__description {
+    font-size: 0.7em; }
+  .sidebar--box__gallery .widget--gallery__info {
+    font-size: 0.8em; }
   .sidebar--box__gallery .widget--gallery__item {
     height: 40px;
     margin-right: 3px; }
@@ -1722,9 +1764,13 @@ section {
   .widget--gallery {
     padding: 5px; }
   .widget--gallery__title {
-    font-size: 1em;
-    margin-bottom: 5px;
-    line-height: 1; }
+    margin-bottom: 5px; }
+    .widget--gallery__title a {
+      font-size: 0.8em; }
+  .widget--gallery__description {
+    font-size: 0.7em; }
+  .widget--gallery__info {
+    font-size: 0.8em; }
   .widget--gallery__item {
     margin-right: 5px;
     height: 50px; }
@@ -3145,7 +3191,22 @@ label {
     .listing-item--button__deal:active {
       box-shadow: 0 2px #a94a0d;
       -webkit-transform: translateY(3px);
-              transform: translateY(3px); } }
+              transform: translateY(3px); }
+  /*----------  Gallery item pag  ----------*/
+  .gallery-title, .video-title {
+    font-size: 2.5em; }
+  .gallery-image .owl-theme .owl-controls .owl-buttons .owl-prev,
+  .gallery-image .owl-theme .owl-controls .owl-buttons .owl-next {
+    top: 32%;
+    padding: 20px 14px;
+    font-size: 2.2em;
+    border-radius: 5px; }
+  .gallery-image .owl-theme .owl-controls .owl-buttons .owl-prev {
+    left: -10px; }
+  .gallery-image .owl-theme .owl-controls .owl-buttons .owl-next {
+    right: -10px; }
+  .gallery-image--slider .item img {
+    max-width: 82%; } }
 
 @media only screen and (max-width: 635px) {
   .deals--articles--list__text--mobile {
@@ -3491,4 +3552,22 @@ label {
       font-size: 1.3em;
       width: 20px; }
     .activity--info__line span {
-      margin-left: 5px; } }
+      margin-left: 5px; }
+  /*----------  Gallery item pag  ----------*/
+  .gallery-title, .video-title {
+    font-size: 2em;
+    margin-bottom: 10px; }
+  .gallery-image .owl-theme .owl-controls .owl-buttons .owl-prev,
+  .gallery-image .owl-theme .owl-controls .owl-buttons .owl-next {
+    top: 32%;
+    padding: 10px 8px;
+    font-size: 2em;
+    border-radius: 3px; }
+  .gallery-image .owl-theme .owl-controls .owl-buttons .owl-prev {
+    left: -15px; }
+  .gallery-image .owl-theme .owl-controls .owl-buttons .owl-next {
+    right: -15px; }
+  .gallery-image--slider {
+    margin-bottom: 10px; }
+    .gallery-image--slider .item img {
+      max-width: 88%; } }

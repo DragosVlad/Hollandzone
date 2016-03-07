@@ -414,19 +414,31 @@
 		}
 
 		.widget--gallery__title {
-			font-size: 1em;
-		}
 
-			.widget--gallery__item {
-				height: 40px;
-				margin-right: 3px;
-			}
-
-			.widget--gallery__item--more {
-				width: 40px;
-				height: 40px;
+			a {
 				font-size: 0.8em;
 			}
+			
+		}
+
+		.widget--gallery__description {
+			font-size: 0.7em;
+		}
+
+		.widget--gallery__info {
+			font-size: 0.8em;
+		}
+
+		.widget--gallery__item {
+			height: 40px;
+			margin-right: 3px;
+		}
+
+		.widget--gallery__item--more {
+			width: 40px;
+			height: 40px;
+			font-size: 0.8em;
+		}
 
 	}
 
@@ -474,9 +486,20 @@
 	}
 
 		.widget--gallery__title {
-			font-size: 1em;
 			margin-bottom: 5px;
-			line-height: 1;
+			
+			a {
+				font-size: 0.8em;
+			}
+
+		}
+
+		.widget--gallery__description {
+			font-size: 0.7em;
+		}
+
+		.widget--gallery__info {
+			font-size: 0.8em;
 		}
 
 		.widget--gallery__item {
