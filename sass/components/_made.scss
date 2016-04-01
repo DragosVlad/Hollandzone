@@ -1,0 +1,35 @@
+.made {
+
+	.article-trending {
+		position: relative;
+
+		&:after {
+			position: absolute;
+			content: "TRENDING";
+			background-color: $accent-color;
+			color: #fff;
+			border-radius: 3px;
+			bottom: 20px;
+			right: 20px;
+			font-size: 1.3em;
+			font-weight: $font-semibold;
+			letter-spacing: 2px;
+			padding: 5px 15px;
+		}
+	}
+
+
+	.articles--list {
+		margin-top: 10px;
+		font-size: 0.6em;
+
+		.articles--list__thumbnail {
+			max-width: 250px;
+		}
+
+		.articles--list__title a {
+			font-size: 0.8em;
+		}
+	}
+
+}

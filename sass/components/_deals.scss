@@ -7,6 +7,8 @@
 	}
 }
 
+
+
 .deals--articles--list__item {
 	width: 100%;
 	// margin-right: 50px;
@@ -98,3 +100,79 @@
 .deals--articles-list__mobile {
 	display: none;
 }
+
+
+
+.deals--expired {
+
+	position: relative;
+
+	.articles--list__thumbnail {
+		position: relative;
+		background-color: #fff;
+
+		&:hover {
+			.articles--list__image {
+				opacity: 0.5;
+
+			}
+
+			.image-button--wrapper {
+				opacity: 0;
+			}
+		}
+
+		.deals--expired-label {
+			position: absolute;
+			content: "";
+			top: -10%;
+			left: 0;
+			z-index: 98;
+			width: 130%;
+			font-weight: $font-bold;
+			font-size: 2em;
+			text-align: center;
+			padding: 5px 0;
+			letter-spacing: 5px;
+			color: #fff;
+			background-color: $accent-color;
+			transform-origin: 0 0;
+			transition: all 0.3s ease-in-out;
+			transform: rotate(33deg);
+		}
+
+	}
+
+	.articles--list__image {
+		opacity: 0.5;
+	}
+
+	.deals--articles--list__text {
+		color: rgba(0, 0, 0, 0.4);
+	}
+
+	.deals--articles--list__title {
+		a {
+			color: rgba(0, 0, 0, 0.4);
+		}
+		
+	}
+
+	.deals--articles--list__info {
+		.category {
+			a {
+				color: rgba(0, 0, 0, 0.4);
+			}
+			
+		}
+	}
+
+
+	.deals--list__button {
+		background-color: rgba($accent-color, 0.4);
+		box-shadow: 0 5px darken(rgba($accent-color, 0.4), 10%);
+	}
+
+
+}
+

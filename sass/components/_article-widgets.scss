@@ -23,6 +23,18 @@
 
 
 
+// Blockquote widget
+
+.widget--blockquote {
+	font-size: 1.1em;
+	line-height: 1.4em;
+	color: rgba(0, 0, 0, 0.9);
+	margin: 0 0 30px;
+	border-left: 3px solid rgba($main-color, 0.8);
+}
+
+
+
 
 // Embed video widget
 
@@ -50,7 +62,8 @@
 // Related deals and calendar widget (material design cards)
 
 .widget--deal__wrapper,
-.widget--calendar__wrapper {
+.widget--calendar__wrapper,
+.widget--generic__wrapper {
 	position: relative;
 	display: inline-flex;
 	align-items: center;
@@ -70,11 +83,16 @@
 		.widget--calendar__title {
 			color: $main-color;
 		}
+
+		.widget--generic__title {
+			color: $main-color;
+		}
 	}
 }
 
 	.widget--deal__image,
-	.widget--calendar__image {
+	.widget--calendar__image,
+	.widget--generic__image {
 		max-width: 70px;
 		max-height: 70px;
 		margin-right: 20px;
@@ -86,7 +104,8 @@
 	}
 
 		.widget--deal__title,
-		.widget--calendar__title {
+		.widget--calendar__title,
+		.widget--generic__title {
 			font-size: 1.6em;
 			font-family: $font-family-raleway;
 			color: $accent-color;
@@ -98,7 +117,8 @@
 			margin-top: -15px;
 		}
 
-		.widget--calendar__date {
+		.widget--calendar__date,
+		.widget--generic__date {
 			font-size: 1em;
 		}
 
