@@ -225,7 +225,7 @@
 }
 
 .tabs-style-tzoid nav {
-	padding: 0 1em;
+	padding: 0 0.5em;
 }
 
 .tabs-style-tzoid nav ul li {
@@ -290,6 +290,10 @@
 
 .tabs-style-tzoid nav ul li.tab-current a::after {
 	background: rgba(0, 0, 0, 0.15);
+}
+
+.tabs-style-tzoid .tabs-icon::before {
+	font-size: 1.3em;
 }
 
 

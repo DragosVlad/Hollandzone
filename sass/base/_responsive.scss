@@ -256,6 +256,18 @@
 		}
 	}
 
+
+	.deals--expired {
+
+		.articles--list__thumbnail {
+
+			.deals--expired-label {
+				font-size: 1.8em;
+				transform: rotate(32deg);
+			}
+		}
+	}
+
 	
 
 	// FOOTER 
@@ -430,6 +442,15 @@
 
 
 
+	// Badges and additional items 
+
+	.article--badge {
+		font-size: 0.6em;
+		letter-spacing: 0.7px;
+	}
+
+
+
 	// FOOTER 
 
 	.main-footer {
@@ -438,7 +459,17 @@
 	}
 
 
+	.deals--expired {
 
+		.articles--list__thumbnail {
+
+			.deals--expired-label {
+				top: -14%;
+				font-size: 1.4em;
+				transform: rotate(34deg);
+			}
+		}
+	}
 
 
 
@@ -678,6 +709,36 @@
 
 
 
+	// Additional items 
+
+	.tabs-style-tzoid nav {
+		padding: 0 0.2em;
+	}
+
+	.tabs-style-tzoid nav ul li a {
+		padding: 0 1.3em 0 0.3em;
+		font-size: 0.8em;
+		line-height: 2.5;
+	}
+
+
+	.deals--expired {
+
+		.articles--list__thumbnail {
+
+			.deals--expired-label {
+				top: -10%;
+				font-size: 1.4em;
+				padding: 5px 0;
+				letter-spacing: 5px;
+				transform-origin: 0 0;
+				transform: rotate(33deg);
+			}
+		}
+	}
+
+
+
 
 }  /// END  ---  800px
 
@@ -845,6 +906,11 @@
 		font-size: 0.9em;
 		line-height: 1.3em;
 		letter-spacing: 0.8px;
+	}
+
+	.widget--blockquote {
+		font-size: 1em;
+		line-height: 1.3em;
 	}
 
 	.widget--deal__image,
@@ -1018,9 +1084,44 @@
 	}
 
 
+	.deals--expired {
+
+		.articles--list__thumbnail {
+
+			.deals--expired-label {
+				top: -6%;
+				font-size: 1.4em;
+				transform: rotate(34deg);
+			}
+		}
+	}
+
+
 
 
 } /// END --- 635px
+
+
+
+
+@media only screen and (max-width: 550px) {
+
+	.deals--expired {
+
+		.articles--list__thumbnail {
+
+			.deals--expired-label {
+				top: -6%;
+				font-size: 1.4em;
+				padding: 5px 0;
+				letter-spacing: 5px;
+				transform-origin: 0 0;
+				transform: rotate(33deg);
+			}
+		}
+	}
+
+} /// END --- 550px
 
 
 
@@ -1389,6 +1490,38 @@
 	        }
 	    }
 	}
+
+
+	// Additional items 
+
+	.tabs-style-tzoid nav {
+		padding: 0 0.01em;
+	}
+
+	.tabs-style-tzoid nav ul li a {
+		padding: 0 1.3em 0 0.3em;
+		font-size: 0.6em;
+		line-height: 2.2;
+	}
+
+	.tabs-style-tzoid .tabs-icon::before {
+		font-size: 1em;
+	}
+
+
+	.deals--expired {
+
+		.articles--list__thumbnail {
+
+			.deals--expired-label {
+				top: -8%;
+				font-size: 1.2em;
+				padding: 2px 0;
+				transform: rotate(33deg);
+			}
+		}
+	}
+
 
 
 

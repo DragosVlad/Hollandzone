@@ -62,8 +62,7 @@
 // Related deals and calendar widget (material design cards)
 
 .widget--deal__wrapper,
-.widget--calendar__wrapper,
-.widget--generic__wrapper {
+.widget--calendar__wrapper {
 	position: relative;
 	display: inline-flex;
 	align-items: center;
@@ -83,16 +82,11 @@
 		.widget--calendar__title {
 			color: $main-color;
 		}
-
-		.widget--generic__title {
-			color: $main-color;
-		}
 	}
 }
 
 	.widget--deal__image,
-	.widget--calendar__image,
-	.widget--generic__image {
+	.widget--calendar__image {
 		max-width: 70px;
 		max-height: 70px;
 		margin-right: 20px;
@@ -104,8 +98,7 @@
 	}
 
 		.widget--deal__title,
-		.widget--calendar__title,
-		.widget--generic__title {
+		.widget--calendar__title {
 			font-size: 1.6em;
 			font-family: $font-family-raleway;
 			color: $accent-color;
@@ -117,10 +110,33 @@
 			margin-top: -15px;
 		}
 
-		.widget--calendar__date,
-		.widget--generic__date {
+		.widget--calendar__date {
 			font-size: 1em;
 		}
+
+	.widget--generic__wrapper {
+		@extend .widget--calendar__wrapper;
+
+		&:hover {
+			.widget--generic__title {
+				color: $main-color;
+			}
+		}
+	}
+
+	.widget--generic__image {
+		@extend .widget--calendar__image;
+	}
+
+	.widget--generic__title {
+		@extend .widget--calendar__title;
+	}
+
+	.widget--generic__date {
+		@extend .widget--calendar__date;
+	}
+
+
 
 
 

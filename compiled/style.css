@@ -583,7 +583,6 @@ section {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
   padding: 2px 4px;
   background-color: rgba(0, 0, 0, 0.4);
-  border: 2px solid #ed6a15;
   border-radius: 5px;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.4); }
 
@@ -1020,7 +1019,6 @@ section {
       color: #fff;
       background-color: #2b3340;
       transform-origin: 0 0;
-      transition: all 0.3s ease-in-out;
       transform: rotate(33deg); }
   .deals--expired .articles--list__image {
     opacity: 0.5; }
@@ -1284,16 +1282,11 @@ section {
   .widget--generic__wrapper:hover {
     box-shadow: 0 3px 6px 2px rgba(0, 0, 0, 0.4); }
     .widget--deal__wrapper:hover .widget--deal__title,
-    .widget--calendar__wrapper:hover .widget--deal__title,
-    .widget--generic__wrapper:hover .widget--deal__title {
+    .widget--calendar__wrapper:hover .widget--deal__title, .widget--generic__wrapper:hover .widget--deal__title {
       color: #ed6a15; }
-    .widget--deal__wrapper:hover .widget--calendar__title,
-    .widget--calendar__wrapper:hover .widget--calendar__title,
-    .widget--generic__wrapper:hover .widget--calendar__title {
-      color: #ed6a15; }
-    .widget--deal__wrapper:hover .widget--generic__title,
-    .widget--calendar__wrapper:hover .widget--generic__title,
-    .widget--generic__wrapper:hover .widget--generic__title {
+    .widget--deal__wrapper:hover .widget--calendar__title, .widget--deal__wrapper:hover .widget--generic__title,
+    .widget--calendar__wrapper:hover .widget--calendar__title, .widget--generic__wrapper:hover .widget--calendar__title,
+    .widget--calendar__wrapper:hover .widget--generic__title, .widget--generic__wrapper:hover .widget--generic__title {
       color: #ed6a15; }
 
 .widget--deal__image,
@@ -1316,9 +1309,11 @@ section {
 .widget--deal__title {
   margin-top: -15px; }
 
-.widget--calendar__date,
-.widget--generic__date {
+.widget--calendar__date, .widget--generic__date {
   font-size: 1em; }
+
+.widget--generic__wrapper:hover .widget--generic__title {
+  color: #ed6a15; }
 
 .widget--review {
   position: relative;
@@ -1764,7 +1759,7 @@ section {
   border: 1px solid #e6e6e6; }
 
 .tabs-style-tzoid nav {
-  padding: 0 1em; }
+  padding: 0 0.5em; }
 
 .tabs-style-tzoid nav ul li {
   -webkit-backface-visibility: hidden;
@@ -1818,6 +1813,9 @@ section {
 
 .tabs-style-tzoid nav ul li.tab-current a::after {
   background: rgba(0, 0, 0, 0.15); }
+
+.tabs-style-tzoid .tabs-icon::before {
+  font-size: 1.3em; }
 
 .tabs-style-fillup .tabs-icon::before {
   font-size: 1.3em;
@@ -2784,6 +2782,9 @@ label {
     opacity: 0.95; }
   .articles--list__thumbnail:hover .image-button--wrapper {
     opacity: 0; }
+  .deals--expired .articles--list__thumbnail .deals--expired-label {
+    font-size: 1.8em;
+    transform: rotate(32deg); }
   .main-footer {
     width: calc(100% + 20px);
     margin: 0 auto 0 -10px; } }
@@ -2844,9 +2845,16 @@ label {
     font-size: 1.5em; }
     .page-numbers--item a {
       padding: 0 15px; }
+  .article--badge {
+    font-size: 0.6em;
+    letter-spacing: 0.7px; }
   .main-footer {
     width: calc(100% + 30px);
-    margin: 0 auto 0 -15px; } }
+    margin: 0 auto 0 -15px; }
+  .deals--expired .articles--list__thumbnail .deals--expired-label {
+    top: -14%;
+    font-size: 1.4em;
+    transform: rotate(34deg); } }
 
 @media only screen and (max-width: 800px) {
   .container {
@@ -2960,7 +2968,20 @@ label {
   .gallery-image .owl-theme .owl-controls .owl-buttons .owl-next {
     right: -10px; }
   .gallery-image--slider .item img {
-    max-width: 82%; } }
+    max-width: 82%; }
+  .tabs-style-tzoid nav {
+    padding: 0 0.2em; }
+  .tabs-style-tzoid nav ul li a {
+    padding: 0 1.3em 0 0.3em;
+    font-size: 0.8em;
+    line-height: 2.5; }
+  .deals--expired .articles--list__thumbnail .deals--expired-label {
+    top: -10%;
+    font-size: 1.4em;
+    padding: 5px 0;
+    letter-spacing: 5px;
+    transform-origin: 0 0;
+    transform: rotate(33deg); } }
 
 @media only screen and (max-width: 635px) {
   .deals--articles--list__text--mobile {
@@ -3041,8 +3062,12 @@ label {
     font-size: 0.9em;
     line-height: 1.3em;
     letter-spacing: 0.8px; }
+  .widget--blockquote {
+    font-size: 1em;
+    line-height: 1.3em; }
   .widget--deal__image,
-  .widget--calendar__image {
+  .widget--calendar__image,
+  .widget--generic__image {
     width: 50px;
     height: 50px;
     margin-right: 10px; }
@@ -3127,7 +3152,20 @@ label {
       font-size: 1.3em;
       width: 20px; }
     .activity--info__line span {
-      margin-left: 5px; } }
+      margin-left: 5px; }
+  .deals--expired .articles--list__thumbnail .deals--expired-label {
+    top: -6%;
+    font-size: 1.4em;
+    transform: rotate(34deg); } }
+
+@media only screen and (max-width: 550px) {
+  .deals--expired .articles--list__thumbnail .deals--expired-label {
+    top: -6%;
+    font-size: 1.4em;
+    padding: 5px 0;
+    letter-spacing: 5px;
+    transform-origin: 0 0;
+    transform: rotate(33deg); } }
 
 @media only screen and (max-width: 400px) {
   .nav--mobile__search {
@@ -3170,13 +3208,15 @@ label {
   .main-article--details__image-source a {
     font-size: 0.4em; }
   .widget--deal__wrapper,
-  .widget--calendar__wrapper {
+  .widget--calendar__wrapper,
+  .widget--generic__wrapper {
     margin-bottom: 30px;
     padding: 10px 10px; }
   .widget--deal__title,
-  .widget--calendar__title {
+  .widget--calendar__title,
+  .widget--generic__title {
     font-size: 1.2em; }
-  .widget--calendar__date {
+  .widget--calendar__date, .widget--generic__date {
     font-size: 0.7em; }
   .share-buttons {
     font-size: 1em; }
@@ -3298,4 +3338,17 @@ label {
   .gallery-image--slider {
     margin-bottom: 10px; }
     .gallery-image--slider .item img {
-      max-width: 88%; } }
+      max-width: 88%; }
+  .tabs-style-tzoid nav {
+    padding: 0 0.01em; }
+  .tabs-style-tzoid nav ul li a {
+    padding: 0 1.3em 0 0.3em;
+    font-size: 0.6em;
+    line-height: 2.2; }
+  .tabs-style-tzoid .tabs-icon::before {
+    font-size: 1em; }
+  .deals--expired .articles--list__thumbnail .deals--expired-label {
+    top: -8%;
+    font-size: 1.2em;
+    padding: 2px 0;
+    transform: rotate(33deg); } }
