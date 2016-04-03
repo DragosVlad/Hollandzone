@@ -504,7 +504,7 @@ section {
 
 .article--title {
   display: inline-block;
-  font-size: 1.7em;
+  font-size: 1.4em;
   font-weight: 300;
   color: #fff;
   text-align: left;
@@ -624,7 +624,7 @@ section {
   .reports--carousel .reports--item {
     margin-right: 15px; }
   .reports--carousel .article--title {
-    font-size: 1.7em; }
+    font-size: 1.4em; }
   .reports--carousel .article--text {
     font-size: 0.6em;
     margin: 10px;
@@ -2822,7 +2822,7 @@ label {
   .section-title {
     font-size: 2.3em; }
   .article--title {
-    font-size: 1.5em; }
+    font-size: 1.2em; }
   .articles--main .article--title {
     font-size: 1.6em; }
   .reports .owl-theme .owl-controls .owl-buttons .owl-prev {
@@ -2840,7 +2840,7 @@ label {
     .reports--carousel .reports--item {
       margin-right: 10px; }
     .reports--carousel .article--title {
-      font-size: 1.5em; }
+      font-size: 1.1em; }
   .page-numbers--item {
     font-size: 1.5em; }
     .page-numbers--item a {
@@ -2870,9 +2870,9 @@ label {
   .section-title {
     font-size: 2em; }
   .article--title {
-    font-size: 1.3em; }
+    font-size: 1em; }
   .articles--main .article--title {
-    font-size: 1.2em; }
+    font-size: 0.9em; }
   /*----------  Article page  ----------*/
   .main-article--overlay, .activity--overlay {
     width: 100%; }
@@ -3188,6 +3188,8 @@ label {
     margin-bottom: 30px; }
   .articles--list__text {
     flex-basis: 90%; }
+  .tabs .articles--list__text {
+    flex-basis: 80%; }
   .page-numbers--item {
     font-size: 1.1em; }
     .page-numbers--item a {

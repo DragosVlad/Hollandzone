@@ -383,7 +383,7 @@
 	}
 
 	.article--title {
-		font-size: 1.5em;
+		font-size: 1.2em;
 	}
 
 
@@ -425,7 +425,7 @@
 		}
 
 			.article--title {
-				font-size: 1.5em;
+				font-size: 1.1em;
 			}
 
 	}
@@ -507,14 +507,14 @@
 	}
 
 	.article--title {
-		font-size: 1.3em;
+		font-size: 1em;
 	}
 
 
 	.articles--main {
 
 		.article--title {
-			font-size: 1.2em;
+			font-size: 0.9em;
 		}
 	}
 
@@ -1176,6 +1176,12 @@
 
 		.articles--list__text {
 			flex-basis: 90%;
+		}
+
+		.tabs {
+			.articles--list__text {
+				flex-basis: 80%;
+			}
 		}
 
 
