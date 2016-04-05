@@ -1,0 +1,160 @@
+.breadcrumb {
+	background-color: lighten($accent-color, 70%);
+	padding: 20px;
+	box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.3);
+}
+
+.crumb-list {
+	list-style: none;
+}
+
+.crumb-item {
+	display: inline-block;
+	position: relative;
+	margin-right: 12px;
+
+	a {
+		font-size: 1.2em;
+		color: $main-color;
+
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+	}
+
+	&.current {
+
+		a {
+			color: $accent-color;
+			pointer-events: none;
+		}
+		
+	}
+
+	&:after {
+		position: absolute;
+		content: "/";
+		color: $main-color;
+		top: 3px;
+		left: calc(100% + 3px);
+	}
+
+	&.last {
+		&:after {
+			display: none;
+		}
+	}
+}
+
+
+.crumb-info {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+	.crumb-title {
+		@extend .section-title;
+		font-size: 2.1em;
+		flex-basis: 40%;
+		// border: 1px solid red;
+	}
+
+	.crumb-description {
+		@extend .main-article--paragraph;
+		color: $accent-color;
+		margin-bottom: 0;
+		flex-basis: 55%;
+		// border: 1px solid green;
+	}
+
+
+
+
+
+.info-cities--list {
+	margin-top: 30px;
+	margin-bottom: 50px;
+	padding: 10px 20px;
+}
+
+	.info-cities--item {
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 30px;
+		background-color: #fff;
+		transition: all 0.2s ease-in-out;
+		box-shadow: 0 1px 4px 2px rgba(0, 0, 0, 0.3);
+
+		&:hover {
+			box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.45);
+
+			.info-cities--title {
+				color: $main-color;
+			}
+
+			.info-cities--image {
+				transform: scale(1.06) translateY(-4px);
+				opacity: 0.8;
+			}
+		}
+	}
+
+		.info-cities--image {
+			transition: all 0.3s ease-in-out;
+			width: 100%;
+		}
+
+		.info-cities--text {
+			padding: 10px;
+			position: relative;
+		}
+
+			.info-cities--title {
+				color: $accent-color;
+				font-size: 2em;
+				line-height: 1.1;
+				font-weight: $font-bold;
+				text-align: center;
+				margin-bottom: 10px;
+				transition: all 0.2s ease-in-out;
+			}
+
+			.info-cities--description {
+				text-align: center;
+			}
+
+			.info-floating-button {
+				position: absolute;
+				right: 10px;
+				top: -25px;
+				z-index: 97;
+				cursor: pointer;
+
+
+				i {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 50px;
+					height: 50px;
+					font-size: 1.5em;
+					color: #fff;
+					background-color: $main-color;
+					padding: 0 3px 0 0;
+					border-radius: 50%;
+					box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.4);
+					transition: all 0.25s ease-in-out;
+
+					&:hover {
+						box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.8);
+						transform: scale(1.05);
+						color: darken($main-color, 30%);
+						font-size: 1.6em;
+					}
+				}
+			}
+
+

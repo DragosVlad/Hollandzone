@@ -1,0 +1,23 @@
+.info-categories--list {
+	@extend .info-cities--list;
+}
+
+	.info-categories--item {
+		@extend .info-cities--item;
+	}
+
+		.info-categories--image {
+			@extend .info-cities--image;
+		}
+
+		.info-categories--text {
+			@extend .info-cities--text;
+		}
+
+			.info-categories--title {
+				@extend .info-cities--title;
+			}
+
+			.info-categories--description {
+				@extend .info-cities--description;
+			}

@@ -1,0 +1,23 @@
+.info-results--list {
+	@extend .info-cities--list;
+}
+
+	.info-results--item {
+		@extend .info-cities--item;
+	}
+
+		.info-results--image {
+			@extend .info-cities--image;
+		}
+
+		.info-results--text {
+			@extend .info-cities--text;
+		}
+
+			.info-results--title {
+				@extend .info-cities--title;
+			}
+
+			.info-results--description {
+				@extend .info-cities--description;
+			}
