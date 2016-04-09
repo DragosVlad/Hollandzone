@@ -25,36 +25,6 @@ $(document).ready(function(){
 
 
 
-
-	// Owl Carousel
-
-	$(".featured-articles--carousel").owlCarousel({
-      items : 3,
-
-      pagination: true,
-      lazyLoad: true,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,3]
- 
-  	});
-
-
-  	$(".reports--carousel").owlCarousel({
-      items : 3,
-      pagination: true,
-      navigation: true,
-      navigationText: [
-      "<i class='fa fa-angle-left'></i>",
-      "<i class='fa fa-angle-right'></i>"
-      ],
-      lazyLoad: true,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,3]
- 
-  	});
-
-
-
     checkSize();
     $(window).resize(checkSize);
     function checkSize(){
@@ -118,36 +88,65 @@ $(document).ready(function(){
 
 
 
+      // Owl Carousel
+
+      $(".featured-articles--carousel").owlCarousel({
+          items : 3,
+
+          pagination: true,
+          lazyLoad: true,
+          itemsDesktop : [1199,3],
+          itemsDesktopSmall : [979,3]
+     
+        });
+
+
+        $(".reports--carousel").owlCarousel({
+          items : 3,
+          pagination: true,
+          navigation: true,
+          navigationText: [
+          "<i class='fa fa-angle-left'></i>",
+          "<i class='fa fa-angle-right'></i>"
+          ],
+          lazyLoad: true,
+          itemsDesktop : [1199,3],
+          itemsDesktopSmall : [979,3]
+     
+        });
+
+
+
     // Gallery Synced Carousel
 
     var sync1 = $("#gallery-image--slider");
     var sync2 = $("#gallery-thumbs--slider");
    
-    // sync1.owlCarousel({
-    //   singleItem : true,
-    //   slideSpeed : 1000,
-    //   navigation: true,
-    //   navigationText: [
-    //   "<i class='fa fa-angle-left'></i>",
-    //   "<i class='fa fa-angle-right'></i>"
-    //   ],
-    //   pagination:false,
-    //   afterAction : syncPosition,
-    //   responsiveRefreshRate : 200,
-    // });
+    sync1.owlCarousel({
+      singleItem : true,
+      slideSpeed : 1000,
+      navigation: true,
+      navigationText: [
+      "<i class='fa fa-angle-left'></i>",
+      "<i class='fa fa-angle-right'></i>"
+      ],
+      pagination:false,
+      afterAction : syncPosition,
+      responsiveRefreshRate : 200,
+    });
    
-    // sync2.owlCarousel({
-    //   items : 10,
-    //   itemsDesktop      : [1199,10],
-    //   itemsDesktopSmall     : [979,8],
-    //   itemsTablet       : [768,6],
-    //   itemsMobile       : [520,4],
-    //   pagination:true,
-    //   responsiveRefreshRate : 100,
-    //   afterInit : function(el){
-    //     el.find(".owl-item").eq(0).addClass("synced");
-    //   }
-    // });
+    sync2.owlCarousel({
+      items : 10,
+      itemsDesktop      : [1199,10],
+      itemsDesktopSmall     : [979,8],
+      itemsTablet       : [768,6],
+      itemsMobile       : [520,4],
+      pagination:true,
+      responsiveRefreshRate : 100,
+      afterInit : function(el){
+        el.find(".owl-item").eq(0).addClass("synced");
+      }
+    });
    
     function syncPosition(el){
       var current = this.currentItem;

@@ -36,7 +36,7 @@ body {
   margin: 0;
   margin-right: 0; }
 
-.section-title, .crumb-title {
+.section-title {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 2.5em;
@@ -2650,7 +2650,10 @@ label {
   justify-content: space-between; }
 
 .crumb-title {
-  font-size: 1.8em;
+  color: #353f4f;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 2em;
   flex-basis: 40%; }
 
 .crumb-description {
@@ -2924,7 +2927,7 @@ label {
   .headroom--not-top .has-dropdown i {
     top: 40%;
     font-size: 0.44em; }
-  .section-title, .crumb-title {
+  .section-title {
     font-size: 2.3em; }
   .article--title {
     font-size: 1.2em; }
@@ -2972,7 +2975,7 @@ label {
     display: none; }
   .deals--articles-list__mobile {
     display: block; }
-  .section-title, .crumb-title {
+  .section-title {
     font-size: 2em; }
   .article--title {
     font-size: 1em; }
@@ -3086,7 +3089,28 @@ label {
     padding: 5px 0;
     letter-spacing: 5px;
     transform-origin: 0 0;
-    transform: rotate(33deg); } }
+    transform: rotate(33deg); }
+  .crumb-info {
+    flex-wrap: wrap; }
+  .crumb-item a {
+    font-size: 0.8em; }
+  .crumb-item:after {
+    top: 2px;
+    left: calc(100% + 2px); }
+  .crumb-title {
+    flex-basis: 100%; }
+  .crumb-description {
+    flex-basis: 90%; }
+  .info-cities--title, .info-categories--title, .info-results--title {
+    font-size: 1.2em; }
+  .info-cities--description, .info-categories--description, .info-results--description {
+    font-size: 0.8em;
+    line-height: 1.3; }
+  .info-floating-button {
+    top: -20px; }
+  .info-button__image {
+    width: 35px;
+    height: 35px; } }
 
 @media only screen and (max-width: 635px) {
   .deals--articles--list__text--mobile {

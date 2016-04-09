@@ -738,6 +738,50 @@
 	}
 
 
+	// INFO Pages
+
+	.crumb-info {
+		flex-wrap: wrap;
+	}
+
+	.crumb-item { 
+		a {
+			font-size: 0.8em;
+		}
+
+		&:after {
+			top: 2px;
+			left: calc(100% + 2px);
+		}
+	}
+
+		.crumb-title {
+			flex-basis: 100%;
+		}
+
+		.crumb-description {
+			flex-basis: 90%;
+		}
+
+
+	.info-cities--title {
+		font-size: 1.2em;
+	}
+
+	.info-cities--description {
+		font-size: 0.8em;
+		line-height: 1.3;
+	}
+
+	.info-floating-button {
+		top: -20px;
+	}
+
+		.info-button__image {
+			width: 35px;
+			height: 35px;
+		}
+
 
 
 }  /// END  ---  800px

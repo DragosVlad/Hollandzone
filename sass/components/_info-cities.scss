@@ -57,8 +57,10 @@
 }
 
 	.crumb-title {
-		@extend .section-title;
-		font-size: 1.8em;
+		color: lighten($accent-color, 5%);
+		font-family: $font-family-raleway;
+		font-weight: $font-semibold;
+		font-size: 2em;
 		flex-basis: 40%;
 		// border: 1px solid red;
 	}
