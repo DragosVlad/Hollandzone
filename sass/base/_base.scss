@@ -70,8 +70,21 @@ section {
 	&.reports {
 		margin-bottom: 100px;
 	}
+
+	&.featured-articles,
+	&.reports,
+	&.made,
+	&.deals {
+		padding-left: .9375rem;
+		padding-right: .9375rem;
+	}
 }
 
+
+.banner-container {
+	padding-left: .9375rem;
+	padding-right: .9375rem;
+}
 
 .two-sides-content {
 	padding: 0;

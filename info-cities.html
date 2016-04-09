@@ -231,10 +231,12 @@
 					<div class="info-cities--item">
 						<a href="info-categories.html" class="full-link"></a>
 
-						<img src="images/thumbnail.jpg" alt="City Item" class="info-cities--image lazy">
+						<img data-original="images/thumbnail.jpg" alt="City Item" class="info-cities--image lazy">
 
 						<div class="info-cities--text">
-							<div class="info-floating-button"><a href="#"><i class="fa fa-shopping-cart"></i></a></div>
+							<div class="info-floating-button">
+								<img src="images/small-thumbnail.jpg" alt="Floating button image" class="info-button__image">
+							</div>
 							<div class="info-cities--title">Amsterdam</div>
 							<div class="info-cities--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ratione ut, laborum explicabo repellat nostrum atque, odit.</div>
 						</div>
@@ -248,10 +250,12 @@
 					<div class="info-cities--item">
 						<a href="info-categories.html" class="full-link"></a>
 
-						<img src="images/web1.jpg" alt="City Item" class="info-cities--image lazy">
+						<img data-original="images/web1.jpg" alt="City Item" class="info-cities--image lazy">
 
 						<div class="info-cities--text">
-							<div class="info-floating-button"><a href="#"><i class="fa fa-shopping-cart"></i></a></div>
+							<div class="info-floating-button">
+								<img src="images/small-thumbnail.jpg" alt="Floating button image" class="info-button__image">
+							</div>
 							<div class="info-cities--title">Rotterdam</div>
 							<div class="info-cities--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ratione ut, laborum explicabo repellat nostrum atque, odit.</div>
 						</div>
@@ -265,10 +269,12 @@
 					<div class="info-cities--item">
 						<a href="info-categories.html" class="full-link"></a>
 
-						<img src="images/thumbnail.jpg" alt="City Item" class="info-cities--image lazy">
+						<img data-original="images/thumbnail.jpg" alt="City Item" class="info-cities--image lazy">
 
 						<div class="info-cities--text">
-							<div class="info-floating-button"><a href="#"><i class="fa fa-shopping-cart"></i></a></div>
+							<div class="info-floating-button">
+								<img src="images/small-thumbnail.jpg" alt="Floating button image" class="info-button__image">
+							</div>
 							<div class="info-cities--title">Eindhoven</div>
 							<div class="info-cities--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ratione ut, laborum explicabo repellat nostrum atque, odit.</div>
 						</div>
@@ -287,10 +293,12 @@
 					<div class="info-cities--item">
 						<a href="info-categories.html" class="full-link"></a>
 
-						<img src="images/web1.jpg" alt="City Item" class="info-cities--image lazy">
+						<img data-original="images/web1.jpg" alt="City Item" class="info-cities--image lazy">
 
 						<div class="info-cities--text">
-							<div class="info-floating-button"><a href="#"><i class="fa fa-shopping-cart"></i></a></div>
+							<div class="info-floating-button">
+								<img src="images/small-thumbnail.jpg" alt="Floating button image" class="info-button__image">
+							</div>
 							<div class="info-cities--title">Utrecht</div>
 							<div class="info-cities--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ratione ut, laborum explicabo repellat nostrum atque, odit.</div>
 						</div>
@@ -303,10 +311,12 @@
 					<div class="info-cities--item">
 						<a href="info-categories.html" class="full-link"></a>
 
-						<img alt="City Item" class="info-cities--image lazy" src="images/thumbnail.jpg">
+						<img data-original="images/thumbnail.jpg" alt="City Item" class="info-cities--image lazy">
 
 						<div class="info-cities--text">
-							<div class="info-floating-button"><a href="#"><i class="fa fa-shopping-cart"></i></a></div>
+							<div class="info-floating-button">
+								<img src="images/small-thumbnail.jpg" alt="Floating button image" class="info-button__image">
+							</div>
 							<div class="info-cities--title">Nijmegen</div>
 							<div class="info-cities--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ratione ut, laborum explicabo repellat nostrum atque, odit.</div>
 						</div>
@@ -398,6 +408,17 @@
 	<!-- jQuery -->
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
+	<!-- Lazy Load -->
+	<script src="js/jquery.lazyload.min.js"></script>
+	<script>
+		$(function() {
+			$("img.lazy").lazyload({
+				effect : "fadeIn"
+			});
+
+		});
+	</script>
+
 	<!-- Custom Javascript -->
 	<script src="js/script.js"></script>
 
@@ -411,17 +432,6 @@
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/jQuery.headroom.min.js"></script>
 
 	<script src="js/SmoothScroll.js"></script>
-
-
-	<script src="js/jquery.lazyload.min.js"></script>
-	<script>
-		$(function() {
-			$(".lazy").lazyload({
-				effect : "fadeIn"
-			});
-
-		});
-	</script>
 
 </body>
 </html>

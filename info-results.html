@@ -236,10 +236,13 @@
 					<div class="info-results--item">
 						<a href="#" class="full-link"></a>
 
-						<img src="images/thumbnail.jpg" alt="City Item" class="info-results--image">
+						<img data-original="images/thumbnail.jpg" alt="City Item" class="info-results--image lazy">
 
 						<div class="info-results--text">
-							<div class="info-results--title">Rembrand Museum</div>
+							<div class="info-floating-button">
+								<img src="images/small-thumbnail.jpg" alt="Floating button image" class="info-button__image">
+							</div>
+							<div class="info-results--title">Rembrand&nbsp;Museum</div>
 							<div class="info-results--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ratione ut, laborum explicabo repellat nostrum atque, odit.</div>
 						</div>
 					</div>
@@ -249,14 +252,17 @@
 
 				<div class="medium-4 small-12 columns">
 					
-					<div class="info-categories--item">
+					<div class="info-results--item">
 						<a href="#" class="full-link"></a>
 
-						<img src="images/web1.jpg" alt="City Item" class="info-categories--image">
+						<img data-original="images/web1.jpg" alt="City Item" class="info-results--image lazy">
 
-						<div class="info-categories--text">
-							<div class="info-categories--title">Van Gogh Museum</div>
-							<div class="info-categories--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ratione ut, laborum explicabo repellat nostrum atque, odit.</div>
+						<div class="info-results--text">
+							<div class="info-floating-button">
+								<img src="images/small-thumbnail.jpg" alt="Floating button image" class="info-button__image">
+							</div>
+							<div class="info-results--title">Van Gogh Museum</div>
+							<div class="info-results--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ratione ut, laborum explicabo repellat nostrum atque, odit.</div>
 						</div>
 					</div>
 
@@ -265,14 +271,17 @@
 
 				<div class="medium-4 small-12 columns">
 					
-					<div class="info-categories--item">
+					<div class="info-results--item">
 						<a href="#" class="full-link"></a>
 
-						<img src="images/thumbnail.jpg" alt="City Item" class="info-categories--image">
+						<img data-original="images/thumbnail.jpg" alt="City Item" class="info-results--image lazy">
 
-						<div class="info-categories--text">
-							<div class="info-categories--title">All about the Rembrand Museum</div>
-							<div class="info-categories--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ratione ut, laborum explicabo repellat nostrum atque, odit.</div>
+						<div class="info-results--text">
+							<div class="info-floating-button">
+								<img src="images/small-thumbnail.jpg" alt="Floating button image" class="info-button__image">
+							</div>
+							<div class="info-results--title">All about the Rembrand Museum</div>
+							<div class="info-results--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ratione ut, laborum explicabo repellat nostrum atque, odit.</div>
 						</div>
 					</div>
 
@@ -286,14 +295,17 @@
 
 				<div class="medium-4 small-12 columns">
 					
-					<div class="info-categories--item">
+					<div class="info-results--item">
 						<a href="#" class="full-link"></a>
 
-						<img src="images/web1.jpg" alt="City Item" class="info-categories--image">
+						<img data-original="images/web1.jpg" alt="City Item" class="info-results--image lazy">
 
-						<div class="info-categories--text">
-							<div class="info-categories--title">Article about museums</div>
-							<div class="info-categories--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ratione ut, laborum explicabo repellat nostrum atque, odit.</div>
+						<div class="info-results--text">
+							<div class="info-floating-button">
+								<img src="images/small-thumbnail.jpg" alt="Floating button image" class="info-button__image">
+							</div>
+							<div class="info-results--title">Article about museums</div>
+							<div class="info-results--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ratione ut, laborum explicabo repellat nostrum atque, odit.</div>
 						</div>
 					</div>
 
@@ -302,14 +314,17 @@
 
 				<div class="medium-4 small-12 columns">
 					
-					<div class="info-categories--item">
+					<div class="info-results--item">
 						<a href="#" class="full-link"></a>
 
-						<img src="images/thumbnail.jpg" alt="City Item" class="info-categories--image">
+						<img data-original="images/thumbnail.jpg" alt="City Item" class="info-results--image lazy">
 
-						<div class="info-categories--text">
-							<div class="info-categories--title">More museums in Amsterdam</div>
-							<div class="info-categories--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ratione ut, laborum explicabo repellat nostrum atque, odit.</div>
+						<div class="info-results--text">
+							<div class="info-floating-button">
+								<img src="images/small-thumbnail.jpg" alt="Floating button image" class="info-button__image">
+							</div>
+							<div class="info-results--title">More museums in Amsterdam</div>
+							<div class="info-results--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ratione ut, laborum explicabo repellat nostrum atque, odit.</div>
 						</div>
 					</div>
 
@@ -398,6 +413,17 @@
 
 	<!-- jQuery -->
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+	<!-- Lazy Load -->
+	<script src="js/jquery.lazyload.min.js"></script>
+	<script>
+		$(function() {
+			$("img.lazy").lazyload({
+				effect : "fadeIn"
+			});
+
+		});
+	</script>
 
 	<!-- Custom Javascript -->
 	<script src="js/script.js"></script>

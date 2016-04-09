@@ -55,6 +55,13 @@ section {
     margin-bottom: 0; }
   section.reports {
     margin-bottom: 100px; }
+  section.featured-articles, section.reports, section.made, section.deals {
+    padding-left: .9375rem;
+    padding-right: .9375rem; }
+
+.banner-container {
+  padding-left: .9375rem;
+  padding-right: .9375rem; }
 
 .two-sides-content {
   padding: 0; }
@@ -3035,7 +3042,7 @@ label {
     top: 0; }
 
 .breadcrumb {
-  background-color: #e3e7ed;
+  background-color: rgba(0, 0, 0, 0.05);
   padding: 20px;
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.3); }
 
@@ -3047,7 +3054,7 @@ label {
   position: relative;
   margin-right: 12px; }
   .crumb-item a {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #ed6a15; }
     .crumb-item a:hover {
       text-decoration: underline; }
@@ -3075,13 +3082,14 @@ label {
           justify-content: space-between; }
 
 .crumb-title {
-  font-size: 2.1em;
+  font-size: 1.8em;
   -webkit-flex-basis: 40%;
       -ms-flex-preferred-size: 40%;
           flex-basis: 40%; }
 
 .crumb-description {
   color: #2b3340;
+  font-size: 0.9em;
   margin-bottom: 0;
   -webkit-flex-basis: 55%;
       -ms-flex-preferred-size: 55%;
@@ -3119,8 +3127,10 @@ label {
   position: relative; }
 
 .info-cities--title, .info-categories--title, .info-results--title {
+  width: 85%;
+  margin: 0 auto;
   color: #2b3340;
-  font-size: 2em;
+  font-size: 1.8em;
   line-height: 1.1;
   font-weight: 700;
   text-align: center;
@@ -3134,38 +3144,14 @@ label {
 .info-floating-button {
   position: absolute;
   right: 10px;
-  top: -25px;
-  z-index: 97;
+  top: -30px;
   cursor: pointer; }
-  .info-floating-button i {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 50px;
-    height: 50px;
-    font-size: 1.5em;
-    color: #fff;
-    background-color: #ed6a15;
-    padding: 0 3px 0 0;
-    border-radius: 50%;
-    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.4);
-    -webkit-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out; }
-    .info-floating-button i:hover {
-      box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.8);
-      -webkit-transform: scale(1.05);
-              transform: scale(1.05);
-      color: #622b08;
-      font-size: 1.6em; }
+
+.info-button__image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.4); }
 
 .main-footer {
   width: calc(100% + 50px);

@@ -232,9 +232,12 @@
 					<div class="info-categories--item">
 						<a href="info-results.html" class="full-link"></a>
 
-						<img src="images/thumbnail.jpg" alt="City Item" class="info-categories--image">
+						<img data-original="images/thumbnail.jpg" alt="City Item" class="info-categories--image lazy">
 
 						<div class="info-categories--text">
+							<div class="info-floating-button">
+								<img src="images/small-thumbnail.jpg" alt="Floating button image" class="info-button__image">
+							</div>
 							<div class="info-categories--title">Museums</div>
 							<div class="info-categories--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ratione ut, laborum explicabo repellat nostrum atque, odit.</div>
 						</div>
@@ -248,9 +251,12 @@
 					<div class="info-categories--item">
 						<a href="#" class="full-link"></a>
 
-						<img src="images/web1.jpg" alt="City Item" class="info-categories--image">
+						<img data-original="images/web1.jpg" alt="City Item" class="info-categories--image lazy">
 
 						<div class="info-categories--text">
+							<div class="info-floating-button">
+								<img src="images/small-thumbnail.jpg" alt="Floating button image" class="info-button__image">
+							</div>
 							<div class="info-categories--title">Restaurants</div>
 							<div class="info-categories--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ratione ut, laborum explicabo repellat nostrum atque, odit.</div>
 						</div>
@@ -264,9 +270,12 @@
 					<div class="info-categories--item">
 						<a href="#" class="full-link"></a>
 
-						<img src="images/thumbnail.jpg" alt="City Item" class="info-categories--image">
+						<img data-original="images/thumbnail.jpg" alt="City Item" class="info-categories--image lazy">
 
 						<div class="info-categories--text">
+							<div class="info-floating-button">
+								<img src="images/small-thumbnail.jpg" alt="Floating button image" class="info-button__image">
+							</div>
 							<div class="info-categories--title">Shopping</div>
 							<div class="info-categories--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ratione ut, laborum explicabo repellat nostrum atque, odit.</div>
 						</div>
@@ -285,9 +294,12 @@
 					<div class="info-categories--item">
 						<a href="#" class="full-link"></a>
 
-						<img src="images/web1.jpg" alt="City Item" class="info-categories--image">
+						<img data-original="images/web1.jpg" alt="City Item" class="info-categories--image lazy">
 
 						<div class="info-categories--text">
+							<div class="info-floating-button">
+								<img src="images/small-thumbnail.jpg" alt="Floating button image" class="info-button__image">
+							</div>
 							<div class="info-categories--title">Attractions</div>
 							<div class="info-categories--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ratione ut, laborum explicabo repellat nostrum atque, odit.</div>
 						</div>
@@ -301,9 +313,12 @@
 					<div class="info-categories--item">
 						<a href="#" class="full-link"></a>
 
-						<img src="images/thumbnail.jpg" alt="City Item" class="info-categories--image">
+						<img data-original="images/thumbnail.jpg" alt="City Item" class="info-categories--image lazy">
 
 						<div class="info-categories--text">
+							<div class="info-floating-button">
+								<img src="images/small-thumbnail.jpg" alt="Floating button image" class="info-button__image">
+							</div>
 							<div class="info-categories--title">Accomodation</div>
 							<div class="info-categories--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ratione ut, laborum explicabo repellat nostrum atque, odit.</div>
 						</div>
@@ -394,6 +409,17 @@
 
 	<!-- jQuery -->
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+	<!-- Lazy Load -->
+	<script src="js/jquery.lazyload.min.js"></script>
+	<script>
+		$(function() {
+			$("img.lazy").lazyload({
+				effect : "fadeIn"
+			});
+
+		});
+	</script>
 
 	<!-- Custom Javascript -->
 	<script src="js/script.js"></script>
