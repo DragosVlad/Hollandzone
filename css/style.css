@@ -36,6 +36,9 @@ body {
   padding: 0;
   background-color: #fffefe; }
 
+.wrapper--noborder {
+  border-top: none; }
+
 .row {
   margin: 0;
   margin-right: 0; }
@@ -3137,6 +3140,7 @@ label {
   line-height: 1.1;
   font-weight: 700;
   text-align: center;
+  margin-top: 10px;
   margin-bottom: 10px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
