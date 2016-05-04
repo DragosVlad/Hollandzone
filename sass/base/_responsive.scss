@@ -77,6 +77,12 @@
 
 
 
+	.premium__title {
+		// width: 80%;
+	}
+
+
+
 
 
 }  /// END  ---  1350px
@@ -92,10 +98,12 @@
 		width: 95%;
 	}
 
+	.wrapper--fullwidth {
+		width: 100%;
+	}
+
 	.wrapper--main {
 		padding: 30px 10px 0;
-
-
 	}
 
 
@@ -267,6 +275,33 @@
 			}
 		}
 	}
+
+
+
+	.premium__wrapper {
+		padding: 40px 100px 0;
+
+		// .widget--image,
+		// .widget--gallery {
+		// 	max-width: 80%;
+		// }
+
+		.widget--review {
+			max-width: 90%;
+		}
+	}
+
+
+	.premium__title {
+		font-size: 3em;
+		line-height: 1.1;
+		color: #fff;
+	}
+
+	.premium--category-badge {
+		font-size: 1em;
+	}
+
 
 	
 
@@ -469,6 +504,23 @@
 				transform: rotate(34deg);
 			}
 		}
+	}
+
+
+	.premium__title {
+		font-size: 2em;
+		line-height: 1;
+		width: 70%;
+	}
+
+	.premium--category-badge {
+		font-size: 0.8em;
+		padding: 2px 4px;
+		left: 15%;
+	}
+
+	.premium__image-source {
+		font-size: 0.8em;
 	}
 
 
@@ -783,6 +835,20 @@
 		}
 
 
+	.premium__wrapper {
+		padding: 40px 50px 0;
+
+		.widget--image,
+		.widget--gallery {
+			max-width: 90%;
+		}
+
+		.widget--review {
+			max-width: 100%;
+		}
+	}
+
+
 
 }  /// END  ---  800px
 
@@ -822,6 +888,25 @@
 			font-size: 0.9em;
 			padding: 7px 12px;
 			border-radius: 2px;
+		}
+
+
+		.premium__title {
+			font-size: 1.2em;
+			line-height: 1;
+			width: 85%;
+			margin-bottom: 0;
+		}
+
+		.premium--category-badge {
+			font-size: 0.6em;
+			padding: 2px 4px;
+			left: 8%;
+			border-radius: 2px;
+		}
+
+		.premium__image-source {
+			font-size: 0.5em;
 		}
 
 
@@ -1572,6 +1657,57 @@
 		}
 	}
 
+	.premium__info {
+		font-size: 0.8em;
+	}
+
+
+	.premium__info--avatar {
+		width: 60px;
+		height: 60px;
+	}
+
+
+	.premium__wrapper {
+		padding: 40px 10px 0;
+
+		.widget--image,
+		.widget--gallery {
+			max-width: 100%;
+		}
+
+	}
+
+	.premium__hero {
+		margin-top: 20px;
+	}
+
+	.premium__text {
+		padding-bottom: 25px;
+	}
+
+	.premium__title {
+		font-size: 1em;
+		line-height: 1;
+		width: 90%;
+	}
+
+	.premium--category-badge {
+		font-size: 0.5em;
+		padding: 1px 2px;
+		left: 5%;
+		border-radius: 2px;
+	}
+
+	.premium__image-source {
+		font-size: 0.5em;
+		margin-bottom: 5px;
+		right: 5px;
+	}
+
+	.share-buttons--premium {
+		font-size: 0.8em;
+	}
 
 
 

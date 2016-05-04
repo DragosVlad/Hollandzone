@@ -15,9 +15,13 @@
 body {
 	position: relative;
 	background-color: #F0F0F0;
-	
 	padding-top: 135px;
+
+	&.nopadding {
+		padding-top: 30px;
+	}
 }
+
 
 
 .wrapper {
@@ -41,6 +45,10 @@ body {
 
 	.wrapper--noborder {
 		border-top: none;
+	}
+
+	.wrapper--fullwidth {
+		width: 100%;
 	}
 
 	.row {
@@ -92,6 +100,20 @@ section {
 
 .two-sides-content {
 	padding: 0;
+}
+	
+.premium__wrapper {
+	padding: 40px 200px 0;
+
+	.row {
+		max-width: 100%;
+	}
+
+	.widget--image,
+	.widget--gallery,
+	.widget--review {
+		max-width: 80%;
+	}
 }
 
 .two-sides-content > .row {

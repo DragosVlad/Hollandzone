@@ -201,6 +201,26 @@
 		}
 
 
+		.premium--badge {
+			position: absolute;
+			right: 0px;
+			bottom: 0px;
+			font-size: 0.9em;
+			font-weight: $font-bold;
+			letter-spacing: 1.5px;
+			color: #fff;
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+			padding: 4px 8px;
+			background-color: $main-color;
+			border-radius: 2px;
+			box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+
+			i {
+				margin-right: 3px;
+			}
+		}
+
+
 
 .articles--main {
 	position: relative;
