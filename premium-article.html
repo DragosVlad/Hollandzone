@@ -56,79 +56,11 @@
 
 	<!-- Custom CSS styles -->
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/switch.css">
 	<link class="rs-file" href="css/royalslider.css" rel="stylesheet">
-	<link class="rs-file" href="css/rs-default-inverted.css" rel="stylesheet">
 
 
-	<style>
-		#gallery-t-group {
-		  width: 100%;
-		  -webkit-user-select: none;
-		  -moz-user-select: none;  
-		  user-select: none;
-		}
-		.rsDefaultInv,
-		.rsDefaultInv .rsOverflow,
-		.rsDefaultInv .rsSlide,
-		.rsDefaultInv .rsVideoFrameHolder,
-		.rsDefaultInv .rsThumbs {
-		  background: #eee;
-		}
-
-		#gallery-t-group .rsThumb {
-		  float: left;
-		  overflow: hidden;
-		  width: 56px;
-		  height: 56px;
-		  margin-right: 1px;
-		}
-		#gallery-t-group .rsThumbs {
-		  width: 285px;
-		  height: 100%;
-		  position: absolute;
-		  top: 0;
-		  padding: 0 0 0 1px;
-		  right: 0;
-		}
-		#gallery-t-group .rsGCaption {
-		  right: 285px;
-		  line-height: 12px;
-		  padding: 1px 7px;
-		  font-size: 11px;
-		  background: #EEE;
-		  position: absolute;
-		  width: auto;
-		  bottom: 0;
-		  float: none;
-		  text-align: left;
-		}
-		@media screen and (min-width: 0px) and (max-width: 1200px) {  
-		  #gallery-t-group .rsThumbs {
-		    width: 228px;
-		  }
-		  #gallery-t-group .rsGCaption {
-		    right: 228px;
-		  }
-		}
-		@media screen and (min-width: 0px) and (max-width: 760px) {  
-		  #gallery-t-group .rsThumbs {
-		    left: 0;
-		    position: relative;
-		    width: 100%;
-		    height: auto;
-		    padding: 1px 0 0 1px;
-		  }
-		  #gallery-t-group .rsThumbsContainer {
-		    height: auto !important;
-		  }
-		  #gallery-t-group .rsGCaption { 
-		    right: 0;
-		  }
-
-		}
-	</style>
 </head>
+
 <body class="nopadding">
 
 
@@ -277,8 +209,6 @@
 			
 			<img src="images/premium.jpg" alt="Premium article image" class="premium__image">
 
-			<!-- <div class="premium--category-badge">Article</div> -->
-
 			<div class="premium__text">
 				<div class="premium--category-badge">Article</div>
 				<h1 class="premium__title">
@@ -287,6 +217,11 @@
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia atque, minus sequi vero facilis, placeat maxime ipsa quae enim explicabo!
 					</div>
 				</h1>
+			</div>
+
+			<div class="language-switcher language-switcher--premium">
+				<a href="#"><div class="language-switcher--item active english"></div></a>
+				<a href="#"><div class="language-switcher--item dutch"></div></a>
 			</div>
 
 			<p class="premium__image-source"> <a href="#"><i class="fa fa-picture-o"></i> http://image-source.html</a></p>
@@ -334,22 +269,19 @@
 						<p class="main-article--paragraph p1">Electronic Family festival is somewhat unknown to us but having a look at the line-up this festival is obviously not the new kid in town. With well established names in their line-up, especially for trance freaks,  Electronic Family promised to be an exciting and electrifying day. This year celebrating their fifth anniversary.</p>
 
 						<!-- slider code start -->
-						<div class="row clearfix">
-							<div class="fwImage col span_6">
-								<div id="gallery-t-group" class="royalSlider rsDefaultInv">
-									<a class="rsImg" href="images/rs/medium/1.jpg"><img class="rsTmb" width="56" height="56" src="images/rs/thumbs/1.jpg" /></a>
-									<a class="rsImg" href="images/rs/medium/2.jpg"><img class="rsTmb" width="56" height="56" src="images/rs/thumbs/2.jpg" /></a>
-									<a class="rsImg" href="images/rs/medium/3.jpg"><img class="rsTmb" width="56" height="56" src="images/rs/thumbs/3.jpg" /></a>
-									<a class="rsImg" href="images/rs/medium/4.jpg"><img class="rsTmb" width="56" height="56" src="images/rs/thumbs/4.jpg" /></a>
-									<a class="rsImg" href="images/rs/medium/5.jpg"><img class="rsTmb" width="56" height="56" src="images/rs/thumbs/5.jpg" /></a>
-									<a class="rsImg" href="images/rs/medium/6.jpg"><img class="rsTmb" width="56" height="56" src="images/rs/thumbs/6.jpg" /></a>
-									<a class="rsImg" href="images/rs/medium/7.jpg"><img class="rsTmb" width="56" height="56" src="images/rs/thumbs/7.jpg" /></a>
-									<a class="rsImg" href="images/rs/medium/8.jpg"><img class="rsTmb" width="56" height="56" src="images/rs/thumbs/8.jpg" /></a>
-									<a class="rsImg" href="images/rs/medium/9.jpg"><img class="rsTmb" width="56" height="56" src="images/rs/thumbs/9.jpg" /></a>
-									<a class="rsImg" href="images/rs/medium/10.jpg"><img class="rsTmb" width="56" height="56" src="images/rs/thumbs/10.jpg" /></a>
-									<a class="rsImg" href="images/rs/medium/11.jpg"><img class="rsTmb" width="56" height="56" src="images/rs/thumbs/11.jpg" /></a>
-
-								</div>
+						<div class="clearfix">
+							<div id="gallery-t-group" class="royalSlider rsDefaultInv">
+								<a class="rsImg" href="images/gallery/1.jpg"><img class="rsTmb" width="56" height="56" src="images/gallery/1.jpg" /></a>
+								<a class="rsImg" href="images/gallery/2.jpg"><img class="rsTmb" width="56" height="56" src="images/gallery/2.jpg" /></a>
+								<a class="rsImg" href="images/gallery/3.jpg"><img class="rsTmb" width="56" height="56" src="images/gallery/3.jpg" /></a>
+								<a class="rsImg" href="images/gallery/4.jpg"><img class="rsTmb" width="56" height="56" src="images/gallery/4.jpg" /></a>
+								<a class="rsImg" href="images/gallery/5.jpg"><img class="rsTmb" width="56" height="56" src="images/gallery/5.jpg" /></a>
+								<a class="rsImg" href="images/gallery/6.jpg"><img class="rsTmb" width="56" height="56" src="images/gallery/6.jpg" /></a>
+								<a class="rsImg" href="images/gallery/7.jpg"><img class="rsTmb" width="56" height="56" src="images/gallery/7.jpg" /></a>
+								<a class="rsImg" href="images/gallery/8.jpg"><img class="rsTmb" width="56" height="56" src="images/gallery/8.jpg" /></a>
+								<a class="rsImg" href="images/gallery/9.jpg"><img class="rsTmb" width="56" height="56" src="images/gallery/9.jpg" /></a>
+								<a class="rsImg" href="images/gallery/10.jpg"><img class="rsTmb" width="56" height="56" src="images/gallery/10.jpg" /></a>
+								<a class="rsImg" href="images/gallery/11.jpg"><img class="rsTmb" width="56" height="56" src="images/gallery/11.jpg" /></a>
 							</div>
 						</div>
 
@@ -526,70 +458,72 @@
 						</div>
 
 
-						<div class="related-entries">
-
-							<h1 class="section-title">Related entries</h1>
-
-							<div class="widget--related-entries">
-
-								<div class="row">
-
-									<div class="medium-4 small-12 columns">
-
-										<div class="widget--related-entries__item">
-											<a href="#" class="full-link"></a>
-											<img src="images/thumbnail.jpg" alt="Thumbnail" class="widget--related-entries__image">
-												
-											<div class="widget--related-entries__text"> <!-- Flexbox container -->
-												<h3 class="widget--related-entries__title">Article Title</h3>
-												<div class="widget--related-entries__date"><i class="fa fa-calendar"></i> <span>01/04/2016</span></div>
-											</div>
-
-										</div>
-
-									</div>
-
-									<div class="medium-4 small-12 columns">
-
-										<div class="widget--related-entries__item">
-											<a href="#" class="full-link"></a>
-											<img src="images/thumbnail.jpg" alt="Thumbnail" class="widget--related-entries__image">
-												
-											<div class="widget--related-entries__text">
-												<h3 class="widget--related-entries__title">Article Title</h3>
-												<div class="widget--related-entries__date"><i class="fa fa-calendar"></i> <span>01/04/2016</span></div>
-											</div>
-
-										</div>
-
-									</div>
-
-									<div class="medium-4 small-12 columns">
-
-										<div class="widget--related-entries__item">
-											<a href="#" class="full-link"></a>
-											<img src="images/thumbnail.jpg" alt="Thumbnail" class="widget--related-entries__image">
-												
-											<div class="widget--related-entries__text">
-												<h3 class="widget--related-entries__title">Article Title</h3>
-												<div class="widget--related-entries__date"><i class="fa fa-calendar"></i> <span>01/04/2016</span></div>
-											</div>
-
-										</div>
-
-									</div>
-
-
-								</div> <!-- END Row -->
-
-
-							</div>  <!-- END Related articles list -->
-						</div> <!-- END Related entries -->
+						
 
 
 
 
 					</div> <!-- END main-article content -->
+
+					<div class="related-entries">
+
+						<h1 class="section-title">Related entries</h1>
+
+						<div class="widget--related-entries">
+
+							<div class="row">
+
+								<div class="medium-4 small-12 columns">
+
+									<div class="widget--related-entries__item">
+										<a href="#" class="full-link"></a>
+										<img src="images/thumbnail.jpg" alt="Thumbnail" class="widget--related-entries__image">
+											
+										<div class="widget--related-entries__text"> <!-- Flexbox container -->
+											<h3 class="widget--related-entries__title">Article Title</h3>
+											<div class="widget--related-entries__date"><i class="fa fa-calendar"></i> <span>01/04/2016</span></div>
+										</div>
+
+									</div>
+
+								</div>
+
+								<div class="medium-4 small-12 columns">
+
+									<div class="widget--related-entries__item">
+										<a href="#" class="full-link"></a>
+										<img src="images/thumbnail.jpg" alt="Thumbnail" class="widget--related-entries__image">
+											
+										<div class="widget--related-entries__text">
+											<h3 class="widget--related-entries__title">Article Title</h3>
+											<div class="widget--related-entries__date"><i class="fa fa-calendar"></i> <span>01/04/2016</span></div>
+										</div>
+
+									</div>
+
+								</div>
+
+								<div class="medium-4 small-12 columns">
+
+									<div class="widget--related-entries__item">
+										<a href="#" class="full-link"></a>
+										<img src="images/thumbnail.jpg" alt="Thumbnail" class="widget--related-entries__image">
+											
+										<div class="widget--related-entries__text">
+											<h3 class="widget--related-entries__title">Article Title</h3>
+											<div class="widget--related-entries__date"><i class="fa fa-calendar"></i> <span>01/04/2016</span></div>
+										</div>
+
+									</div>
+
+								</div>
+
+
+							</div> <!-- END Row -->
+
+
+						</div>  <!-- END Related articles list -->
+					</div> <!-- END Related entries -->
 
 
 				</section> <!-- END Main content section -->

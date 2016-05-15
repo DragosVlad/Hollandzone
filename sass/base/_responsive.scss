@@ -1025,6 +1025,10 @@
 		margin-bottom: 0;
 	}
 
+	.language-switcher--premium {
+		margin-bottom: 1rem;
+	}
+
 
 	.main-article--heading {
 		font-size: 1.6em;
@@ -1703,6 +1707,12 @@
 		font-size: 0.5em;
 		margin-bottom: 5px;
 		right: 5px;
+	}
+
+	.language-switcher--premium {
+		left: 0;
+		margin-bottom: 5px;
+		transform: scale(0.7);
 	}
 
 	.share-buttons--premium {

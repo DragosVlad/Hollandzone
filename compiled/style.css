@@ -2802,6 +2802,11 @@ label {
   font-weight: 300;
   margin-top: 10px; }
 
+.language-switcher--premium {
+  position: absolute;
+  bottom: 0;
+  left: 30px; }
+
 .premium__image-source {
   position: absolute;
   bottom: 0;
@@ -3357,6 +3362,8 @@ label {
     vertical-align: baseline; }
   .language-switcher {
     margin-bottom: 0; }
+  .language-switcher--premium {
+    margin-bottom: 1rem; }
   .main-article--heading {
     font-size: 1.6em;
     color: #2b3340; }
@@ -3683,5 +3690,9 @@ label {
     font-size: 0.5em;
     margin-bottom: 5px;
     right: 5px; }
+  .language-switcher--premium {
+    left: 0;
+    margin-bottom: 5px;
+    transform: scale(0.7); }
   .share-buttons--premium {
     font-size: 0.8em; } }
